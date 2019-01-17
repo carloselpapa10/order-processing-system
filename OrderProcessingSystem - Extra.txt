@@ -1,0 +1,165 @@
+Jenkins Blueocean
+docker run -u root -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 2375:2375 --name jenkins_blueocean jenkinsci/blueocean:latest
+
+mvn clean package docker:build
+
+mvn -f customer-service/pom.xml docker:build
+mvn -f invoice-service/pom.xml docker:build
+mvn -f order-service/pom.xml docker:build
+mvn -f orderview-service/pom.xml docker:build
+
+docker-compose build
+docker-compose up
+
+docker network create ordersample-net
+
+docker run -d \
+    --name mongodb \
+    --network=ordersample-net \
+    -p 27017:27017 \
+    -e MONGO_DATA_DIR=/data/db \
+    -e MONGO_LOG_DIR=/dev/null \
+    -v /Users/cavendanoa/Documents/data/db:/data/db \
+    mongo:3.0.15
+
+docker run -d \
+    --name mysql \
+    --network=ordersample-net \
+    -p 3306:3306 \
+    -e MYSQL_ROOT_PASSWORD=rootpassword \
+    -e MYSQL_USER=mysqluser \
+    -e MYSQL_PASSWORD=mysqlpw \
+    eventuateio/eventuate-tram-sagas-mysql:0.6.0.RELEASE
+
+docker run -d \
+    --name zookeeper \
+    --network=ordersample-net \
+    -p 2181:2181 \
+    -p 2888:2888 \
+    -p 3888:3888 \
+    eventuateio/eventuateio-local-zookeeper:0.22.0.RELEASE
+
+docker run -d \
+	--name kafka \
+        --network=ordersample-net \
+	-p 9092:9092 \
+	--link zookeeper \
+	-e ADVERTISED_HOST_NAME=${DOCKER_HOST_IP} \
+	-e "KAFKA_HEAP_OPTS=-Xmx320m -Xms320m" \
+	-e ZOOKEEPER_SERVERS=zookeeper:2181 \
+	eventuateio/eventuateio-local-kafka:0.22.0.RELEASE
+
+docker run -d \
+	--name cdcservice \
+        --network=ordersample-net \
+	-p 8099:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+	-e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e EVENTUATELOCAL_CDC_DB_USER_NAME=root \
+	-e EVENTUATELOCAL_CDC_DB_PASSWORD=rootpassword \
+	-e EVENTUATELOCAL_CDC_BINLOG_CLIENT_ID=1234567890 \
+	eventuateio/eventuate-tram-cdc-mysql-service:0.11.1.RELEASE
+
+docker build -t ordersample-admin .
+
+docker run -d \
+    --name ordersample-admin \
+    --network=ordersample-net \
+    -p 5020:8080 \
+    ordersample-admin
+
+docker run -d \
+	--name customer-service \
+        --network=ordersample-net \
+	-p 5000:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/customerservicedb \
+    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
+        -e SPRING_BOOT_ADMIN_USERNAME=admin \
+        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
+	-e SPRING_BOOT_ADMIN_CLIENT_NAME=customer-service \
+	ordersample/customer-service
+
+docker run -d \
+	--name invoice-service \
+        --network=ordersample-net \
+	-p 5001:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/invoiceservicedb \
+    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
+        -e SPRING_BOOT_ADMIN_USERNAME=admin \
+        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
+	-e SPRING_BOOT_ADMIN_CLIENT_NAME=invoice-service \
+	ordersample/invoice-service
+
+docker run -d \
+	--name order-service \
+        --network=ordersample-net \
+	-p 5002:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/orderservicedb \
+    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
+        -e SPRING_BOOT_ADMIN_USERNAME=admin \
+        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
+	-e SPRING_BOOT_ADMIN_CLIENT_NAME=order-service \
+	ordersample/order-service
+
+docker run -d \
+	--name orderview-service \
+        --network=ordersample-net \
+	-p 5003:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/orderviewservicedb \
+    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
+        -e SPRING_BOOT_ADMIN_USERNAME=admin \
+        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
+	-e SPRING_BOOT_ADMIN_CLIENT_NAME=orderview-service \
+	ordersample/orderview-service
+

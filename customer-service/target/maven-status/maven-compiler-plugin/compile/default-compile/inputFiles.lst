@@ -1,0 +1,13 @@
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/impl/CustomerServiceImpl.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlersConfiguration.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/swagger/SwaggerConfig.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/model/CustomerRepository.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerRequest.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/model/CustomerDomainEventPublisher.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlers.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/model/Customer.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/dao/CustomerService.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerResponse.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/CustomerServiceApplication.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/controller/CustomerServiceController.java
+/media/charlis/Carlos Data/Microservices/runtime-EclipseApplication-2/org.eclipse.acceleo.module.sample/real-app/customer-service/src/main/java/org/ordersample/customerservice/dao/CustomerServiceConfiguration.java

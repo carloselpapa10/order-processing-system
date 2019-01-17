@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: invoice-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Kelwin Payares
+Implementation-Vendor-Id: org.ordersample
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://projects.spring.io/spring-boot/invoice-serv
+ ice/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: org.ordersample.invoiceservice.InvoiceServiceApplication
+
