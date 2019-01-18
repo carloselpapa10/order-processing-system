@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/../eventuate-tram-aggregate-domain-events/pom.xml" />
         <option value="$PROJECT_DIR$/../customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/../invoice-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../orderview-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f53431-0a44-450f-a867-88f810dbaaec" name="Default Changelist" comment="" />
+    <list default="true" id="33f53431-0a44-450f-a867-88f810dbaaec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../customer-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/controller/InvoiceServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/controller/InvoiceServiceController.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../eventuate-tram-aggregate-domain-events/target/" />
     <ignored path="$PROJECT_DIR$/../customer-service/target/" />
     <ignored path="$PROJECT_DIR$/../invoice-service/target/" />
+    <ignored path="$PROJECT_DIR$/../order-service/target/" />
+    <ignored path="$PROJECT_DIR$/../orderview-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,19 +32,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+            <state relative-caret-position="45">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../customer-service/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="31" selection-start-line="31" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="68" column="28" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -48,39 +62,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.m2/settings.xml" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/CustomerServiceApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/customer/api/info/CustomerDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/customer/api/events/CustomerCreatedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/customer/api/events/CustomerDeletedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/customer/api/events/CustomerUpdatedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/customer/api/commands/ValidateCustomerByOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/info/InvoiceDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/events/InvoiceCreatedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/events/InvoiceCreationFailedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/commands/RequestInvoiceCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/commands/CompensateInvoiceCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/invoice/api/commands/ValidateInvoiceByOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/info/OrderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderCompletedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderCreatedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderDeletedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderEditedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderRejectedEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/events/OrderUpdatedInvoiceEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/commands/CompleteOrderCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/commands/EditOrderCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/servicemodel/order/api/commands/RejectOrderCommand.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlers.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/dao/CustomerService.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/controller/CustomerServiceController.java" />
         <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/model/Customer.java" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/model/Invoice.java" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/dao/InvoiceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/info/InvoiceDTO.java" />
-        <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/controller/InvoiceServiceController.java" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlers.java" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/InvoiceServiceApplication.java" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/impl/InvoiceServiceImpl.java" />
@@ -88,6 +74,45 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../invoice-service/pom.xml" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/model/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/dao/OrderService.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/CustomerServiceProxy.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/InvoiceServiceProxy.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/OrderServiceProxy.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSagaData.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/updateorder/UpdateOrderSagaData.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderRequest.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderResponse.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java" />
+        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerRequest.java" />
+        <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerResponse.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/updateorder/UpdateOrderSaga.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../orderview-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Customer.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Order.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Invoice.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/InvoiceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/OrderService.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/controller/OrderViewServiceController.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/InvoiceService.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/CustomerService.java" />
+        <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/controller/InvoiceServiceController.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../customer-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/../invoice-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/../order-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/../orderview-service/Dockerfile" />
       </list>
     </option>
   </component>
@@ -117,77 +142,7 @@
           <expand>
             <path>
               <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="customerservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="invoiceservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domain-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="invoice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,7 +153,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547763129987" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547828495708" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -208,6 +163,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../orderview-service" />
+      <recent name="$PROJECT_DIR$/../order-service" />
       <recent name="$PROJECT_DIR$/../invoice-service" />
       <recent name="$PROJECT_DIR$/../customer-service" />
     </key>
@@ -224,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InvoiceServiceApplication">
+  <component name="RunManager" selected="Application.OrderViewServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ordersample.customerservice.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -251,10 +208,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderservice.OrderServiceApplication" />
+      <module name="order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ordersample.orderservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderViewServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderviewservice.OrderViewServiceApplication" />
+      <module name="orderview-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ordersample.orderviewservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderViewServiceApplication" />
         <item itemvalue="Application.InvoiceServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -275,16 +260,16 @@
     <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49818182" weight="0.2342918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976526" visible="true" weight="0.2342918" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.35218093" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5018182" side_tool="true" weight="0.2342918" />
+      <window_info id="Favorites" order="6" sideWeight="0.5023474" side_tool="true" weight="0.2342918" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2777202" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5523316" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -303,16 +288,16 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49818182" visible="true" weight="0.2342918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976526" visible="true" weight="0.2342918" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.35218093" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5018182" side_tool="true" weight="0.2342918" />
+      <window_info id="Favorites" order="6" sideWeight="0.5023474" side_tool="true" weight="0.2342918" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22590673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5585492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,7 +305,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.17823835" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3726977" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.35336787" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,336 +317,340 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/info/CustomerDTO.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/dao/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/events/CustomerDomainEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/events/CustomerUpdatedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/events/CustomerCreatedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/events/CustomerDeletedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/customer/api/commands/ValidateCustomerByOrderService.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/impl/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/commands/CompensateInvoiceCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/commands/RequestInvoiceCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-          <folding>
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/commands/ValidateInvoiceByOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding>
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/events/InvoiceCreatedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="138">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderDeletedEvent.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="527">
+          <caret line="143" column="57" selection-start-line="143" selection-start-column="57" selection-end-line="143" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderEditedEvent.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="1080">
+          <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderRejectedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderUpdatedInvoiceEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCompletedEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/commands/RejectOrderCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/commands/EditOrderCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#438#439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/commands/CompleteOrderCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#447#448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/common/Channels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/wait-for-mysql.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/dao/CustomerServiceConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlersConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-events/0.6.0.RELEASE/eventuate-tram-events-0.6.0.RELEASE.jar!/io/eventuate/tram/events/publisher/DomainEventPublisher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/model/CustomerDomainEventPublisher.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/OrderServiceProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/repository/CustomerRepository.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/InvoiceServiceProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlersConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="78" />
+        <state relative-caret-position="240">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/controller/CustomerServiceController.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/CustomerServiceProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/repository/InvoiceRepository.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/updateorder/UpdateOrderSagaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/dao/InvoiceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/events/InvoiceCreationFailedEvent.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSagaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/swagger/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/info/InvoiceDTO.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/webapi/CreateCustomerResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="90">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/updateorder/UpdateOrderSaga.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="51" column="80" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/model/Invoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="315">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="14" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlers.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="122" lean-forward="true" selection-start-line="66" selection-start-column="122" selection-end-line="66" selection-end-column="122" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlers.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/repository/CustomerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/InvoiceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/controller/OrderViewServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/InvoiceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -670,118 +659,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/controller/InvoiceServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="300">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/dao/InvoiceServiceConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/controller/CustomerServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/impl/InvoiceServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/EventHandlersConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/impl/CustomerServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="83" />
+        <state relative-caret-position="316">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/model/Customer.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="149">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/common/BusinessException.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="324">
+          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/swagger/SwaggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/dao/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="124">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../customer-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="115">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/InvoiceServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="true" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/CustomerServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/../invoice-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="164">
+          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/../invoice-service/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="31" selection-start-line="31" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/../invoice-service/invoice-service.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+        <state relative-caret-position="45">
+          <caret line="3" column="31" lean-forward="true" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="68" column="28" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -837,7 +822,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>invoice-service</last-edited>
+          <last-edited>orderview-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,0 +1,90 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://172.28.200.187:3306/eventuate?autoReconnect=true&useSSL=false
+    username: mysqluser
+    password: mysqlpw
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      idle-timeout: 10000
+  jpa:
+    database: MYSQL
+    generate-ddl: true 
+  data:
+    mongodb:
+      uri: ${MONGO_URL:mongodb://localhost:27017/orderservicedb}
+ 
+eventuatelocal:
+  kafka:
+    bootstrap:
+      servers: 172.28.200.187:9092
+  zookeeper:
+    connection:
+      string: 172.28.200.187:2181
+  cdc:
+    dbUserName: root
+    dbPassword: rootpassword
+
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true
+
+    
+---  
+spring:
+  profiles: container
+  application:
+    name: order-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME}
+    hikari:
+      idle-timeout: ${SPRING_DATASOURCE_TIMEOUT}
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+  data:
+    mongodb:
+      uri: ${MONGO_URL:mongodb://${MONGODB}}
+    
+eventuatelocal:
+  kafka: 
+    bootstrap:
+      servers: ${EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS}
+  zookeeper:
+    connection:
+      string: ${EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING}
+  cdc:
+    dbUserName: root
+    dbPassword: rootpassword
+
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true
+
+server:
+  port: 8080

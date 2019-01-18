@@ -14,6 +14,10 @@ public class OrderDTO {
     private String customerId;
     private String invoiceId;
 
+	public OrderDTO(String id) {
+		this.id = id;
+	}
+
 	public OrderDTO(String id, String description, String customerId, String invoiceId) {
 		this.id = id;
 		this.description = description;

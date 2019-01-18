@@ -18,7 +18,7 @@ public class InvoiceServiceController {
 	private InvoiceService invoiceService;
 
 	@GetMapping("{invoiceId}")
-	public Invoice findInvoice(@RequestParam String id){
+	public Invoice findInvoice(@PathVariable("invoiceId") String id){
 		log.info("InvoiceService - InvoiceServiceController - findInvoice");
 		return invoiceService.findInvoice(id);
 	} 			
