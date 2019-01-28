@@ -23,8 +23,9 @@
 		<eventuateTramVersion>0.6.0.RELEASE</eventuateTramVersion>
 		<eventuateTramSagasVersion>0.5.0.RELEASE</eventuateTramSagasVersion>
 		<eventuateClientVersion>0.20.1.RELEASE</eventuateClientVersion>
-
 	</properties>
+
+
 
 	<dependencies>
 
@@ -62,13 +63,13 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>2.2.2</version>
+			<version>2.9.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.2.2</version>
+			<version>2.9.2</version>
 		</dependency>
 
 		<dependency>
@@ -97,8 +98,6 @@
 			<artifactId>micrometer-registry-prometheus</artifactId>
 			<version>1.0.6</version>
 		</dependency>
-
-
 
 	</dependencies>
 

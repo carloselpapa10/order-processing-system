@@ -1,17 +1,14 @@
 Jenkins Blueocean
 docker run -u root -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 2375:2375 --name jenkins_blueocean jenkinsci/blueocean:latest
 
-mvn clean package docker:build
-
-mvn -f customer-service/pom.xml docker:build
-mvn -f invoice-service/pom.xml docker:build
-mvn -f order-service/pom.xml docker:build
-mvn -f orderview-service/pom.xml docker:build
-
-docker-compose build
-docker-compose up
+mvn clean install -U -s settings.xml
 
 docker network create ordersample-net
+
+docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service
+docker build -f invoice-service/Dockerfile invoice-service/ -t carloselpapa10/invoice-service
+docker build -f order-service/Dockerfile order-service/ -t carloselpapa10/order-service
+docker build -f orderview-service/Dockerfile orderview-service/ -t carloselpapa10/orderview-service
 
 docker run -d \
     --name mongodb \
@@ -67,14 +64,6 @@ docker run -d \
 	-e EVENTUATELOCAL_CDC_BINLOG_CLIENT_ID=1234567890 \
 	eventuateio/eventuate-tram-cdc-mysql-service:0.11.1.RELEASE
 
-docker build -t ordersample-admin .
-
-docker run -d \
-    --name ordersample-admin \
-    --network=ordersample-net \
-    -p 5020:8080 \
-    ordersample-admin
-
 docker run -d \
 	--name customer-service \
         --network=ordersample-net \
@@ -91,11 +80,7 @@ docker run -d \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/customerservicedb \
-    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
-        -e SPRING_BOOT_ADMIN_USERNAME=admin \
-        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
-	-e SPRING_BOOT_ADMIN_CLIENT_NAME=customer-service \
-	ordersample/customer-service
+	carloselpapa10/customer-service
 
 docker run -d \
 	--name invoice-service \
@@ -113,11 +98,7 @@ docker run -d \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/invoiceservicedb \
-    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
-        -e SPRING_BOOT_ADMIN_USERNAME=admin \
-        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
-	-e SPRING_BOOT_ADMIN_CLIENT_NAME=invoice-service \
-	ordersample/invoice-service
+	carloselpapa10/invoice-service
 
 docker run -d \
 	--name order-service \
@@ -135,11 +116,7 @@ docker run -d \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/orderservicedb \
-    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
-        -e SPRING_BOOT_ADMIN_USERNAME=admin \
-        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
-	-e SPRING_BOOT_ADMIN_CLIENT_NAME=order-service \
-	ordersample/order-service
+	carloselpapa10/order-service
 
 docker run -d \
 	--name orderview-service \
@@ -157,9 +134,5 @@ docker run -d \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/orderviewservicedb \
-    -e SPRING_BOOT_ADMIN_URL=http://ordersample-admin:8080 \
-        -e SPRING_BOOT_ADMIN_USERNAME=admin \
-        -e SPRING_BOOT_ADMIN_PASSWORD=admin \
-	-e SPRING_BOOT_ADMIN_CLIENT_NAME=orderview-service \
-	ordersample/orderview-service
+	carloselpapa10/orderview-service
 

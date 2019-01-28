@@ -17,6 +17,11 @@ spring:
   data:
     mongodb:
       uri: ${MONGO_URL:mongodb://localhost:27017/customerservicedb}
+    #zipkin:
+    #discoveryClientEnabled: false
+  #baseUrl: http://172.28.200.187:9411/
+    #sender:
+    #  type: web
  
 eventuatelocal:
   kafka:
@@ -42,6 +47,17 @@ management:
     metrics:
       enabled: true
 
+logging:
+  level:
+    org:
+      springframework:
+        web: ERROR
+      ordersample:
+        customerservice: DEBUG
+  file: /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/logs/application.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 ---  
 spring:
   profiles: container

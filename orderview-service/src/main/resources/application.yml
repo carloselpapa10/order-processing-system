@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8080
 
 spring:
   datasource:
@@ -55,6 +55,3 @@ eventuatelocal:
   cdc:
     dbUserName: root
     dbPassword: rootpassword
-
-server:
-  port: 8080

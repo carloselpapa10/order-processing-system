@@ -70,9 +70,6 @@ eventuatelocal:
     dbUserName: root
     dbPassword: rootpassword
 
-server:
-  port: 8080
-
 management:
   metrics:
     export:
