@@ -11,6 +11,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       idle-timeout: 10000
+    continue-on-error: true
   jpa:
     database: MYSQL
     generate-ddl: true 
