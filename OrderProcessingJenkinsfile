@@ -16,6 +16,7 @@ stages {
 				}
 			}
 			steps {
+			   echo '! nc -z localhost 3306'
                            echo 'SIIIIUUU'
 			}
 	}
