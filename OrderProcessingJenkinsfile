@@ -12,7 +12,7 @@ stages {
 			agent any
 			steps {
                            waitUntil {
-                              sh '! nc -z 192.168.1.56 3306'
+                              sh '! nc -z localhost 3306'
                               echo 'ND'
                            }
                            echo 'SIIIIUUU'
