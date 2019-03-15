@@ -42,7 +42,6 @@ stages {
 			agent any
 			steps {
 				sh 'while ! exec 6<>/dev/tcp/192.168.1.156/3306; do
-                                      echo "Trying to connect to MySQL at ${DATABASE_PORT}..."
                                       sleep 10
                                      done'
                                 echo 'SIIIIUUU'
