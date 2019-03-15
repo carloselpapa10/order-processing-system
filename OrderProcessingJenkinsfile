@@ -16,7 +16,7 @@ stages {
 				}
 			}
 			steps {
-			   def comando = $(nc -z localhost 3306)
+			   comando = $(nc -z localhost 3306)
 			   
                            echo 'SIIIIUUU'
 			}
