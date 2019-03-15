@@ -10,3 +10,7 @@ while ! exec 6<>/dev/tcp/192.168.1.56/3306; do
     sleep 10
 done
 
+
+
+
+

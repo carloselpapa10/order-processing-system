@@ -40,7 +40,7 @@ stages {
         stage('Zookeeper') {
 			agent any
 			steps {
-			   sh './wait.sh'			   
+			   sh './wait_databases.sh'			   
                            sh 'docker run -d \
 					--name zookeeper \
 					--network=order-processing-net \
@@ -48,6 +48,13 @@ stages {
 					-p 2888:2888 \
 					-p 3888:3888 \
 					eventuateio/eventuateio-local-zookeeper:0.22.0.RELEASE'
+			}
+	}
+        stage('Kafka') {
+			agent any
+			steps {
+			   sh './wait_zookeeper.sh'			   
+                           sh 'DONE'
 			}
 	}
   }
