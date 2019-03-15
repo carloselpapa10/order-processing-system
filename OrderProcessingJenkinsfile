@@ -41,15 +41,13 @@ stages {
 			agent any
 			steps {
 			   sh './wait.sh'			   
-                           steps {
-				sh 'docker run -d \
+                           sh 'docker run -d \
 					--name zookeeper \
 					--network=order-processing-net \
 					-p 2181:2181 \
 					-p 2888:2888 \
 					-p 3888:3888 \
 					eventuateio/eventuateio-local-zookeeper:0.22.0.RELEASE'
-				}
 			}
 	}
   }
