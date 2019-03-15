@@ -12,7 +12,7 @@ stages {
 			agent any
 			when{
 				expression {
-					return ! nc -z localhost 3306
+					return 1 == 1
 				}
 			}
 			steps {
