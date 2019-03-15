@@ -41,10 +41,11 @@ stages {
         stage('Zookeeper') {
 			agent any
 			steps {
-				sh 'while ! exec 6<>/dev/tcp/192.168.1.156/3306; do
-                                      sleep 10
-                                     done'
-                                echo 'SIIIIUUU'
+                           waitUntil {
+                              sh '! exec 6<>/dev/tcp/192.168.1.156/3306'
+                              echo 'ND'
+                           }
+                           echo 'SIIIIUUU'
 			}
 	}
   }
