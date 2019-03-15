@@ -4,17 +4,14 @@ stages {
 	stage('Docker Network') {
 		agent any
 		steps {
-			echo 'holaa'	
+			echo 'holaa'
 		}
 	}
 
         stage('Zookeeper') {
 			agent any
 			steps {
-				script{					
-					if(!nc -z localhost 3306){
-					}
-				}			   
+			   sh './wait.sh'			   
                            echo 'SIIIIUUU'
 			}
 	}
