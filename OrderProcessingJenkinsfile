@@ -59,9 +59,10 @@ stages {
 			agent any
 			steps {
                                 sh './wait_zookeeper.sh'
+                                sleep 10
 				sh 'docker run -d \
 				--name kafka \
-				--network=mdeforge-net \
+				--network=$NETWORK \
 				-p 9092:9092 \
 				--link zookeeper \
 				-e ADVERTISED_HOST_NAME=$DOCKER_HOST_IP \
@@ -74,9 +75,10 @@ stages {
 			agent any
 			steps {
                                 sh './wait_kafka.sh'
+                                sleep 15
 				sh 'docker run -d \
 				--name cdcservice \
-				--network=mdeforge-net \
+				--network=$NETWORK \
 				-p 8099:8080 \
 				--link mysql \
 				--link kafka \
