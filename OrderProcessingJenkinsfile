@@ -54,7 +54,7 @@ stages {
 			agent any
 			steps {
 			   sh './wait_zookeeper.sh'			   
-                           sh 'DONE'
+                           echo 'DONE'
 			}
 	}
   }
