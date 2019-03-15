@@ -9,6 +9,7 @@ stages {
 	stage('Docker Network') {
 		agent any
 		steps {
+			sh './wait_databases.sh'			
 			sh 'docker network create $NETWORK'
 		}
 	}
