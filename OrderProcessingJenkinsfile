@@ -13,8 +13,6 @@ stages {
 			steps {
 				script{					
 					if(! exec 6<>/dev/tcp/localhost/3306){
-					    echo "Trying to connect to MySQL at 3306..."
-					    sleep 10
 					}
 				}			   
                            echo 'SIIIIUUU'
