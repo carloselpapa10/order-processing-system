@@ -12,7 +12,7 @@ stages {
 			agent any
 			steps {
                            waitUntil {
-                              sh 'netstat -lntu | grep 3306'
+                              sh '! nc -z localhost 3306'
                               echo 'ND'
                            }
                            echo 'SIIIIUUU'
