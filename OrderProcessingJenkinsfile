@@ -10,11 +10,12 @@ stages {
 
         stage('Zookeeper') {
 			agent any
+			when{
+				expression {
+					return ! nc -z localhost 3306
+				}
+			}
 			steps {
-                           waitUntil {
-			      expression { ! nc -z localhost 3306 }
-                              echo 'ND'
-                           }
                            echo 'SIIIIUUU'
 			}
 	}
