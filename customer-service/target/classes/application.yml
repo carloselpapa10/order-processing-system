@@ -5,19 +5,18 @@ spring:
   application:
     name: customer-service
   datasource:
-    url: jdbc:mysql://172.28.200.187:3306/eventuate?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://192.168.1.56:3306/eventuate?autoReconnect=true&useSSL=false
     username: mysqluser
     password: mysqlpw
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       idle-timeout: 10000
-    continue-on-error: true
   jpa:
     database: MYSQL
     generate-ddl: true 
   data:
     mongodb:
-      uri: ${MONGO_URL:mongodb://localhost:27017/customerservicedb}
+      uri: ${MONGO_URL:mongodb://192.168.1.56:27017/customerservicedb}
     #zipkin:
     #discoveryClientEnabled: false
   #baseUrl: http://172.28.200.187:9411/
@@ -27,10 +26,10 @@ spring:
 eventuatelocal:
   kafka:
     bootstrap:
-      servers: 172.28.200.187:9092
+      servers: 192.168.1.56:9092
   zookeeper:
     connection:
-      string: 172.28.200.187:2181
+      string: 192.168.1.56:2181
   cdc:
     dbUserName: root
     dbPassword: rootpassword
@@ -55,7 +54,7 @@ logging:
         web: ERROR
       ordersample:
         customerservice: DEBUG
-  file: /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/logs/application.log
+  #file: /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/logs/application.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

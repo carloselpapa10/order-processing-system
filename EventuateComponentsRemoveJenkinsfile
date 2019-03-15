@@ -1,0 +1,45 @@
+pipeline {
+	agent none
+
+        environment {
+		NETWORK = 'order-processing-net'
+	} 
+stages {
+	stage('RM CDCservice') {
+		agent any
+		steps {
+			sh 'docker rm cdcservice --force'
+		}
+	}
+	stage('RM Kafka') {
+		agent any
+		steps {
+			sh 'docker rm kafka --force'
+		}
+	}
+	stage('RM Zookeeper') {
+		agent any
+		steps {
+			sh 'docker rm zookeeper --force'
+		}
+	}
+	stage('RM Mysql') {
+		agent any
+		steps {
+			sh 'docker rm mysql --force'
+		}
+	}
+	stage('RM Mongodb') {
+		agent any
+		steps {
+			sh 'docker rm mongodb --force'
+		}
+	}
+        stage('RM Docker Network') {
+		agent any
+		steps {
+			sh 'docker network rm $NETWORK'
+		}
+	}
+  }
+}
