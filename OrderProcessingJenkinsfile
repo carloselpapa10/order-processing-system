@@ -12,7 +12,7 @@ stages {
 			agent any
 			steps {
                            waitUntil {
-			      expression { return ! nc -z localhost 3306 }
+			      expression { ! nc -z localhost 3306 }
                               echo 'ND'
                            }
                            echo 'SIIIIUUU'
