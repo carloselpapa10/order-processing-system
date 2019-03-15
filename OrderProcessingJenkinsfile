@@ -12,7 +12,7 @@ stages {
 			agent any
 			steps {
 				script{					
-					if( 1 == 1){
+					if(!nc -z localhost 3306){
 					}
 				}			   
                            echo 'SIIIIUUU'
