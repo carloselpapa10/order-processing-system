@@ -1,10 +1,15 @@
 pipeline {
-	agent none    
+	agent none
+
+	environment {
+		DOCKER_HOST_IP = '192.168.1.56'
+		NETWORK = 'order-processing-net'
+	    }
 stages {
 	stage('Docker Network') {
 		agent any
 		steps {
-			sh 'docker network create order-processing-net'
+			sh 'docker network create ${env.NETWORK}'
 		}
 	}
         stage('Database') {
@@ -14,7 +19,7 @@ stages {
 				steps {
 					sh 'docker run -d \
 					    --name mysql \
-					    --network=order-processing-net \
+					    --network=${env.NETWORK} \
 					    -p 3306:3306 \
 					    -e MYSQL_ROOT_PASSWORD=rootpassword \
 					    -e MYSQL_USER=mysqluser \
@@ -27,7 +32,7 @@ stages {
 				steps {
 					sh 'docker run -d \
 					    --name mongodb \
-					    --network=order-processing-net \
+					    --network=${env.NETWORK} \
 					    -p 27017:27017 \
 					    -e MONGO_DATA_DIR=/data/db \
 					    -e MONGO_LOG_DIR=/dev/null \
@@ -43,7 +48,7 @@ stages {
 			   sh './wait_databases.sh'			   
                            sh 'docker run -d \
 					--name zookeeper \
-					--network=order-processing-net \
+					--network=${env.NETWORK} \
 					-p 2181:2181 \
 					-p 2888:2888 \
 					-p 3888:3888 \
