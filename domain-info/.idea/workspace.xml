@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f53431-0a44-450f-a867-88f810dbaaec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../customer-service/customer-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/customer-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain-info.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../invoice-service/invoice-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/invoice-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/order-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../orderview-service/orderview-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/orderview-service.iml" afterDir="false" />
-    </list>
+    <list default="true" id="33f53431-0a44-450f-a867-88f810dbaaec" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../eventuate-tram-aggregate-domain-events/target/" />
     <ignored path="$PROJECT_DIR$/../customer-service/target/" />
@@ -332,12 +323,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547493399132</updated>
       <workItem from="1552679345957" duration="385000" />
-      <workItem from="1552679865408" duration="1290000" />
+      <workItem from="1552679865408" duration="1869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1675000" />
+    <option name="totallyTimeSpent" value="2254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
