@@ -10,14 +10,13 @@ stages {
 
         stage('Zookeeper') {
 			agent any
-			when{
-				expression {
-					return 1 == 1
-				}
-			}
 			steps {
-			   comando = $(nc -z localhost 3306)
-			   
+				script{					
+					while ! exec 6<>/dev/tcp/localhost/3306; do
+					    echo "Trying to connect to MySQL at 3306..."
+					    sleep 10
+					done		
+				}			   
                            echo 'SIIIIUUU'
 			}
 	}
