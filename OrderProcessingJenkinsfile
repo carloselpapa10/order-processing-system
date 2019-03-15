@@ -3,7 +3,9 @@ pipeline {
 stages {
 	stage('Docker Network') {
 		agent any
-		
+		steps {
+			echo 'holaa'	
+		}
 	}
 
         stage('Zookeeper') {
