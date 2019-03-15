@@ -3,9 +3,7 @@ pipeline {
 stages {
 	stage('Docker Network') {
 		agent any
-		steps {
-			sh 'docker network create order-processing-net'		
-		}
+		
 	}
 
         stage('Zookeeper') {
