@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafka-service
+  labels:
+    name: kafka-service
+spec:
+  ports:
+  - port: 9092
+    targetPort: 9092
+  selector:
+    role: order-kafka
+---
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: kafka
+spec:
+  serviceName: "kafka"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        role: order-kafka
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: kafka
+          image: eventuateio/eventuateio-local-kafka:0.22.0.RELEASE
+          env:
+            - name: KAFKA_HEAP_OPTS
+              value: -Xmx320m -Xms320m
+            - name: ZOOKEEPER_SERVERS
+              value: zookeeper-service:2181
+          ports:
+              - containerPort: 9092
+          volumeMounts:
+            - name: order-kafka-persistent-storage
+              mountPath: /usr/local/kafka-data
+            - name: order-kafka-config-volume
+              mountPath: /usr/local/kafka-config2
+      volumes:
+      - name: order-kafka-config-volume
+        configMap:
+          name: order-kafka-config
+  volumeClaimTemplates:
+  - metadata:
+      name: order-kafka-persistent-storage
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+---
