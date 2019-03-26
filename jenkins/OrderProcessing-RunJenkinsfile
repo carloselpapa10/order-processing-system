@@ -2,9 +2,9 @@ pipeline {
 	agent none
 
 	environment {
-		DOCKER_HOST_IP = '192.168.1.121'
 		NETWORK = 'order-processing-net'
 		VERSION = '21'
+		registry = 'carloselpapa10'
 	}
 stages {
 	stage('Customer Service') {
@@ -26,7 +26,77 @@ stages {
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/customerservicedb \
-	carloselpapa10/customer-service:$VERSION"
+	$registry/customer-service:$VERSION"
+  sleep 20
+		}
+	}
+	stage('Invoice Service') {
+		agent any
+		steps{
+		 sh "docker run -d \
+	--name invoice-service \
+        --network=$NETWORK \
+	-p 5001:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/invoiceservicedb \
+	$registry/invoice-service:$VERSION"
+  sleep 20
+		}
+	}
+	stage('Order Service') {
+		agent any
+		steps{
+		 sh "docker run -d \
+	--name order-service \
+        --network=$NETWORK \
+	-p 5002:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/orderservicedb \
+	$registry/order-service:$VERSION"
+  sleep 20
+		}
+	}
+	stage('Order View Service') {
+		agent any
+		steps{
+		 sh "docker run -d \
+	--name orderview-service \
+        --network=$NETWORK \
+	-p 5003:8080 \
+	--link mysql \
+	--link kafka \
+	--link zookeeper \
+        --link cdcservice \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
+	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
+	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
+        -e SPRING_DATASOURCE_TIMEOUT=10000 \
+	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
+	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
+	-e MONGODB=mongodb:27017/orderviewservicedb \
+	$registry/orderview-service:$VERSION"
+  sleep 20
 		}
 	}
   }
