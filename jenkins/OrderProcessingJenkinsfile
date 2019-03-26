@@ -2,13 +2,12 @@ pipeline {
 	agent none
 
 	environment {
-		DOCKER_HOST_IP = '192.168.1.121'
-		NETWORK = 'order-processing-net'
 		registryCredential = 'dockerhub'
 		dockerImage = ''
-	    }
+		registry = 'carloselpapa10'
+	}
 stages {
-	stage('Buinding application') {
+	stage('Building applications') {
 		agent{
 			docker {
 			    image 'maven:3-alpine'
@@ -19,18 +18,43 @@ stages {
 			sh 'mvn clean install'
 		}
 	}
-	stage('Building Image') {
-		agent any
-		steps {
-			sh 'docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service' + ":$BUILD_NUMBER"
+	stage('Building Images') {
+		parallel {
+			stage('Customer Service') {
+				agent any
+				steps{
+					sh "docker build -f customer-service/Dockerfile customer-service/ -t $registry/customer-service:$BUILD_NUMBER"
+				}
+			}
+			stage('Invoice Service') {
+				agent any
+				steps{
+					sh "docker build -f invoice-service/Dockerfile invoice-service/ -t $registry/invoice-service:$BUILD_NUMBER"
+				}
+			}
+			stage('Order Service') {
+				agent any
+				steps{
+					sh "docker build -f order-service/Dockerfile order-service/ -t $registry/order-service:$BUILD_NUMBER"
+				}
+			}
+			stage('Order View Service') {
+				agent any
+				steps{
+					sh "docker build -f orderview-service/Dockerfile orderview-service/ -t $registry/orderview-service:$BUILD_NUMBER"
+				}
+			}
 		}
 	}
-	stage('Deploy Image') {
+	stage('Deploy Images') {
 		agent any
 		steps {
 			script {
 				docker.withRegistry( '', registryCredential ) {
-					sh "docker push carloselpapa10/customer-service:$BUILD_NUMBER"
+					sh "docker push $registry/customer-service:$BUILD_NUMBER"
+					sh "docker push $registry/invoice-service:$BUILD_NUMBER"
+					sh "docker push $registry/order-service:$BUILD_NUMBER"
+					sh "docker push $registry/orderview-service:$BUILD_NUMBER"
 				}
 			}
 		}
@@ -38,7 +62,10 @@ stages {
 	stage('Remove Unused docker image') {
 		agent any
 		steps{
-			sh "docker rmi carloselpapa10/customer-service:$BUILD_NUMBER"
+			sh "docker rmi $registry/customer-service:$BUILD_NUMBER"
+			sh "docker rmi $registry/invoice-service:$BUILD_NUMBER"
+			sh "docker rmi $registry/order-service:$BUILD_NUMBER"
+			sh "docker rmi $registry/orderview-service:$BUILD_NUMBER"
 		}
 	}
   }
