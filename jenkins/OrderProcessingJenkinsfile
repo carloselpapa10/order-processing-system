@@ -45,7 +45,7 @@ stages {
         stage('Zookeeper') {
 			agent any
 			steps {
-			   sh './wait_databases.sh'			   
+			   sh './jenkins/wait_databases.sh'			   
                            sh 'docker run -d \
 					--name zookeeper \
 					--network=$NETWORK \
@@ -58,7 +58,7 @@ stages {
         stage('Kafka') {
 			agent any
 			steps {
-                                sh './wait_zookeeper.sh'
+                                sh './jenkins/wait_zookeeper.sh'
                                 sleep 10
 				sh 'docker run -d \
 				--name kafka \
@@ -74,7 +74,7 @@ stages {
         stage('CDCservice') {
 			agent any
 			steps {
-                                sh './wait_kafka.sh'
+                                sh './jenkins/wait_kafka.sh'
                                 sleep 15
 				sh 'docker run -d \
 				--name cdcservice \
