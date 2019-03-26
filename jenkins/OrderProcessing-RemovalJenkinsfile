@@ -1,0 +1,35 @@
+pipeline {
+	agent none
+
+	environment {
+		NETWORK = 'order-processing-net'
+		VERSION = '21'
+		registry = 'carloselpapa10'
+	}
+stages {
+	stage('Customer Service') {
+		agent any
+		steps{
+		 sh "docker rm customer-service --force"
+		}
+	}
+	stage('Invoice Service') {
+		agent any
+		steps{
+		 sh "docker rm invoice-service --force"
+		}
+	}
+	stage('Order Service') {
+		agent any
+		steps{
+		 sh "docker rm order-service --force"
+		}
+	}
+	stage('Order View Service') {
+		agent any
+		steps{
+		 sh "docker rm orderview-service --force"
+		}
+	}
+  }
+}
