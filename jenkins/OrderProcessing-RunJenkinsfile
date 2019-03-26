@@ -59,7 +59,7 @@ stages {
 		 sh "docker run -d \
 	--name order-service \
         --network=$NETWORK \
-	-p 5002:8080 \
+	-p 5002:8082 \
 	--link mysql \
 	--link kafka \
 	--link zookeeper \
