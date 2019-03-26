@@ -36,6 +36,7 @@ stages {
 		}
 	}
 	stage('Remove Unused docker image') {
+		agent any
 		steps{
 			sh "docker rmi carloselpapa10/customer-service:$BUILD_NUMBER"
 		}
