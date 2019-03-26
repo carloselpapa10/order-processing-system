@@ -21,7 +21,9 @@ stages {
 	stage('Building Image') {
 		agent any
 		steps {
-			sh 'docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service' + ":$BUILD_NUMBER"
+			script {
+				dockerImage = docker.build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service + ":$BUILD_NUMBER"
+			}
 		}
 	}
 	stage('Deploy Image') {
