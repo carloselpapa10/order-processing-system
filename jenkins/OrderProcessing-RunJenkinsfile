@@ -3,7 +3,7 @@ pipeline {
 
 	environment {
 		NETWORK = 'order-processing-net'
-		VERSION = '21'
+		VERSION = '2'
 		registry = 'carloselpapa10'
 	}
 stages {
