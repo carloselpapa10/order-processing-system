@@ -24,6 +24,19 @@ stages {
 			sh 'docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service' + ":$BUILD_NUMBER"
 		}
 	}
+	stage('Deploy Image') {
+		agent any
+		steps {
+			script {
+				docker.withRegistry( '', registryCredential ) {
+				dockerImage.push()
+          }
+		}
+	}
+	stage('Remove Unused docker image') {
+		steps{
+			sh "docker rmi carloselpapa10/customer-service:$BUILD_NUMBER"
+		}
+	}
   }
 }
-
