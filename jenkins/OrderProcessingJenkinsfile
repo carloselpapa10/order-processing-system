@@ -19,31 +19,12 @@ stages {
 		}
 	}
 	stage('Building Images') {
-		parallel {
-			stage('Customer Service') {
-				agent any
-				steps{
-					sh "docker build -f customer-service/Dockerfile customer-service/ -t $registry/customer-service:$BUILD_NUMBER"
-				}
-			}
-			stage('Invoice Service') {
-				agent any
-				steps{
-					sh "docker build -f invoice-service/Dockerfile invoice-service/ -t $registry/invoice-service:$BUILD_NUMBER"
-				}
-			}
-			stage('Order Service') {
-				agent any
-				steps{
-					sh "docker build -f order-service/Dockerfile order-service/ -t $registry/order-service:$BUILD_NUMBER"
-				}
-			}
-			stage('Order View Service') {
-				agent any
-				steps{
-					sh "docker build -f orderview-service/Dockerfile orderview-service/ -t $registry/orderview-service:$BUILD_NUMBER"
-				}
-			}
+		agent any
+		steps{
+			sh "docker build -f customer-service/Dockerfile customer-service/ -t $registry/customer-service:$BUILD_NUMBER"
+			sh "docker build -f invoice-service/Dockerfile invoice-service/ -t $registry/invoice-service:$BUILD_NUMBER"
+			sh "docker build -f order-service/Dockerfile order-service/ -t $registry/order-service:$BUILD_NUMBER"
+			sh "docker build -f orderview-service/Dockerfile orderview-service/ -t $registry/orderview-service:$BUILD_NUMBER"
 		}
 	}
 	stage('Deploy Images') {
