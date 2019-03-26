@@ -10,9 +10,7 @@ stages {
 	stage('Buinding application') {
 		agent any
 		steps {
-			script {
-				mvn clean install
-			}
+			sh 'mvn clean install'
 		}
 	}
 	stage('Building Image') {
