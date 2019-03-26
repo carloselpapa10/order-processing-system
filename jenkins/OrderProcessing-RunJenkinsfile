@@ -36,7 +36,7 @@ stages {
 		 sh "docker run -d \
 	--name invoice-service \
         --network=$NETWORK \
-	-p 5001:8080 \
+	-p 5001:8081 \
 	--link mysql \
 	--link kafka \
 	--link zookeeper \
