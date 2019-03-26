@@ -22,9 +22,7 @@ stages {
 	stage('Building Image') {
 		agent any
 		steps {
-			script {
-				dockerImage = docker.build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service + ":$BUILD_NUMBER"
-			}
+			sh 'docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service' + ":$BUILD_NUMBER"
 		}
 	}
 	stage('Deploy Image') {
@@ -32,7 +30,7 @@ stages {
 		steps {
 			script {
 				docker.withRegistry( '', registryCredential ) {
-					dockerImage.push()
+					sh "docker push carloselpapa10/customer-service:$BUILD_NUMBER"
 				}
 			}
 		}
