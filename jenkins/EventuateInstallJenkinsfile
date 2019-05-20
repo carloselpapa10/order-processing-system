@@ -2,7 +2,7 @@ pipeline {
 	agent none
 
 	environment {
-		DOCKER_HOST_IP = '10.10.10.104'
+		DOCKER_HOST_IP = '10.117.165.108'
 		NETWORK = 'order-processing-net'
 	    }
 stages {
