@@ -1,6 +1,6 @@
 package org.ordersample.customerservice.controller;
 
-import org.ordersample.customerservice.impl.*;
+import org.ordersample.customerservice.dao.CustomerService;
 import org.ordersample.customerservice.model.*;
 import org.ordersample.customerservice.webapi.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +17,14 @@ public class CustomerServiceController {
 	private static final Logger log = LoggerFactory.getLogger(CustomerServiceController.class);
 
 	@Autowired
-	private CustomerServiceImpl customerServiceImpl;
+	private CustomerService customerService;
 
 	@PostMapping
 	public CreateCustomerResponse createCustomer(@RequestBody CreateCustomerRequest createCustomerRequest){
 		log.info("CustomerService - CustomerServiceController - createCustomer");
 		
-		if(customerServiceImpl.findCustomer(createCustomerRequest.getId()) == null) {
-			Customer customer = customerServiceImpl.createCustomer(new Customer(createCustomerRequest.getId(), createCustomerRequest.getName()));
+		if(customerService.findCustomer(createCustomerRequest.getId()) == null) {
+			Customer customer = customerService.createCustomer(new Customer(createCustomerRequest.getId(), createCustomerRequest.getName()));
 			return new CreateCustomerResponse(customer.getId());
 		}
 		
@@ -34,15 +34,15 @@ public class CustomerServiceController {
 	@GetMapping("{customerId}")
 	public Customer findCustomer(@PathVariable("customerId") String id){
 		log.info("CustomerService - CustomerServiceController - findCustomer");
-		return customerServiceImpl.findCustomer(id);
+		return customerService.findCustomer(id);
 	} 			
 
 	@PutMapping
-	public ResponseEntity<Customer> updateCustomer(@RequestBody Customer customer){
+	public ResponseEntity<Customer> updateCustomer(@RequestBody UpdateCustomerRequest customer){
 		log.info("CustomerService - CustomerServiceController - updateCustomer");
 
-		if(customerServiceImpl.findCustomer(customer.getId()) != null) {
-			return ResponseEntity.ok(customerServiceImpl.updateCustomer(customer));
+		if(customerService.findCustomer(customer.getId()) != null) {
+			return ResponseEntity.ok(customerService.updateCustomer(new Customer(customer.getId(), customer.getName())));
 		}		
 		return null;
 	}
@@ -51,9 +51,9 @@ public class CustomerServiceController {
 	public String deleteCustomer(@PathVariable("customerId") String id){
 		log.info("CustomerService - CustomerServiceController - updateCustomer");
 
-		Customer customer = customerServiceImpl.findCustomer(id);
+		Customer customer = customerService.findCustomer(id);
 		if(customer != null) {
-			customerServiceImpl.deleteCustomer(customer);
+			customerService.deleteCustomer(customer);
 			return "Customer is being deleted...";
 		}
 		return "CustomerID does not exist!";
@@ -62,7 +62,7 @@ public class CustomerServiceController {
 	@GetMapping
 	public List<Customer> findAllCustomers(){
 		log.info("CustomerService - CustomerServiceController - findAllCustomers");
-		return customerServiceImpl.findAll();
+		return customerService.findAll();
 	}
 
 }

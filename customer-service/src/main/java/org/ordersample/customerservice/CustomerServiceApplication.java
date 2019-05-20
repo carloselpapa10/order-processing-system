@@ -6,11 +6,19 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 import io.eventuate.jdbckafka.TramJdbcKafkaConfiguration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 @SpringBootApplication
+@EnableSpringDataWebSupport
+@ComponentScan(basePackages = {"org.ordersample.customerservice.*"})
+@EnableJpaRepositories(basePackages = {"org.ordersample.customerservice.*"})
+@EntityScan(basePackages = "org.ordersample.customerservice.*")
 @Import({CustomerServiceConfiguration.class,
 	CustomerServiceCommandHandlersConfiguration.class,
 	TramJdbcKafkaConfiguration.class})

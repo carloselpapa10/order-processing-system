@@ -1,5 +1,6 @@
 package org.ordersample.customerservice.commandhandlers;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -12,6 +13,9 @@ import io.eventuate.tram.sagas.participant.SagaParticipantConfiguration;
 @Import({ SagaParticipantConfiguration.class, TramEventsPublisherConfiguration.class })
 public class CustomerServiceCommandHandlersConfiguration {
 
+	@Value("${service.dispatcher}")
+	private String serviceDispatcher;
+
 	@Bean
 	public CustomerServiceCommandHandlers customerServiceCommandHandlers() {
 	    return new CustomerServiceCommandHandlers();
@@ -19,6 +23,6 @@ public class CustomerServiceCommandHandlersConfiguration {
 
 	@Bean
 	public CommandDispatcher commandDispatcher(CustomerServiceCommandHandlers customerServiceCommandHandlers) {
-	    return new SagaCommandDispatcher("customerServiceDispatcher", customerServiceCommandHandlers.commandHandlers());
+	    return new SagaCommandDispatcher(serviceDispatcher, customerServiceCommandHandlers.commandHandlers());
 	}
 }

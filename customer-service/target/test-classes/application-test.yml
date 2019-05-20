@@ -1,2 +1,62 @@
 server:
   port: 8080
+
+spring:
+  application:
+    name: customer-service
+  datasource:
+    url: jdbc:mysql://10.117.165.108:3306/eventuate?autoReconnect=true&useSSL=false
+    username: mysqluser
+    password: mysqlpw
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      idle-timeout: 10000
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+  data:
+    mongodb:
+      uri: ${MONGO_URL:mongodb://10.117.165.108:27017/customerservice-testdb}
+    #zipkin:
+    #discoveryClientEnabled: false
+    #baseUrl: http://172.28.200.187:9411/
+    #sender:
+    #  type: web
+
+eventuatelocal:
+  kafka:
+    bootstrap:
+      servers: 10.117.165.108:9092
+  zookeeper:
+    connection:
+      string: 10.117.165.108:2181
+  cdc:
+    dbUserName: root
+    dbPassword: rootpassword
+
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    metrics:
+      enabled: true
+
+  level:
+    org:
+      springframework:
+        web: ERROR
+      ordersample:
+        customerservice: DEBUG
+  #file: /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/logs/application.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+service:
+  dispatcher: customerServiceDispatcherTest

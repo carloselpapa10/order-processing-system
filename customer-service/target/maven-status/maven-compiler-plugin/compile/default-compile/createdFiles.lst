@@ -1,5 +1,6 @@
 org/ordersample/customerservice/webapi/CreateCustomerRequest.class
 org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlers.class
+org/ordersample/customerservice/webapi/UpdateCustomerRequest.class
 org/ordersample/customerservice/swagger/SwaggerConfig.class
 org/ordersample/customerservice/webapi/CreateCustomerResponse.class
 org/ordersample/customerservice/repository/CustomerRepository.class

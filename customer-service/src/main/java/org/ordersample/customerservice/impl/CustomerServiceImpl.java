@@ -53,7 +53,8 @@ public class CustomerServiceImpl implements CustomerService{
 	public Customer findCustomer(String id) throws BusinessException{
 		log.info("CustomerService - CustomerServiceImpl - findCustomer");
 
-		return customerRepository.existsById(id) ? customerRepository.findById(id).get() : null ;
+		Optional<Customer> customer = customerRepository.findById(id);
+		return customer.isPresent() ? customer.get() : null ;
 	}
 			
 	@Override
