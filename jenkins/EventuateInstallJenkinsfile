@@ -34,10 +34,8 @@ stages {
 					    --name mongodb \
 					    --network=$NETWORK \
 					    -p 27017:27017 \
-					    --smallfiles \
 					    -e MONGO_DATA_DIR=/data/db \
 					    -e MONGO_LOG_DIR=/dev/null \
-					    -v /data/db:/data/db \
 						mongo:3.0.15'
 				}
 			}
