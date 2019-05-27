@@ -37,7 +37,8 @@ stages {
 					    -e MONGO_DATA_DIR=/data/db \
 					    -e MONGO_LOG_DIR=/dev/null \
 					    -v /data/db:/data/db \
-						mongo:3.0.15'
+						mongo:3.0.15' \
+						--smallfiles
 				}
 			}
 		}
