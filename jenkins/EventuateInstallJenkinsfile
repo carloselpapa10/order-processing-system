@@ -24,7 +24,7 @@ stages {
 					    -e MYSQL_ROOT_PASSWORD=rootpassword \
 					    -e MYSQL_USER=mysqluser \
 					    -e MYSQL_PASSWORD=mysqlpw \
-					    eventuateio/eventuate-tram-sagas-mysql:0.6.0.RELEASE'
+					    eventuateio/eventuate-tram-sagas-mysql:0.11.0.RELEASE'
 				}
 			}
 			stage('MongoDB') {
