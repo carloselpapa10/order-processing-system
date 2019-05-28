@@ -3,7 +3,6 @@ package org.ordersample.orderservice.controller;
 import org.ordersample.orderservice.dao.OrderService;
 import org.ordersample.orderservice.model.*;
 import org.ordersample.orderservice.webapi.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -11,13 +10,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @RestController
-@RequestMapping("order")
+@RequestMapping("/order")
 public class OrderServiceController {
 
 	private static final Logger log = LoggerFactory.getLogger(OrderServiceController.class);
 
-	@Autowired
 	private OrderService orderService;
+
+	public OrderServiceController(OrderService orderService) {
+		this.orderService = orderService;
+	}
 
 	@PostMapping
 	public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest createOrderRequest){
@@ -27,7 +29,7 @@ public class OrderServiceController {
 		return new CreateOrderResponse(order.getId());
 	}
 			
-	@GetMapping("{orderId}")
+	@GetMapping("/{orderId}")
 	public Order findOrder(@PathVariable("orderId") String id){
 		log.info("OrderService - OrderServiceController - findOrder");
 		return orderService.findOrder(id);
@@ -44,7 +46,7 @@ public class OrderServiceController {
 		return null;
 	}
 	
-	@DeleteMapping("{orderId}")
+	@DeleteMapping("/{orderId}")
 	public String deleteOrder(@PathVariable("orderId") String id){
 		log.info("OrderService - OrderServiceController - deleteOrder");
 		
@@ -61,7 +63,4 @@ public class OrderServiceController {
 		log.info("OrderService - OrderServiceController - findAllOrders");
 		return orderService.findAll();
 	}
-
 }
-
-

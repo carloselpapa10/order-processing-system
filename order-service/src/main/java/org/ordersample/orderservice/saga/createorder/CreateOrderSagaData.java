@@ -3,6 +3,8 @@ package org.ordersample.orderservice.saga.createorder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 
 @Setter
 @Getter
@@ -19,4 +21,13 @@ public class CreateOrderSagaData {
 		this.invoiceId = invoiceId;
 	}
 
+	@Override
+	public int hashCode() {
+		return HashCodeBuilder.reflectionHashCode(this);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return EqualsBuilder.reflectionEquals(this, obj);
+	}
 }

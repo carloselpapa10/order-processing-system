@@ -1,6 +1,0 @@
-projectKey=org.ordersample:customer-service
-serverUrl=http://localhost:9000
-serverVersion=7.7.0.23042
-dashboardUrl=http://localhost:9000/dashboard?id=org.ordersample%3Acustomer-service
-ceTaskId=AWrXCh0N4CpvwS99mIck
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWrXCh0N4CpvwS99mIck

@@ -8,14 +8,11 @@ import org.ordersample.domaininfo.order.api.events.*;
 import org.ordersample.domaininfo.order.api.info.*;
 import org.ordersample.orderservice.dao.OrderService;
 import org.ordersample.orderservice.model.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import static java.util.Arrays.asList;
-import static java.util.Collections.singletonList;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,21 +27,21 @@ public class OrderServiceImpl implements OrderService{
 
 	private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
-	private final OrderRepository orderRepository;
-
-	@Autowired
+	private OrderRepository orderRepository;
 	private SagaManager<CreateOrderSagaData> createOrderSagaManager;
-
-	@Autowired
 	private SagaManager<UpdateOrderSagaData> updateOrderSagaManager;
-
-	@Autowired
 	private DomainEventPublisher domainEventPublisher;
-
 	private Optional<MeterRegistry> meterRegistry;
 
-	public OrderServiceImpl(OrderRepository orderRepository, Optional<MeterRegistry> meterRegistry) {
+	public OrderServiceImpl(OrderRepository orderRepository,
+								SagaManager<CreateOrderSagaData> createOrderSagaManager,
+									SagaManager<UpdateOrderSagaData> updateOrderSagaManager,
+										DomainEventPublisher domainEventPublisher,
+											Optional<MeterRegistry> meterRegistry) {
 		this.orderRepository = orderRepository;
+		this.createOrderSagaManager = createOrderSagaManager;
+		this.updateOrderSagaManager = updateOrderSagaManager;
+		this.domainEventPublisher = domainEventPublisher;
 		this.meterRegistry = meterRegistry;
 	}
 

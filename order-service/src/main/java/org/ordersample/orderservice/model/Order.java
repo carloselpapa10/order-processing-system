@@ -35,4 +35,11 @@ public class Order{
 		this.customerId = customerId;
 		this.invoiceId = invoiceId;
 	}
+
+	public Order(String id, String description, String customerId, String invoiceId) {
+		this.id = id;
+		this.description = description;
+		this.customerId = customerId;
+		this.invoiceId = invoiceId;
+	}
 }

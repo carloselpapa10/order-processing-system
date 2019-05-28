@@ -20,8 +20,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 
-		<eventuateTramVersion>0.6.0.RELEASE</eventuateTramVersion>
-		<eventuateTramSagasVersion>0.5.0.RELEASE</eventuateTramSagasVersion>
+		<eventuateTramVersion>0.21.0.RELEASE</eventuateTramVersion>
+		<eventuateTramSagasVersion>0.11.1.RELEASE</eventuateTramSagasVersion>
 		<eventuateClientVersion>0.20.1.RELEASE</eventuateClientVersion>
 	</properties>
 
@@ -45,6 +45,13 @@
 			<groupId>io.eventuate.tram.sagas</groupId>
 			<artifactId>eventuate-jpa-sagas-framework</artifactId>
 			<version>${eventuateTramSagasVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.eventuate.tram.sagas</groupId>
+			<artifactId>eventuate-tram-sagas-testing-support</artifactId>
+			<version>${eventuateTramSagasVersion}</version>
+			<!--<scope>test</scope>-->
 		</dependency>
 
 		<dependency>
