@@ -37,6 +37,7 @@ public class OrderServiceCommandHandlers {
 		Order order = orderService.findOrder(command.getOrderDTO().getId());
 
 		if(order != null) {
+			order.setInvoiceId(command.getOrderDTO().getInvoiceId());
 			orderService.completeOrder(order);
 			return withSuccess();
 		}

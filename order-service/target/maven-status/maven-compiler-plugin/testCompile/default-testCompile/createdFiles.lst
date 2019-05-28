@@ -1,0 +1,5 @@
+org/ordersample/orderservice/dao/OrderServiceTest.class
+org/ordersample/orderservice/saga/createorder/CreateOrderSagaTest.class
+org/ordersample/orderservice/BaseTestClass.class
+org/ordersample/orderservice/saga/OrderDetails.class
+org/ordersample/orderservice/controller/OrderServiceControllerTest.class

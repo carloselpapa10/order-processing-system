@@ -23,9 +23,8 @@
 		<eventuateTramVersion>0.21.0.RELEASE</eventuateTramVersion>
 		<eventuateTramSagasVersion>0.11.1.RELEASE</eventuateTramSagasVersion>
 		<eventuateClientVersion>0.20.1.RELEASE</eventuateClientVersion>
+		<swaggerUIVersion>2.9.2</swaggerUIVersion>
 	</properties>
-
-
 
 	<dependencies>
 
@@ -70,13 +69,13 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
+			<version>${swaggerUIVersion}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
+			<version>${swaggerUIVersion}</version>
 		</dependency>
 
 		<dependency>

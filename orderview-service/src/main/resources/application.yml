@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8084
 
 spring:
   datasource:
-    url: jdbc:mysql://172.28.200.187:3306/eventuate?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://172.28.112.191:3306/eventuate?autoReconnect=true&useSSL=false
     username: mysqluser
     password: mysqlpw
     driver-class-name: com.mysql.jdbc.Driver
@@ -19,10 +19,10 @@ spring:
 eventuatelocal:
   kafka:
     bootstrap:
-      servers: 172.28.200.187:9092
+      servers: 172.28.112.191:9092
   zookeeper:
     connection:
-      string: 172.28.200.187:2181
+      string: 172.28.112.191:2181
   cdc:
     dbUserName: root
     dbPassword: rootpassword

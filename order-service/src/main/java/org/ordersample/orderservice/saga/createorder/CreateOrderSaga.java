@@ -3,26 +3,19 @@ package org.ordersample.orderservice.saga.createorder;
 import org.ordersample.domaininfo.customer.api.info.CustomerDTO;
 import org.ordersample.domaininfo.invoice.api.info.InvoiceDTO;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
-import org.ordersample.orderservice.dao.OrderService;
 import org.ordersample.orderservice.proxy.*;
 import org.ordersample.domaininfo.customer.api.commands.*;
 import org.ordersample.domaininfo.order.api.commands.*;
 import org.ordersample.domaininfo.invoice.api.commands.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import io.eventuate.tram.sagas.orchestration.SagaDefinition;
 import io.eventuate.tram.sagas.simpledsl.SimpleSaga;
 
-@Component
 public class CreateOrderSaga implements SimpleSaga<CreateOrderSagaData>{
 	
 	private static final Logger log = LoggerFactory.getLogger(CreateOrderSaga.class);
 
-	@Autowired
-	private OrderService orderService;
-	
 	private SagaDefinition<CreateOrderSagaData> sagaDefinition;
 	
 	public CreateOrderSaga(CustomerServiceProxy customerService, OrderServiceProxy orderService, InvoiceServiceProxy invoiceService){
@@ -63,7 +56,8 @@ public class CreateOrderSaga implements SimpleSaga<CreateOrderSagaData>{
 
 	private void handleRequestInvoiceCommand(CreateOrderSagaData data, InvoiceDTO invoiceDTO) {
 		log.info("OrderService - CreateOrderSaga - handleRequestInvoiceCommand");
-		orderService.updateInvoiceOrder(data.getId(), invoiceDTO.getInvoiceId());
+		data.setInvoiceId(invoiceDTO.getInvoiceId());
+		//orderService.updateInvoiceOrder(data.getId(), invoiceDTO.getInvoiceId());
 	}
 
 	private CompensateInvoiceCommand makeCompensateInvoiceCommand(CreateOrderSagaData data) {
@@ -73,7 +67,7 @@ public class CreateOrderSaga implements SimpleSaga<CreateOrderSagaData>{
 
 	private CompleteOrderCommand makeCompleteOrderCommand(CreateOrderSagaData data) {
 		log.info("OrderService - CreateOrderSaga - makeCompleteOrderCommand");
-		return new CompleteOrderCommand(new OrderDTO(data.getId()));
+		return new CompleteOrderCommand(new OrderDTO(data.getId(), data.getInvoiceId()));
 	}
 
 }

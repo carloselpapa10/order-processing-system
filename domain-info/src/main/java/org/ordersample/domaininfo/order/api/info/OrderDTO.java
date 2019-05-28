@@ -20,6 +20,11 @@ public class OrderDTO {
 		this.id = id;
 	}
 
+	public OrderDTO(String id, String invoiceId) {
+		this.id = id;
+		this.invoiceId = invoiceId;
+	}
+
 	public OrderDTO(String id, String description, String customerId, String invoiceId) {
 		this.id = id;
 		this.description = description;

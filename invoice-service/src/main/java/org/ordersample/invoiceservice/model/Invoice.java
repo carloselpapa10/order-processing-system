@@ -23,9 +23,8 @@ public class Invoice{
     private String orderId;
     private String invoiceComment;
 
-	public Invoice(String id, String invoiceComment) {
-		this.id = id;
+	public Invoice(String orderId, String invoiceComment) {
+		this.orderId = orderId;
 		this.invoiceComment = invoiceComment;
 	}
-
 }
