@@ -2,7 +2,7 @@ pipeline {
 	agent none
 
 	environment {
-		DOCKER_HOST_IP = '192.168.1.58'
+		DOCKER_HOST_IP = '172.28.112.191'
 		NETWORK = 'order-processing-net'
 	    }
 stages {
@@ -24,7 +24,7 @@ stages {
 					    -e MYSQL_ROOT_PASSWORD=rootpassword \
 					    -e MYSQL_USER=mysqluser \
 					    -e MYSQL_PASSWORD=mysqlpw \
-					    eventuateio/eventuate-tram-sagas-mysql:0.6.0.RELEASE'
+					    eventuateio/eventuate-tram-sagas-mysql:0.11.0.RELEASE'
 				}
 			}
 			stage('MongoDB') {
