@@ -2,8 +2,8 @@ package org.ordersample.orderservice.impl;
 
 import io.eventuate.tram.events.publisher.DomainEventPublisher;
 import io.micrometer.core.instrument.MeterRegistry;
+import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.repository.OrderRepository;
-import org.ordersample.domaininfo.common.BusinessException;
 import org.ordersample.domaininfo.order.api.events.*;
 import org.ordersample.domaininfo.order.api.info.*;
 import org.ordersample.orderservice.dao.OrderService;
@@ -13,10 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import static java.util.Arrays.asList;
-
 import java.util.List;
 import java.util.Optional;
-
 import org.ordersample.orderservice.saga.createorder.CreateOrderSagaData;
 import org.ordersample.orderservice.saga.updateorder.UpdateOrderSagaData;
 import io.eventuate.tram.sagas.orchestration.SagaManager;
@@ -46,7 +44,7 @@ public class OrderServiceImpl implements OrderService{
 	}
 
 	@Override
-	public Order createOrder(Order order) throws BusinessException{
+	public Order createOrder(Order order){
 		log.info("OrderService - OrderServiceImpl - createOrder");
 		
 		order = orderRepository.save(order);
@@ -61,13 +59,20 @@ public class OrderServiceImpl implements OrderService{
 	}
 				
 	@Override
-	public Order findOrder(String id) throws BusinessException{
+	public Order findOrder(String id) throws InvalidOrderIdException {
 		log.info("OrderService - OrderServiceImpl - findOrder");
-		return orderRepository.existsById(id) ? orderRepository.findById(id).get() : null;
+
+		Optional<Order> orderOptional = orderRepository.findById(id);
+
+		if(orderOptional.isPresent()){
+			return orderOptional.get();
+		}
+
+		throw new InvalidOrderIdException(String.format("Order ID %s does not exist!", id));
 	}
 			
 	@Override
-	public Order updateOrder(Order order) throws BusinessException{
+	public Order updateOrder(Order order){
 		log.info("OrderService - OrderServiceImpl - updateOrder");
 
 		order = orderRepository.save(order);
@@ -81,7 +86,7 @@ public class OrderServiceImpl implements OrderService{
 	}
 			
 	@Override
-	public void rejectOrder(Order order) throws BusinessException{
+	public void rejectOrder(Order order){
 		log.info("OrderService - OrderServiceImpl - rejectOrder");
 		
 		order.setCompleted(false);
@@ -91,9 +96,9 @@ public class OrderServiceImpl implements OrderService{
 	}
 			
 	@Override
-	public void completeOrder(Order order) throws BusinessException{
+	public void completeOrder(Order order){
 		log.info("OrderService - OrderServiceImpl - completeOrder");
-		
+
 		order.setCompleted(true);
 		order = orderRepository.save(order);
 
@@ -103,7 +108,7 @@ public class OrderServiceImpl implements OrderService{
 	}
 			
 	@Override
-	public void editOrder(Order order) throws BusinessException{
+	public void editOrder(Order order){
 		log.info("OrderService - OrderServiceImpl - editOrder");
 		
 		order = orderRepository.save(order);
@@ -113,13 +118,13 @@ public class OrderServiceImpl implements OrderService{
 	}
 			
 	@Override
-	public List<Order> findAll() throws BusinessException{
+	public List<Order> findAll(){
 		log.info("OrderService - OrderServiceImpl - findAll");
 		return orderRepository.findAll();
 	}
 
 	@Override
-	public void updateInvoiceOrder(String orderId, String invoiceId) throws BusinessException {
+	public void updateInvoiceOrder(String orderId, String invoiceId) throws InvalidOrderIdException{
 		log.info("OrderService - OrderServiceImpl - updateInvoiceOrder");
 		
 		Order order = findOrder(orderId);
@@ -132,7 +137,7 @@ public class OrderServiceImpl implements OrderService{
 	}
 
 	@Override
-	public void deleteOrder(Order order) throws BusinessException {
+	public void deleteOrder(Order order) {
 		log.info("OrderService - OrderServiceImpl - deleteOrder");
 
 		orderRepository.delete(order);

@@ -1,0 +1,16 @@
+{
+  "id" : "ef0a3ff7-3f8e-4ecc-9508-cbdb9edb870f",
+  "request" : {
+    "url" : "/order/123456",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"customerId\":\"1010\",\"id\":\"123456\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "ef0a3ff7-3f8e-4ecc-9508-cbdb9edb870f"
+}

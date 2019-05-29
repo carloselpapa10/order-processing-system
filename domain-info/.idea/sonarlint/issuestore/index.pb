@@ -7,3 +7,5 @@ Ssrc/main/java/org/ordersample/domaininfo/order/api/commands/RejectOrderCommand.
 Usrc/main/java/org/ordersample/domaininfo/order/api/commands/CompleteOrderCommand.java,a/d/ad55c2ab11b3c5c129883a290f01a33655d1a6af
 u
 Esrc/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java,e/b/eb250b39a106a1cd68eb3b5fee9590a776e72071
+y
+Isrc/main/java/org/ordersample/domaininfo/invoice/api/info/InvoiceDTO.java,f/c/fc33eeec190d6cf51dc241373b15290743c2b502

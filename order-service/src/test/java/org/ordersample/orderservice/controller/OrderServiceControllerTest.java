@@ -5,6 +5,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.ordersample.orderservice.dao.OrderService;
+import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.Order;
 import static io.restassured.http.ContentType.JSON;
 import static io.restassured.module.mockmvc.RestAssuredMockMvc.given;
@@ -27,7 +28,7 @@ public class OrderServiceControllerTest {
     }
 
     @Test
-    public void shouldFindOrder(){
+    public void shouldFindOrder() throws InvalidOrderIdException {
         when(orderService.findOrder(ORDER_ID)).thenReturn(new Order(ORDER_ID, ORDER_DESCRIPTION_2, CUSTOMER_ID, INVOICE_ID));
 
         given().
@@ -42,13 +43,14 @@ public class OrderServiceControllerTest {
     }
 
     @Test
-    public void shouldFindNotOrder(){
+    public void shouldFindNotOrder() throws InvalidOrderIdException {
+        when(orderService.findOrder("123")).thenThrow(new InvalidOrderIdException("Order ID "));
+
         given().
         when()
                 .get("/order/123").
         then()
-                .statusCode(OK.value())
-                .body(CoreMatchers.is(equalTo("")));
+                .statusCode(400);
     }
 
 }

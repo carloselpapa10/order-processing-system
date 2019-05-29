@@ -2,10 +2,12 @@ org/ordersample/orderservice/repository/OrderRepository.class
 org/ordersample/orderservice/saga/updateorder/UpdateOrderSagaData.class
 org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.class
 org/ordersample/orderservice/proxy/OrderServiceProxy.class
+org/ordersample/orderservice/exception/BadRequestException.class
 org/ordersample/orderservice/swagger/SwaggerConfig.class
 org/ordersample/orderservice/proxy/CustomerServiceProxy.class
 org/ordersample/orderservice/webapi/CreateOrderRequest.class
 org/ordersample/orderservice/proxy/InvoiceServiceProxy.class
+org/ordersample/orderservice/exception/InvalidOrderIdException.class
 org/ordersample/orderservice/model/Order.class
 org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlersConfiguration.class
 org/ordersample/orderservice/impl/OrderServiceImpl.class

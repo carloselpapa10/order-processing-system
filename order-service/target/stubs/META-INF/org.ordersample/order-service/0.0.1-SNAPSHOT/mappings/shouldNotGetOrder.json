@@ -1,0 +1,12 @@
+{
+  "id" : "52caf732-5e51-42b2-84f3-f635052d4c5c",
+  "request" : {
+    "url" : "/order/321",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "52caf732-5e51-42b2-84f3-f635052d4c5c"
+}

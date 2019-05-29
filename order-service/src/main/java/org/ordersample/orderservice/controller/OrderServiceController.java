@@ -1,6 +1,7 @@
 package org.ordersample.orderservice.controller;
 
 import org.ordersample.orderservice.dao.OrderService;
+import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.*;
 import org.ordersample.orderservice.webapi.*;
 import org.springframework.http.ResponseEntity;
@@ -30,13 +31,13 @@ public class OrderServiceController {
 	}
 			
 	@GetMapping("/{orderId}")
-	public Order findOrder(@PathVariable("orderId") String id){
+	public Order findOrder(@PathVariable("orderId") String id) throws InvalidOrderIdException {
 		log.info("OrderService - OrderServiceController - findOrder");
 		return orderService.findOrder(id);
 	} 			
 
 	@PutMapping
-	public ResponseEntity<Order> updateOrder(@RequestBody Order order){
+	public ResponseEntity<Order> updateOrder(@RequestBody Order order) throws InvalidOrderIdException{
 		log.info("OrderService - OrderServiceController - updateOrder");
 
 		if(orderService.findOrder(order.getId()) != null) {
@@ -47,7 +48,7 @@ public class OrderServiceController {
 	}
 	
 	@DeleteMapping("/{orderId}")
-	public String deleteOrder(@PathVariable("orderId") String id){
+	public String deleteOrder(@PathVariable("orderId") String id) throws InvalidOrderIdException{
 		log.info("OrderService - OrderServiceController - deleteOrder");
 		
 		if(orderService.findOrder(id) != null) {

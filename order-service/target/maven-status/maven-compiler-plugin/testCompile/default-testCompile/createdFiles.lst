@@ -1,5 +1,10 @@
-org/ordersample/orderservice/dao/OrderServiceTest.class
+org/ordersample/orderservice/InstanceTestClassListener.class
+org/ordersample/orderservice/SpringInstanceTestClassRunner.class
+org/ordersample/orderservice/ContractVerifierTest.class
 org/ordersample/orderservice/saga/createorder/CreateOrderSagaTest.class
 org/ordersample/orderservice/BaseTestClass.class
+org/ordersample/orderservice/repository/OrderJpaTestConfiguration.class
+org/ordersample/orderservice/dao/OrderServiceTest.class
+org/ordersample/orderservice/repository/OrderRepositoryTest.class
 org/ordersample/orderservice/saga/OrderDetails.class
 org/ordersample/orderservice/controller/OrderServiceControllerTest.class

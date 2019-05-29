@@ -3,6 +3,7 @@ package org.ordersample.orderservice.commandhandlers;
 import org.ordersample.domaininfo.common.Channels;
 import org.ordersample.domaininfo.order.api.commands.*;
 import org.ordersample.orderservice.dao.OrderService;
+import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,12 +35,17 @@ public class OrderServiceCommandHandlers {
 		log.info("OrderService - OrderServiceCommandHandlers - handleCompleteOrderCommand");
 		
 		CompleteOrderCommand command = cm.getCommand();
-		Order order = orderService.findOrder(command.getOrderDTO().getId());
 
-		if(order != null) {
-			order.setInvoiceId(command.getOrderDTO().getInvoiceId());
-			orderService.completeOrder(order);
-			return withSuccess();
+		try {
+			Order order = orderService.findOrder(command.getOrderDTO().getId());
+
+			if (order != null) {
+				order.setInvoiceId(command.getOrderDTO().getInvoiceId());
+				orderService.completeOrder(order);
+				return withSuccess();
+			}
+		}catch (InvalidOrderIdException ex){
+			log.error(String.format("Invalid Order with ID: %s", command.getOrderDTO().getId()));
 		}
 		
 		return withFailure();		
@@ -49,11 +55,16 @@ public class OrderServiceCommandHandlers {
 		log.info("OrderService - OrderServiceCommandHandlers - handleRejectOrderCommand");
 		
 		RejectOrderCommand command = cm.getCommand();
-		Order order = orderService.findOrder(command.getOrderDTO().getId());
-		
-		if(order != null) {
-			orderService.rejectOrder(order);
-			return withSuccess();
+
+		try{
+			Order order = orderService.findOrder(command.getOrderDTO().getId());
+
+			if(order != null) {
+				orderService.rejectOrder(order);
+				return withSuccess();
+			}
+		}catch (InvalidOrderIdException ex){
+			log.error(String.format("Invalid Order with ID: %s", command.getOrderDTO().getId()));
 		}
 		
 		return withFailure();
@@ -63,15 +74,20 @@ public class OrderServiceCommandHandlers {
 		log.info("OrderService - OrderServiceCommandHandlers - handleEditOrderCommand");
 		
 		EditOrderCommand command = cm.getCommand();
-		Order order = orderService.findOrder(command.getOrderDTO().getId());
-		
-		if(order != null) {
-			order.setDescription(command.getOrderDTO().getDescription());
-			order.setCustomerId(command.getOrderDTO().getCustomerId());
-			order.setInvoiceId(command.getOrderDTO().getInvoiceId());
-			
-			orderService.editOrder(order);
-			return withSuccess();
+
+		try{
+			Order order = orderService.findOrder(command.getOrderDTO().getId());
+
+			if(order != null) {
+				order.setDescription(command.getOrderDTO().getDescription());
+				order.setCustomerId(command.getOrderDTO().getCustomerId());
+				order.setInvoiceId(command.getOrderDTO().getInvoiceId());
+
+				orderService.editOrder(order);
+				return withSuccess();
+			}
+		}catch (InvalidOrderIdException ex){
+			log.error(String.format("Invalid Order with ID: %s", command.getOrderDTO().getId()));
 		}
 		
 		return withFailure();

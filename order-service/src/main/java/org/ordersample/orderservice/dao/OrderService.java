@@ -2,17 +2,18 @@ package org.ordersample.orderservice.dao;
 
 import java.util.List;
 import org.ordersample.domaininfo.common.BusinessException;
+import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.*;
 
 public interface OrderService {
 
-	public Order createOrder(Order order) throws BusinessException;				
-	public Order findOrder(String id) throws BusinessException;			
-	public Order updateOrder(Order order) throws BusinessException;
-	public void updateInvoiceOrder(String orderId, String invoiceId) throws BusinessException;
-	public void rejectOrder(Order order) throws BusinessException;			
-	public void completeOrder(Order order) throws BusinessException;			
-	public void editOrder(Order order) throws BusinessException;			
-	public List<Order> findAll() throws BusinessException;
-	public void deleteOrder(Order order) throws BusinessException;
+	public Order createOrder(Order order);
+	public Order findOrder(String id) throws InvalidOrderIdException;
+	public Order updateOrder(Order order);
+	public void updateInvoiceOrder(String orderId, String invoiceId) throws InvalidOrderIdException;
+	public void rejectOrder(Order order);
+	public void completeOrder(Order order);
+	public void editOrder(Order order);
+	public List<Order> findAll();
+	public void deleteOrder(Order order);
 }		   

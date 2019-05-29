@@ -1,5 +1,10 @@
+/Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/ContractVerifierTest.java
+/Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/InstanceTestClassListener.java
 /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/BaseTestClass.java
 /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/saga/createorder/CreateOrderSagaTest.java
+/Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/repository/OrderRepositoryTest.java
 /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/dao/OrderServiceTest.java
 /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/saga/OrderDetails.java
+/Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/SpringInstanceTestClassRunner.java
 /Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/controller/OrderServiceControllerTest.java
+/Users/cavendanoa/Documents/Carlos-Docs/order-processing-system/order-service/src/test/java/org/ordersample/orderservice/repository/OrderJpaTestConfiguration.java
