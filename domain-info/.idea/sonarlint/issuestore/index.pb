@@ -9,3 +9,5 @@ u
 Esrc/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java,e/b/eb250b39a106a1cd68eb3b5fee9590a776e72071
 y
 Isrc/main/java/org/ordersample/domaininfo/invoice/api/info/InvoiceDTO.java,f/c/fc33eeec190d6cf51dc241373b15290743c2b502
+v
+Fsrc/main/java/org/ordersample/domaininfo/common/BusinessException.java,6/8/683e86642cae29da033fdfb1ce6a68d02e043265

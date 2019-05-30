@@ -22,11 +22,15 @@ public class Controller {
     private String orderServiceURL;
 
     @GetMapping("/OrderService/{orderId}")
-    public String getOrder(@PathVariable("orderId") String orderId){
+    public String getOrder(@PathVariable("orderId") String orderId) throws BadRequestException{
 
-        HttpHeaders httpHeaders = new HttpHeaders();
-        ResponseEntity<String> responseEntity = restTemplate.exchange(orderServiceURL+"/order/"+orderId, HttpMethod.GET, new HttpEntity<>(httpHeaders), String.class);
+        try {
+            HttpHeaders httpHeaders = new HttpHeaders();
+            ResponseEntity<String> responseEntity = restTemplate.exchange(orderServiceURL + "/order/" + orderId, HttpMethod.GET, new HttpEntity<>(httpHeaders), String.class);
+            return responseEntity.getBody();
+        }catch (HttpClientErrorException ex){
+            throw new BadRequestException("Order ID does not exist");
+        }
 
-        return responseEntity.getBody();
     }
 }

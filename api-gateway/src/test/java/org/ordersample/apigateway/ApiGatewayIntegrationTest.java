@@ -38,12 +38,11 @@ public class ApiGatewayIntegrationTest {
 				.andExpect(jsonPath("$.customerId").value("1010"));
 	}
 
-	/*
 	@Test
 	public void shouldFailToFindMissingOrder() throws Exception{
 		mockMvc.perform(MockMvcRequestBuilders.get("/OrderService/321"))
+				.andExpect(status().isBadRequest())
 				.andDo(print());
 	}
-	*/
 
 }
