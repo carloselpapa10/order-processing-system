@@ -1,0 +1,12 @@
+{
+  "id" : "757c41ee-9ff3-47ae-af59-459736cc1a53",
+  "request" : {
+    "url" : "/order/321",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "757c41ee-9ff3-47ae-af59-459736cc1a53"
+}

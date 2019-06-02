@@ -27,11 +27,4 @@ public class OrderCreatedEvent implements OrderDomainEvent{
 	public boolean equals(Object obj) {
 		return EqualsBuilder.reflectionEquals(this, obj);
 	}
-
-	@Override
-	public String toString() {
-		return "OrderCreatedEvent{" +
-				"orderDTO=" + orderDTO +
-				'}';
-	}
 }

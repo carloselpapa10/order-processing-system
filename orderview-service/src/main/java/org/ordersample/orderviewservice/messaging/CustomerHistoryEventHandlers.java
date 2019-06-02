@@ -1,8 +1,6 @@
 package org.ordersample.orderviewservice.messaging;
 
 import org.ordersample.orderviewservice.dao.CustomerService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.ordersample.orderviewservice.model.Customer;
 import org.ordersample.domaininfo.customer.api.events.*;
 import org.slf4j.Logger;
@@ -11,13 +9,16 @@ import io.eventuate.tram.events.subscriber.DomainEventEnvelope;
 import io.eventuate.tram.events.subscriber.DomainEventHandlers;
 import io.eventuate.tram.events.subscriber.DomainEventHandlersBuilder;	
 
-@Component
+
 public class CustomerHistoryEventHandlers {
 	
 	private static final Logger log = LoggerFactory.getLogger(CustomerHistoryEventHandlers.class);
-	
-	@Autowired
+
 	private CustomerService customerService;
+
+	public CustomerHistoryEventHandlers(CustomerService customerService) {
+		this.customerService = customerService;
+	}
 
 	public DomainEventHandlers domainEventHandlers() {
 		return DomainEventHandlersBuilder

@@ -93,9 +93,10 @@
 				<version>${spring-cloud-contract.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<baseClassForTests>
-						org.ordersample.orderservice.BaseTestClass
-					</baseClassForTests>
+					<packageWithBaseClasses>org.ordersample.orderservice</packageWithBaseClasses>
+					<!--<baseClassForTests>
+						org.ordersample.orderservice.RestBase
+					</baseClassForTests>-->
 				</configuration>
 			</plugin>
 			<plugin>

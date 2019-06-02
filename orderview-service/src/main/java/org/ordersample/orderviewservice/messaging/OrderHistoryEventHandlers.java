@@ -3,8 +3,6 @@ package org.ordersample.orderviewservice.messaging;
 import org.ordersample.orderviewservice.dao.CustomerService;
 import org.ordersample.orderviewservice.dao.InvoiceService;
 import org.ordersample.orderviewservice.dao.OrderService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.ordersample.orderviewservice.model.*;
 import org.ordersample.domaininfo.order.api.events.*;
 import org.slf4j.Logger;
@@ -13,20 +11,20 @@ import io.eventuate.tram.events.subscriber.DomainEventEnvelope;
 import io.eventuate.tram.events.subscriber.DomainEventHandlers;
 import io.eventuate.tram.events.subscriber.DomainEventHandlersBuilder;	
 
-@Component
 public class OrderHistoryEventHandlers {
 	
 	private static final Logger log = LoggerFactory.getLogger(OrderHistoryEventHandlers.class);
 
-	@Autowired
 	private OrderService orderService;
-	
-	@Autowired
 	private CustomerService customerService;
-	
-	@Autowired
 	private InvoiceService invoiceService;
-	
+
+	public OrderHistoryEventHandlers(OrderService orderService, CustomerService customerService, InvoiceService invoiceService) {
+		this.orderService = orderService;
+		this.customerService = customerService;
+		this.invoiceService = invoiceService;
+	}
+
 	public DomainEventHandlers domainEventHandlers() {
 		return DomainEventHandlersBuilder
 				.forAggregateType("org.ordersample.orderservice.model.Order")

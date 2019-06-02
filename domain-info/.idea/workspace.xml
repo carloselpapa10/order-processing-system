@@ -2,10 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86519c2b-0c9e-4d0b-a0b5-8ffa5f518bd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-service/customer-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/customer-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_6_2_2_jre8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain-info.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/invoice-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/invoice-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/order-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/order-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/RestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/test/resources/contracts/shouldGetOrder.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest/shouldGetOrder.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/test/resources/contracts/shouldNotGetOrder.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest/shouldNotGetOrder.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/ContractVerifierTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/order-service.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/order-service.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/shouldGetOrder.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/shouldNotGetOrder.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/shouldGetOrder.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/shouldNotGetOrder.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.ContractVerifierTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.controller.OrderServiceControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.controller.OrderServiceControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.dao.OrderServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.dao.OrderServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.repository.OrderRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.repository.OrderRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.ContractVerifierTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.controller.OrderServiceControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.controller.OrderServiceControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.dao.OrderServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.dao.OrderServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.repository.OrderRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.repository.OrderRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/test-classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/test-classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/test-classes/contracts/shouldGetOrder.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/test-classes/contracts/shouldNotGetOrder.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/orderview-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/orderview-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/EventHandlersConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/EventHandlersConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../customer-service/target/" />
     <ignored path="$PROJECT_DIR$/../invoice-service/target/" />
@@ -23,15 +72,72 @@
     <favorites_list name="service-model" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTest.java">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="85" column="89" lean-forward="true" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/messaging/shouldCreateOrderEvent.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="49" column="25" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Invoice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-20">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -51,6 +157,10 @@
       <find>servic</find>
       <find>RequestInvoiceCommand</find>
       <find>spring-cloud.version</find>
+      <find>eventuate-tram-sagas-testing-support</find>
+      <find>orderCreated</find>
+      <find>OrderHistoryEventHandlers</find>
+      <find>etmv</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -62,7 +172,6 @@
         <option value="$PROJECT_DIR$/../customer-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../order-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/swagger/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/dao/OrderServiceConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java" />
@@ -78,11 +187,9 @@
         <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/controller/OrderServiceControllerTest.java" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/repository/OrderJpaTestConfiguration.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/SpringInstanceTestClassRunner.java" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/InstanceTestClassListener.java" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/repository/OrderRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
         <option value="$PROJECT_DIR$/../order-service/src/test/resources/contracts/shouldGetOrder.groovy" />
         <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" />
@@ -95,6 +202,24 @@
         <option value="$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/Controller.java" />
         <option value="$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/BadRequestException.java" />
         <option value="$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/MessagingBase.java" />
+        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest/shouldGetOrder.groovy" />
+        <option value="$PROJECT_DIR$/../order-service/src/test/resources/contracts/message/shouldCreateOrderEvent.groovy" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/EventHandlersConfiguration.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateContractVerifierMessaging.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateTramMessageVerifier.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateContractVerifierConfiguration.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/src/test/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/test/resources/aplication.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/test/resources/contracts/messaging/shouldCreateOrderEvent.groovy" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlersTest.java" />
       </list>
     </option>
   </component>
@@ -105,11 +230,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1280" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -119,87 +243,106 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apigateway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domaininfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domaininfo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domaininfo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domaininfo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domain-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domaininfo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apigateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orderservice" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -207,27 +350,133 @@
               <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
               <item name="order-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orderservice" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orderviewservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orderviewservice" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orderviewservice" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.38519135" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559228112622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559497925807" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.ordersample.orderviewservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,7 +490,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ApiGatewayIntegrationTest">
+  <component name="RunManager" selected="JUnit.OrderHistoryEventHandlersTest">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ordersample.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -294,16 +543,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-service" />
+    <configuration name="OrderHistoryEventHandlersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orderview-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.ordersample.orderservice.repository.*" />
+          <option name="PATTERN" value="org.ordersample.orderviewservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.ordersample.orderservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderservice.repository.OrderRepositoryTest" />
+      <option name="PACKAGE_NAME" value="org.ordersample.orderviewservice.messaging" />
+      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderviewservice.messaging.OrderHistoryEventHandlersTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -358,11 +607,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderHistoryEventHandlersTest" />
         <item itemvalue="JUnit.ApiGatewayIntegrationTest" />
         <item itemvalue="JUnit.ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="JUnit.All in api-gateway" />
-        <item itemvalue="JUnit.OrderRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -380,42 +629,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 36m 20s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 06m 13s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 36m 48s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 06m 38s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 38m 40s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 14m 46s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 40m 43s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 19m 07s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 42m 59s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 21m 30s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 44m 39s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 33m 01s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 45m 36s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 40m 45s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 49m 49s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 48m 41s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 50m 26s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 49m 32s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiGatewayIntegrationTest_shouldFailToFindMissingOrder - 2019.05.30 at 09h 52m 48s.xml">
-      <configuration name="ApiGatewayIntegrationTest.shouldFailToFindMissingOrder" configurationId="JUnit" />
+    <history-entry file="OrderHistoryEventHandlersTest - 2019.06.02 at 12h 51m 32s.xml">
+      <configuration name="OrderHistoryEventHandlersTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974093" visible="true" weight="0.18796591" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974093" weight="0.30048466" />
       <window_info id="Structure" order="1" sideWeight="0.50259066" side_tool="true" weight="0.18796591" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -423,14 +672,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50252527" side_tool="true" weight="0.32148626" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4103627" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43834198" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51240873" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39270073" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" weight="0.24087591" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30364963" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5985401" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.329927" />
@@ -444,6 +693,36 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4974093" visible="true" weight="0.30048466" />
+      <window_info id="Structure" order="1" sideWeight="0.50259066" side_tool="true" weight="0.18796591" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50252527" side_tool="true" weight="0.32148626" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3138686" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20437956" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="SonarLint" order="7" weight="0.24087591" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5985401" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.329927" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.329927" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,11 +733,58 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>orderArg</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verify(orderService).createOrder(new Order(&quot;111&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verify(orderService).createOrder(orderArg.capture())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orderArg.capture()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>when(orderService.createOrder(any(Order.class))).thenReturn(new Order(&quot;123&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orderArg.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orderService.createOrder(new Order())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>orderRepository.findAll()</expression-string>
         <language-id>JAVA</language-id>
@@ -472,389 +798,368 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/commands/CompleteOrderCommand.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/dao/OrderServiceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/updateorder/UpdateOrderSaga.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/proxy/InvoiceServiceProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/model/Invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="67" column="50" lean-forward="true" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/invoice/api/info/InvoiceDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/orderservice/OrderServiceConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/exception/InvalidOrderIdException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/common/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/repository/OrderJpaTestConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/dao/OrderServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="47" column="99" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/InstanceTestClassListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/SpringInstanceTestClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/repository/OrderRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1797#1798#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/dao/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldNotGetOrder.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/message/shouldCreateOrderEvent.groovy" />
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/RestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/RestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/MessageTest.java" />
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest/shouldNotGetOrder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/rest/shouldGetOrder.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/rest/shouldNotGetOrder.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/rest/shouldGetOrder.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-contract-stub-runner/2.0.0.RELEASE/spring-cloud-contract-stub-runner-2.0.0.RELEASE.jar!/org/springframework/cloud/contract/stubrunner/StubFinder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/saga/OrderDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/ContractVerifierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/BaseTestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="118" lean-forward="true" selection-start-line="31" selection-start-column="118" selection-end-line="31" selection-end-column="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/controller/OrderServiceControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar!/org/springframework/test/web/servlet/MockMvc.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/test/java/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTestConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/../order-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/ApiGatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="21" />
+          <caret selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/shouldGetOrder.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/shouldNotGetOrder.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/shouldGetOrder.json">
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldGetOrder.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/shouldNotGetOrder.groovy">
+    <entry file="file://$PROJECT_DIR$/../order-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/shouldNotGetOrder.json">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/OrderViewServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/messaging/shouldCreateOrderEvent.groovy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/exception/BadRequestException.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/InvoiceHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="82">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/client/HttpClientErrorException.class">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/CustomerHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/Controller.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/EventHandlersConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+        <state relative-caret-position="285">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.9.RELEASE/spring-test-5.0.9.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/target/generated-test-sources/contracts/org/ordersample/orderservice/MessagingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-testing-support-spring-cloud-contract/0.21.0.RELEASE/eventuate-tram-testing-support-spring-cloud-contract-0.21.0.RELEASE.jar!/io/eventuate/tram/springcloudcontractsupport/EventuateTramRoutesConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-testing-support-spring-cloud-contract/0.21.0.RELEASE/eventuate-tram-testing-support-spring-cloud-contract-0.21.0.RELEASE.jar!/io/eventuate/tram/springcloudcontractsupport/EventuateTramMessageVerifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-testing-support-spring-cloud-contract/0.21.0.RELEASE/eventuate-tram-testing-support-spring-cloud-contract-0.21.0.RELEASE.jar!/io/eventuate/tram/springcloudcontractsupport/EventuateContractVerifierMessaging.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-testing-support-spring-cloud-contract/0.21.0.RELEASE/eventuate-tram-testing-support-spring-cloud-contract-0.21.0.RELEASE.jar!/io/eventuate/tram/springcloudcontractsupport/EventuateContractVerifierConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateContractVerifierConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateTramMessageVerifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/EventuateContractVerifierMessaging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/resources/aplication.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-contract-stub-runner/2.0.0.RELEASE/spring-cloud-contract-stub-runner-2.0.0.RELEASE.jar!/org/springframework/cloud/contract/stubrunner/spring/AutoConfigureStubRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/contracts/messaging/shouldCreateOrderEvent.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/dao/OrderServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-events/0.21.0.RELEASE/eventuate-tram-events-0.21.0.RELEASE.jar!/io/eventuate/tram/events/subscriber/DomainEventHandlersBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/dao/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/util/eventuate-util-test/0.1.0.RELEASE/eventuate-util-test-0.1.0.RELEASE.jar!/io/eventuate/util/test/async/Eventually.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/contracts/messaging/shouldCreateOrderEvent.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/MessagingBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="35" column="84" selection-start-line="35" selection-start-column="84" selection-end-line="35" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/main/java/org/ordersample/apigateway/BadRequestException.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="109">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Invoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="-8">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/test/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="85" column="89" lean-forward="true" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

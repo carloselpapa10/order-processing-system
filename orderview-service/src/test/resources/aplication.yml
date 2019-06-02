@@ -1,0 +1,28 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.58:3306/eventuate?autoReconnect=true&useSSL=false
+    username: mysqluser
+    password: mysqlpw
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      idle-timeout: 10000
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+  data:
+    mongodb:
+      uri: ${MONGO_URL:mongodb://localhost:27017/orderviewservicedb}
+
+eventuatelocal:
+  kafka:
+    bootstrap:
+      servers: 192.168.1.58:9092
+  zookeeper:
+    connection:
+      string: 192.168.1.58:2181
+  cdc:
+    dbUserName: root
+    dbPassword: rootpassword
