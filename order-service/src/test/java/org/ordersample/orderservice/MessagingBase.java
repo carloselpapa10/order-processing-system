@@ -1,5 +1,6 @@
 package org.ordersample.orderservice;
 
+import io.eventuate.jdbckafka.TramJdbcKafkaConfiguration;
 import io.eventuate.tram.commands.common.ChannelMapping;
 import io.eventuate.tram.commands.common.DefaultChannelMapping;
 import io.eventuate.tram.events.publisher.DomainEventPublisher;

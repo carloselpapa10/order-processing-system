@@ -1,0 +1,12 @@
+org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlersConfiguration.class
+org/ordersample/invoiceservice/dao/InvoiceServiceConfiguration.class
+org/ordersample/invoiceservice/controller/InvoiceServiceController.class
+org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlers.class
+org/ordersample/invoiceservice/InvoiceServiceApplication.class
+org/ordersample/invoiceservice/dao/InvoiceService.class
+org/ordersample/invoiceservice/webapi/CreateInvoiceResponse.class
+org/ordersample/invoiceservice/model/Invoice.class
+org/ordersample/invoiceservice/webapi/CreateInvoiceRequest.class
+org/ordersample/invoiceservice/repository/InvoiceRepository.class
+org/ordersample/invoiceservice/impl/InvoiceServiceImpl.class
+org/ordersample/invoiceservice/swagger/SwaggerConfig.class

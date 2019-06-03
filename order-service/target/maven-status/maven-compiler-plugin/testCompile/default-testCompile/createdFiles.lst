@@ -4,8 +4,11 @@ org/ordersample/orderservice/SpringInstanceTestClassRunner.class
 org/ordersample/orderservice/MessagingTest.class
 org/ordersample/orderservice/MessagingBase$TestConfiguration.class
 org/ordersample/orderservice/saga/createorder/CreateOrderSagaTest.class
+org/ordersample/orderservice/proxy/SagaMessagingTestHelper.class
 org/ordersample/orderservice/RestTest.class
+org/ordersample/orderservice/proxy/InvoiceServiceProxyIntegrationTest$TestConfiguration.class
 org/ordersample/orderservice/repository/OrderJpaTestConfiguration.class
+org/ordersample/orderservice/proxy/InvoiceServiceProxyIntegrationTest.class
 org/ordersample/orderservice/dao/OrderServiceTest.class
 org/ordersample/orderservice/repository/OrderRepositoryTest.class
 org/ordersample/orderservice/saga/OrderDetails.class

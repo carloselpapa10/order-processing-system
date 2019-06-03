@@ -14,7 +14,7 @@ public class InvoiceServiceCommandHandlersConfiguration {
 
 	@Bean
 	public InvoiceServiceCommandHandlers invoiceServiceCommandHandlers() {
-	    return new InvoiceServiceCommandHandlers();
+		return new InvoiceServiceCommandHandlers();
 	}
 
 	@Bean

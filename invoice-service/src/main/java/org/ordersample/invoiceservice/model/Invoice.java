@@ -27,4 +27,10 @@ public class Invoice{
 		this.orderId = orderId;
 		this.invoiceComment = invoiceComment;
 	}
+
+	public Invoice(String id, String orderId, String invoiceComment) {
+		this.id = id;
+		this.orderId = orderId;
+		this.invoiceComment = invoiceComment;
+	}
 }
