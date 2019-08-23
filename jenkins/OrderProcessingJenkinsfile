@@ -15,7 +15,7 @@ stages {
 			}
 		}
 		steps {
-			sh 'mvn clean install -s settings.xml -DskipTests'
+			sh 'mvn clean install -DskipTests'
 		}
 	}
 	stage('Building Images') {
