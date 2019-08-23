@@ -11,9 +11,8 @@
     <module>domain-info</module>	  
 	  <module>invoice-service</module>
     <module>order-service</module>
-	  <!--
     <module>customer-service</module>
-	  <module>orderview-service</module>-->
+	  <module>orderview-service</module>
   </modules>
 	
 </project>
