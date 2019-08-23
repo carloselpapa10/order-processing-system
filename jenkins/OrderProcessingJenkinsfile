@@ -3,8 +3,8 @@ pipeline {
 
 	environment {
 		registryCredential = 'dockerhub'
-		dockerImage = ''
 		registry = 'carloselpapa10'
+		BUILD_NUMBER = 'latest'
 	}
 stages {
 	stage('Building applications') {
