@@ -33,7 +33,7 @@ public class MessagingTest extends MessagingBase {
 				, headers()
 						.header("command_type", "org.ordersample.domaininfo.invoice.api.commands.RequestInvoiceCommand")
 						.header("command_saga_type", "org.ordersample.orderservice.saga.createorder.CreateOrderSaga")
-						.header("command_saga_id", "e76e49d04898db9d-7bfa06f7ca5bd18f")
+						.header("command_saga_id", "cfea15fd6d03fb1b-1f3328ab2cba3110")
 						.header("command_reply_to", "org.ordersample.orderservice.saga.createorder.CreateOrderSaga-reply")
 			);
 

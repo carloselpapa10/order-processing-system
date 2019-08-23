@@ -13,3 +13,9 @@ v
 Fsrc/main/java/org/ordersample/domaininfo/common/BusinessException.java,6/8/683e86642cae29da033fdfb1ce6a68d02e043265
 €
 Psrc/main/java/org/ordersample/domaininfo/order/api/events/OrderCreatedEvent.java,7/a/7ae82bfcd21db279ddaa9830d199ab58bae178cd
+m
+=src/main/java/org/ordersample/domaininfo/common/Channels.java,a/3/a39d94fa77013324f8701ea301502c2ee31e03a1
+ˆ
+Xsrc/main/java/org/ordersample/domaininfo/invoice/api/commands/RequestInvoiceCommand.java,f/5/f54988fde146c3c8793aeda7496d52ab27369abb
+{
+Ksrc/main/java/org/ordersample/domaininfo/customer/api/info/CustomerDTO.java,8/1/816536c60a047c34bbf8d0aa2fe89b9d99d95d0f
