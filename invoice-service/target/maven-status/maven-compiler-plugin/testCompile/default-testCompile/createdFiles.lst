@@ -1,6 +1,5 @@
 org/ordersample/invoiceservice/InvoiceServiceInMemoryIntegrationTest$TestConfiguration.class
 org/ordersample/invoiceservice/MessagingBase$TestConfiguration.class
-org/ordersample/invoiceservice/MessagingTest.class
 org/ordersample/invoiceservice/repository/InvoiceJpaTestConfiguration.class
 org/ordersample/invoiceservice/MessagingBase.class
 org/ordersample/invoiceservice/InvoiceServiceInMemoryIntegrationTest.class

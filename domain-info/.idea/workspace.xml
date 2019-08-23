@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86519c2b-0c9e-4d0b-a0b5-8ffa5f518bd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/generated-test-sources/contracts/org/ordersample/invoiceservice/MessagingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/generated-test-sources/contracts/org/ordersample/invoiceservice/MessagingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/invoice-service.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/invoice-service.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.InvoiceServiceInMemoryIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.InvoiceServiceInMemoryIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.MessagingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.MessagingTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.repository.InvoiceRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/TEST-org.ordersample.invoiceservice.repository.InvoiceRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.InvoiceServiceInMemoryIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.InvoiceServiceInMemoryIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.MessagingTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.MessagingTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.repository.InvoiceRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../invoice-service/target/surefire-reports/org.ordersample.invoiceservice.repository.InvoiceRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/order-service.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/order-service.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldGetOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldGetOrder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldNotGetOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/stubs/META-INF/org.ordersample/order-service/0.0.1-SNAPSHOT/mappings/rest/shouldNotGetOrder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.MessagingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.MessagingTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.RestTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.RestTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.controller.OrderServiceControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.controller.OrderServiceControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.dao.OrderServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.dao.OrderServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.proxy.InvoiceServiceProxyIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.proxy.InvoiceServiceProxyIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.repository.OrderRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.repository.OrderRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/TEST-org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.MessagingTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.MessagingTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.RestTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.RestTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.controller.OrderServiceControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.controller.OrderServiceControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.dao.OrderServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.dao.OrderServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.proxy.InvoiceServiceProxyIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.proxy.InvoiceServiceProxyIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.repository.OrderRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.repository.OrderRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/surefire-reports/org.ordersample.orderservice.saga.createorder.CreateOrderSagaTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../customer-service/target/" />
     <ignored path="$PROJECT_DIR$/../invoice-service/target/" />
@@ -21,12 +45,12 @@
     <favorites_list name="service-model" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/dao/OrderServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+            <state relative-caret-position="145">
+              <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -134,54 +158,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderservice" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,9 +373,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1519" y="93" width="1562" height="888" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948905" visible="true" weight="0.34144738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948905" visible="true" weight="0.34652665" />
       <window_info id="Structure" order="1" sideWeight="0.50259066" side_tool="true" weight="0.18796591" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -411,7 +391,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" weight="0.24087591" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15326633" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15182482" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.329927" />
@@ -929,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/src/test/java/org/ordersample/orderservice/dao/OrderServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        <state relative-caret-position="145">
+          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
         </state>
       </provider>
     </entry>
