@@ -18,15 +18,14 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/customerservicedb \
-	-e SERVICE_DISPATCHER=customerServiceDispatcher \
+	-e SERVICE_DISPATCHER=customer-dispatcher-1 \
 	$registry/customer-service:$VERSION"
   sleep 20
 		}
@@ -42,14 +41,14 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/invoiceservicedb \
+	-e SERVICE_DISPATCHER=invoice-dispatcher-1 \
 	$registry/invoice-service:$VERSION"
   sleep 20
 		}
@@ -65,14 +64,14 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/orderservicedb \
+	-e SERVICE_DISPATCHER=order-dispatcher-1 \
 	$registry/order-service:$VERSION"
   sleep 20
 		}
@@ -88,8 +87,7 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
