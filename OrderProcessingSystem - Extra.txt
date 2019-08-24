@@ -3,7 +3,7 @@ docker run -u root -v /var/run/docker.sock:/var/run/docker.sock -p 8090:8080 -p 
 
 mvn clean install -U -s settings.xml
 
-docker network create ordersample-net
+docker network create order-processing-net
 
 docker build -f customer-service/Dockerfile customer-service/ -t carloselpapa10/customer-service
 docker build -f invoice-service/Dockerfile invoice-service/ -t carloselpapa10/invoice-service
@@ -12,7 +12,7 @@ docker build -f orderview-service/Dockerfile orderview-service/ -t carloselpapa1
 
 docker run -d \
     --name mongodb \
-    --network=ordersample-net \
+    --network=order-processing-net \
     -p 27017:27017 \
     -e MONGO_DATA_DIR=/data/db \
     -e MONGO_LOG_DIR=/dev/null \
@@ -21,7 +21,7 @@ docker run -d \
 
 docker run -d \
     --name mysql \
-    --network=ordersample-net \
+    --network=order-processing-net \
     -p 3306:3306 \
     -e MYSQL_ROOT_PASSWORD=rootpassword \
     -e MYSQL_USER=mysqluser \
@@ -30,7 +30,7 @@ docker run -d \
 
 docker run -d \
     --name zookeeper \
-    --network=ordersample-net \
+    --network=order-processing-net \
     -p 2181:2181 \
     -p 2888:2888 \
     -p 3888:3888 \
@@ -38,7 +38,7 @@ docker run -d \
 
 docker run -d \
 	--name kafka \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 9092:9092 \
 	--link zookeeper \
 	-e ADVERTISED_HOST_NAME=${DOCKER_HOST_IP} \
@@ -48,7 +48,7 @@ docker run -d \
 
 docker run -d \
 	--name cdcservice \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 8099:8080 \
 	--link mysql \
 	--link kafka \
@@ -66,7 +66,7 @@ docker run -d \
 
 docker run -d \
 	--name customer-service \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 5000:8080 \
 	--link mysql \
 	--link kafka \
@@ -85,7 +85,7 @@ docker run -d \
 
 docker run -d \
 	--name invoice-service \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 5001:8080 \
 	--link mysql \
 	--link kafka \
@@ -103,7 +103,7 @@ docker run -d \
 
 docker run -d \
 	--name order-service \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 5002:8080 \
 	--link mysql \
 	--link kafka \
@@ -121,7 +121,7 @@ docker run -d \
 
 docker run -d \
 	--name orderview-service \
-        --network=ordersample-net \
+        --network=order-processing-net \
 	-p 5003:8080 \
 	--link mysql \
 	--link kafka \
