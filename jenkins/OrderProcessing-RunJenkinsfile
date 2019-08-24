@@ -26,7 +26,7 @@ stages {
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/customerservicedb \
-	-e SERVICE_DISPATCHER=customerServiceDispatcher \
+	-e SERVICE_DISPATCHER=customer-dispatcher-1 \
 	$registry/customer-service:$VERSION"
   sleep 20
 		}
@@ -50,6 +50,7 @@ stages {
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/invoiceservicedb \
+	-e SERVICE_DISPATCHER=invoice-dispatcher-1 \
 	$registry/invoice-service:$VERSION"
   sleep 20
 		}
@@ -73,6 +74,7 @@ stages {
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/orderservicedb \
+	-e SERVICE_DISPATCHER=order-dispatcher-1 \
 	$registry/order-service:$VERSION"
   sleep 20
 		}
@@ -96,6 +98,7 @@ stages {
 	-e EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 \
 	-e EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING=zookeeper:2181 \
 	-e MONGODB=mongodb:27017/orderviewservicedb \
+	-e SERVICE_DISPATCHER=orderview-dispatcher-1 \
 	$registry/orderview-service:$VERSION"
   sleep 20
 		}
