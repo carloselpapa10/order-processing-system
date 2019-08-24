@@ -18,8 +18,7 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
@@ -42,8 +41,7 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
@@ -66,8 +64,7 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
@@ -90,8 +87,7 @@ stages {
 	--link kafka \
 	--link zookeeper \
         --link cdcservice \
-        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate \
-	-e SPRING_DATASOURCE_USERNAME=mysqluser \
+        -e SPRING_DATASOURCE_URL=jdbc:mysql://mysql/eventuate?useSSL=false -e SPRING_DATASOURCE_USERNAME=mysqluser \
 	-e SPRING_DATASOURCE_PASSWORD=mysqlpw \
 	-e SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.jdbc.Driver \
         -e SPRING_DATASOURCE_TIMEOUT=10000 \
