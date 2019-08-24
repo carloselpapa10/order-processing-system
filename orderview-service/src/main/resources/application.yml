@@ -27,6 +27,8 @@ eventuatelocal:
     dbUserName: root
     dbPassword: rootpassword
 
+service:
+  dispatcher: order-dispatcher-1
     
 ---  
 spring:
@@ -55,3 +57,6 @@ eventuatelocal:
   cdc:
     dbUserName: root
     dbPassword: rootpassword
+
+service:
+  dispatcher: ${SERVICE_DISPATCHER}

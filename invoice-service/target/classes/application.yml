@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
@@ -41,7 +41,10 @@ management:
   endpoint:
     metrics:
       enabled: true
-    
+
+service:
+  dispatcher: invoice-dispatcher-1
+
 ---  
 spring:
   profiles: container
@@ -82,3 +85,6 @@ management:
   endpoint:
     metrics:
       enabled: true
+
+service:
+  dispatcher: ${SERVICE_DISPATCHER}

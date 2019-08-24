@@ -5,7 +5,7 @@ spring:
   application:
     name: customer-service
   datasource:
-    url: jdbc:mysql://172.28.112.191:3306/eventuate?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://192.168.1.58:3306/eventuate?autoReconnect=true&useSSL=false
     username: mysqluser
     password: mysqlpw
     driver-class-name: com.mysql.jdbc.Driver
@@ -13,23 +13,26 @@ spring:
       idle-timeout: 10000
   jpa:
     database: MYSQL
-    generate-ddl: true 
+    generate-ddl: true
+    properties:
+      hibernate:
+        show_sql: true
   data:
     mongodb:
-      uri: ${MONGO_URL:mongodb://172.28.112.191:27017/customerservicedb}
+      uri: ${MONGO_URL:mongodb://192.168.1.58:27017/customerservicedb}
     #zipkin:
     #discoveryClientEnabled: false
   #baseUrl: http://172.28.200.187:9411/
     #sender:
     #  type: web
- 
+
 eventuatelocal:
   kafka:
     bootstrap:
-      servers: 172.28.112.191:9092
+      servers: 192.168.1.58:9092
   zookeeper:
     connection:
-      string: 172.28.112.191:2181
+      string: 192.168.1.58:2181
   cdc:
     dbUserName: root
     dbPassword: rootpassword
@@ -58,14 +61,19 @@ management:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
 
 service:
-  dispatcher: customerServiceDispatcher
+  dispatcher: customer-dispatcher-1
 ---
 spring:
   profiles: container
   datasource:
-    url: ${SPRING_DATASOURCE_URL}?autoReconnect=true&useSSL=false
+    url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME}

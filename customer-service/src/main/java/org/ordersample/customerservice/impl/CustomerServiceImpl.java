@@ -81,7 +81,7 @@ public class CustomerServiceImpl implements CustomerService{
 			
 	@Override
 	public List<Customer> findAll() throws BusinessException{
-		log.info("CustomerService - CustomerServiceImpl - createCustomer");
+		log.info("CustomerService - CustomerServiceImpl - findAll");
 
 		return customerRepository.findAll();
 	}
