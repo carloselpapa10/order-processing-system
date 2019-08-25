@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86519c2b-0c9e-4d0b-a0b5-8ffa5f518bd2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/target/test-classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/target/test-classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/target/orderview-service.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/target/orderview-service.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orderview-service/target/test-classes/aplication.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../orderview-service/target/test-classes/aplication.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../customer-service/target/" />
     <ignored path="$PROJECT_DIR$/../invoice-service/target/" />
@@ -21,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="51" column="132" selection-start-line="51" selection-start-column="132" selection-end-line="51" selection-end-column="132" />
+            <state relative-caret-position="99">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -33,8 +42,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="118">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="43" column="42" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCompletedEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,6 +146,10 @@
       <find>jdbc</find>
       <find>database</find>
       <find>createorder</find>
+      <find>handleOrderCreatedEvent</find>
+      <find>makeCompleteOrderCommand</find>
+      <find>CompleteOrderCommand</find>
+      <find>OrderCompletedEvent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../api-gateway/src/test/java/resources/application.properties" />
         <option value="$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/OrderServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/../api-gateway/src/test/java/org/ordersample/apigateway/ApiGatewayIntegrationTestConfiguration.java" />
         <option value="$PROJECT_DIR$/../api-gateway/pom.xml" />
@@ -140,13 +201,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/commandhandlers/InvoiceServiceCommandHandlersConfiguration.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlersConfiguration.java" />
-        <option value="$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../invoice-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../customer-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/../order-service/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -158,7 +220,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="68" />
+    <option name="y" value="50" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
@@ -195,24 +257,7 @@
               <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderviewservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="service-model" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orderview-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orderviewservice" type="462c0819:PsiDirectoryNode" />
-              <item name="messaging" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +267,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.38519135" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566736417258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566738805735" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -250,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InvoiceServiceApplication">
+  <component name="RunManager" selected="Application.OrderViewServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ordersample.customerservice.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -290,17 +335,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvoiceServiceProxyIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order-service" />
+    <configuration name="OrderViewServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderviewservice.OrderViewServiceApplication" />
+      <module name="orderview-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.ordersample.orderservice.proxy.*" />
+          <option name="PATTERN" value="org.ordersample.orderviewservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.ordersample.orderservice.proxy" />
-      <option name="MAIN_CLASS_NAME" value="org.ordersample.orderservice.proxy.InvoiceServiceProxyIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -369,11 +412,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderViewServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.InvoiceServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="JUnit.MessagingTest" />
-        <item itemvalue="JUnit.InvoiceServiceProxyIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +466,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="24" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948905" weight="0.44911146" />
@@ -435,8 +478,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.5051095" side_tool="true" weight="0.30533117" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8043796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.07591241" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47737226" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4948905" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -466,7 +509,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.8043796" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.07591241" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36934307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -555,6 +598,16 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>dee.getEvent().getOrderDTO().setInvoiceId(&quot;5d627e70f264de0001ac0569&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invoiceService.findAll()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>customerService.findAll()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -594,33 +647,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>orderRepository.findAll()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>orderService.findOrder(id)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/sagas/eventuate-tram-sagas-common/0.11.1.RELEASE/eventuate-tram-sagas-common-0.11.1.RELEASE.jar!/io/eventuate/tram/sagas/common/SagaLockManagerImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/eventuate/tram/core/eventuate-tram-events/0.21.0.RELEASE/eventuate-tram-events-0.21.0.RELEASE.jar!/io/eventuate/tram/events/publisher/TramEventsPublisherConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../invoice-service/src/main/java/org/ordersample/invoiceservice/impl/InvoiceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -667,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -887,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/org/ordersample/customerservice/commandhandlers/CustomerServiceCommandHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -908,31 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="52" column="93" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/src/test/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -971,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -985,10 +972,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/commands/CompleteOrderCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/events/OrderCompletedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ordersample/domaininfo/order/api/info/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/saga/createorder/CreateOrderSaga.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/org/ordersample/orderservice/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/java/org/ordersample/orderviewservice/messaging/OrderHistoryEventHandlers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="51" column="132" selection-start-line="51" selection-start-column="132" selection-end-line="51" selection-end-column="132" />
+        <state relative-caret-position="99">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../orderview-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>

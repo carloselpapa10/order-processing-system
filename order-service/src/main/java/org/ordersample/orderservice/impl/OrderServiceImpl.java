@@ -104,7 +104,11 @@ public class OrderServiceImpl implements OrderService{
 
 		meterRegistry.ifPresent(mr -> mr.counter("completed_orders").increment());
 
-		domainEventPublisher.publish(Order.class, order.getId(), asList(new OrderCompletedEvent(new OrderDTO(order.getId()))));
+		OrderDTO orderDTO = new OrderDTO();
+		orderDTO.setId(order.getId());
+		orderDTO.setInvoiceId(order.getInvoiceId());
+
+		domainEventPublisher.publish(Order.class, order.getId(), asList(new OrderCompletedEvent(orderDTO)));
 	}
 			
 	@Override
