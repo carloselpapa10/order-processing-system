@@ -48,7 +48,8 @@ public class OrderHistoryEventHandlers {
 		log.info("OrderViewService - OrderHistoryEventHandlers - handleOrderCreatedEvent");
 		
 		Customer customer = customerService.findCustomer(dee.getEvent().getOrderDTO().getCustomerId());
-		orderService.createOrder(new Order(dee.getAggregateId(), dee.getEvent().getOrderDTO().getDescription(), customer));
+		Invoice invoice = invoiceService.findInvoice(dee.getEvent().getOrderDTO().getInvoiceId());
+		orderService.createOrder(new Order(dee.getAggregateId(), dee.getEvent().getOrderDTO().getDescription(), customer, invoice));
 	}
 
 	private void handleOrderRejectedEvent(DomainEventEnvelope<OrderRejectedEvent> dee) {
