@@ -36,7 +36,7 @@ stages {
 		 sh "docker run -d \
 	--name invoice-service \
         --network=$NETWORK \
-	-p 5001:8081 \
+	-p 5001:8080 \
 	--link mysql \
 	--link kafka \
 	--link zookeeper \
@@ -59,7 +59,7 @@ stages {
 		 sh "docker run -d \
 	--name order-service \
         --network=$NETWORK \
-	-p 5002:8082 \
+	-p 5002:8080 \
 	--link mysql \
 	--link kafka \
 	--link zookeeper \
