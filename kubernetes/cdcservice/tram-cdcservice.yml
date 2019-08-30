@@ -5,16 +5,18 @@ metadata:
 spec:
   ports:
   - port: 8080
+    nodePort: 31080
     targetPort: 8080
   selector:
-    svc: tram-cdc-service
+    name: tram-cdc-service
+  type: LoadBalancer
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: tram-cdc-service
   labels:
-    application: order-processing
+    name: tram-cdc-service
 spec:
   replicas: 1
   strategy:
@@ -23,7 +25,7 @@ spec:
   template:
     metadata:
       labels:
-        svc: order-tram-cdc-service
+        name: tram-cdc-service
     spec:
       containers:
       - name: cdcservice
@@ -37,23 +39,23 @@ spec:
           - name: JAVA_OPTS
             value: "-Dsun.net.inetaddr.ttl=30"
           - name: SPRING_DATASOURCE_URL
-            value: jdbc:mysql://mysql-service/eventuate
+            value: jdbc:mysql://mysql/eventuate
           - name: SPRING_DATASOURCE_USERNAME
             valueFrom:
               secretKeyRef:
-                name: order-secrets
+                name: server-secrets
                 key: mysql_username
           - name: SPRING_DATASOURCE_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: order-secrets
+                name: server-secrets
                 key: mysql_password
           - name: SPRING_DATASOURCE_DRIVER_CLASS_NAME
             value: com.mysql.jdbc.Driver
           - name: EVENTUATELOCAL_KAFKA_BOOTSTRAP_SERVERS
-            value: kafka-service:9092
+            value: kafka:9092
           - name: EVENTUATELOCAL_ZOOKEEPER_CONNECTION_STRING
-            value: zookeeper-service:2181
+            value: zookeeper:2181
           - name: EVENTUATELOCAL_CDC_DB_USER_NAME
             value: root
           - name: EVENTUATELOCAL_CDC_DB_PASSWORD

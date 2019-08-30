@@ -1,28 +1,29 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb-service
+  name: mongodb
   labels:
-    name: mongodb-service
+    name: mongodb
 spec:
   ports:
   - port: 27017
+    nodePort: 32017
     targetPort: 27017
-  clusterIP: None
   selector:
-    role: order-mongodb
+    name: mongodb
+  type: LoadBalancer
 ---
 apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: mongodb
 spec:
-  serviceName: "mongodb"
+  serviceName: mongodb
   replicas: 1
   template:
     metadata:
       labels:
-        role: order-mongodb
+        name: mongodb
     spec:
       terminationGracePeriodSeconds: 10
       containers:
@@ -37,13 +38,13 @@ spec:
             - name: MONGO_LOG_DIR
               value: /dev/null
           volumeMounts:
-            - name: order-mongodb-persistent-storage
-              mountPath: /var/lib/mongodb
+            - name: mongodb-persistent-storage
+              mountPath: /data/db
   volumeClaimTemplates:
   - metadata:
-      name: order-mongodb-persistent-storage
+      name: mongodb-persistent-storage
     spec:
-      accessModes: [ "ReadWriteOnce" ]
+      accessModes: ["ReadWriteOnce"]
       resources:
         requests:
           storage: 1Gi

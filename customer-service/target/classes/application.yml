@@ -1,11 +1,11 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   application:
     name: customer-service
   datasource:
-    url: jdbc:mysql://192.168.1.58:3306/eventuate?autoReconnect=true&useSSL=false
+    url: jdbc:mysql://192.168.64.9:32306/eventuate?autoReconnect=true&useSSL=false
     username: mysqluser
     password: mysqlpw
     driver-class-name: com.mysql.jdbc.Driver
@@ -19,7 +19,7 @@ spring:
         show_sql: true
   data:
     mongodb:
-      uri: ${MONGO_URL:mongodb://192.168.1.58:27017/customerservicedb}
+      uri: ${MONGO_URL:mongodb://192.168.64.9:32017/customerservicedb}
     #zipkin:
     #discoveryClientEnabled: false
   #baseUrl: http://172.28.200.187:9411/
@@ -29,10 +29,10 @@ spring:
 eventuatelocal:
   kafka:
     bootstrap:
-      servers: 192.168.1.58:9092
+      servers: 192.168.64.9:32092
   zookeeper:
     connection:
-      string: 192.168.1.58:2181
+      string: 192.168.64.9:32181
   cdc:
     dbUserName: root
     dbPassword: rootpassword
