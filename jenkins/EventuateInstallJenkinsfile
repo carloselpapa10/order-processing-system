@@ -2,9 +2,11 @@ pipeline {
 	agent none
 
 	environment {
-		DOCKER_HOST_IP = '172.28.110.57'
 		NETWORK = 'order-processing-net'
 	    }
+	parameters {
+		string(description: 'Type the DOCKER HOST IP', name: 'DOCKER_HOST_IP', defaultValue: '10.117.165.108')
+	}
 stages {
 	stage('Docker Network') {
 		agent any
@@ -64,7 +66,7 @@ stages {
 				--network=$NETWORK \
 				-p 9092:9092 \
 				--link zookeeper \
-				-e ADVERTISED_HOST_NAME=$DOCKER_HOST_IP \
+				-e ADVERTISED_HOST_NAME=${DOCKER_HOST_IP} \
 				-e "KAFKA_HEAP_OPTS=-Xmx320m -Xms320m" \
 				-e ZOOKEEPER_SERVERS=zookeeper:2181 \
 			eventuateio/eventuateio-local-kafka:0.22.0.RELEASE'
