@@ -1,0 +1,11 @@
+{
+     "type": "record",
+     "namespace": "io.karengryg",
+     "name": "Movie",
+     "version": "1",
+     "fields": [
+       { "name": "id", "type": "string", "doc": "Id of Movie" },
+       { "name": "movie_name", "type": "string", "doc": "Name of Movie" },
+       { "name": "genre", "type": "string", "doc": "Genre of Movie" }
+     ]
+}

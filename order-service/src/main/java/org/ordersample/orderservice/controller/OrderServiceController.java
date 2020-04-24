@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.UUID;
 
 @RestController
@@ -23,7 +24,7 @@ public class OrderServiceController {
     }
 
     @PostMapping
-    public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest createOrderRequest) {
+    public CreateOrderResponse createOrder(@RequestBody CreateOrderRequest createOrderRequest) throws IOException {
         log.info("OrderService - OrderServiceController - createOrder");
 
         OrderDTO orderDTO = OrderDTO.builder()
@@ -37,7 +38,7 @@ public class OrderServiceController {
     }
 
     @PutMapping
-    public CreateOrderResponse completeOrder(@RequestBody CreateOrderRequest createOrderRequest) {
+    public CreateOrderResponse completeOrder(@RequestBody CreateOrderRequest createOrderRequest) throws IOException {
         log.info("OrderService - OrderServiceController - createOrder");
 
         OrderDTO orderDTO = OrderDTO.builder()

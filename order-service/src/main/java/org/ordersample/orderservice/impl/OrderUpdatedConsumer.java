@@ -1,8 +1,9 @@
 package org.ordersample.orderservice.impl;
 
+import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
+import io.confluent.kafka.serializers.KafkaAvroDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.ordersample.orderservice.control.EventConsumer;
 import org.ordersample.orderservice.control.EventDeserializer;
 import org.slf4j.Logger;
@@ -14,7 +15,6 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.Properties;
-import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -24,12 +24,6 @@ public class OrderUpdatedConsumer {
     private static final Logger logger = LoggerFactory.getLogger(OrderUpdatedConsumer.class);
 
     private EventConsumer eventConsumer;
-
-//    @Inject
-//    ExecutorService mes;
-
-//    @Inject
-//    Event<AppEvent> events;
 
     @Autowired
     private ApplicationEventPublisher applicationEventPublisher;
@@ -41,8 +35,9 @@ public class OrderUpdatedConsumer {
         kafkaProperties.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG, "read_committed");
         kafkaProperties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         kafkaProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        kafkaProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        kafkaProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, EventDeserializer.class);
+        kafkaProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        kafkaProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class.getName());
+        kafkaProperties.put(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8081");
 
         //kafkaProperties.put("group.id", "order-consumer-" + UUID.randomUUID());
         kafkaProperties.put("group.id", "order-consumer-1");

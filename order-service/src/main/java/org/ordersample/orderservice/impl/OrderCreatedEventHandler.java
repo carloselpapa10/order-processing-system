@@ -2,6 +2,7 @@ package org.ordersample.orderservice.impl;
 
 import org.ordersample.domaininfo.order.api.events.OrderCreatedEvent;
 import org.ordersample.orderservice.model.Order;
+import org.ordersample.orderservice.model.OrderEvent;
 import org.ordersample.orderservice.repository.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
 @Component
-public class OrderCreatedEventHandler implements ApplicationListener<OrderCreatedEvent> {
+public class OrderCreatedEventHandler implements ApplicationListener<OrderEvent> {
 
     private static final Logger logger = LoggerFactory.getLogger(OrderCreatedEventHandler.class);
 
@@ -25,18 +26,20 @@ public class OrderCreatedEventHandler implements ApplicationListener<OrderCreate
     private Map<UUID, Order> orders = new ConcurrentHashMap<>();
 
     @Override
-    public void onApplicationEvent(OrderCreatedEvent event) {
-        Order order = Order.builder()
-                .id(event.getOrderDTO().getId().toString())
-                .description(event.getOrderDTO().getDescription())
-                .build();
+    public void onApplicationEvent(OrderEvent event) {
 
-        orders.putIfAbsent(event.getOrderDTO().getId(), new Order());
-//        orderRepository.save(order);
-        applyFor(event.getOrderDTO().getId(),
-                o -> o.create(event.getOrderDTO().getId().toString(),
-                        event.getOrderDTO().getDescription(),
-                        event.getOrderDTO().getCustomerId()));
+        logger.info("sii");
+//        Order order = Order.builder()
+//                .id(event.getOrderDTO().getId().toString())
+//                .description(event.getOrderDTO().getDescription())
+//                .build();
+//
+//        orders.putIfAbsent(event.getOrderDTO().getId(), new Order());
+////        orderRepository.save(order);
+//        applyFor(event.getOrderDTO().getId(),
+//                o -> o.create(event.getOrderDTO().getId().toString(),
+//                        event.getOrderDTO().getDescription(),
+//                        event.getOrderDTO().getCustomerId()));
     }
 
     private void applyFor(final UUID orderId, final Consumer<Order> consumer) {

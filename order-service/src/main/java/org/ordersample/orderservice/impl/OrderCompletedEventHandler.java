@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class OrderCompletedEventHandler implements ApplicationListener<OrderCompletedEvent> {
 
     private static final Logger logger = LoggerFactory.getLogger(OrderCreatedEventHandler.class);
