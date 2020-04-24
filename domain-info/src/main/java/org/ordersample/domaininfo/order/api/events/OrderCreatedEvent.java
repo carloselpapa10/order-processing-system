@@ -3,28 +3,35 @@ package org.ordersample.domaininfo.order.api.events;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.ordersample.domaininfo.AppEvent;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
+
+import javax.json.JsonObject;
+import java.time.Instant;
 
 @Setter
 @Getter
 @NoArgsConstructor
-public class OrderCreatedEvent implements OrderDomainEvent{
+public class OrderCreatedEvent extends AppEvent {
+    private OrderDTO orderDTO;
 
-	private OrderDTO orderDTO;
+    public OrderCreatedEvent(OrderDTO orderDTO) {
+        this.orderDTO = orderDTO;
+    }
 
-	public OrderCreatedEvent(OrderDTO orderDTO) {
-		this.orderDTO = orderDTO;
-	}
+    public OrderCreatedEvent(Object source, OrderDTO orderDTO) {
+        super(source);
+        this.orderDTO = orderDTO;
+    }
 
-	@Override
-	public int hashCode() {
-		return HashCodeBuilder.reflectionHashCode(this);
-	}
+    public OrderCreatedEvent(Object source, OrderDTO orderDTO, Instant instant) {
+        super(source, instant);
+        this.orderDTO = orderDTO;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		return EqualsBuilder.reflectionEquals(this, obj);
-	}
+    public OrderCreatedEvent(JsonObject jsonObject) {
+        this(new OrderDTO(jsonObject.getJsonObject("orderDTO")), new OrderDTO(jsonObject.getJsonObject("orderDTO")), Instant.parse(jsonObject.getString("instant")));
+    }
+
+
 }

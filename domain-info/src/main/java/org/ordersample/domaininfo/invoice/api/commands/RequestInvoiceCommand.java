@@ -5,16 +5,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.ordersample.domaininfo.invoice.api.info.InvoiceDTO;
 
-import io.eventuate.tram.commands.common.Command;
-
 @Setter
 @Getter
 @NoArgsConstructor
-public class RequestInvoiceCommand implements Command{
+public class RequestInvoiceCommand {
 
-	private InvoiceDTO invoiceDTO;
+    private InvoiceDTO invoiceDTO;
 
-	public RequestInvoiceCommand(InvoiceDTO invoiceDTO) {
-		this.invoiceDTO = invoiceDTO;
-	}
+    public RequestInvoiceCommand(InvoiceDTO invoiceDTO) {
+        this.invoiceDTO = invoiceDTO;
+    }
 }

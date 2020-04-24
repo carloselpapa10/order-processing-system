@@ -5,16 +5,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
 
-import io.eventuate.tram.commands.common.Command;
-
 @Setter
 @Getter
 @NoArgsConstructor
-public class RejectOrderCommand implements Command{
+public class RejectOrderCommand {
 
-	private OrderDTO orderDTO;
+    private OrderDTO orderDTO;
 
-	public RejectOrderCommand(OrderDTO orderDTO) {
-		this.orderDTO = orderDTO;
-	}
+    public RejectOrderCommand(OrderDTO orderDTO) {
+        this.orderDTO = orderDTO;
+    }
 }

@@ -5,16 +5,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.ordersample.domaininfo.customer.api.info.CustomerDTO;
 
-import io.eventuate.tram.commands.common.Command;
-
 @Setter
 @Getter
 @NoArgsConstructor
-public class ValidateCustomerByOrderService implements Command{
+public class ValidateCustomerByOrderService {
 
-	private CustomerDTO customerDTO;
+    private CustomerDTO customerDTO;
 
-	public ValidateCustomerByOrderService(CustomerDTO customerDTO) {
-		this.customerDTO = customerDTO;
-	}
+    public ValidateCustomerByOrderService(CustomerDTO customerDTO) {
+        this.customerDTO = customerDTO;
+    }
 }

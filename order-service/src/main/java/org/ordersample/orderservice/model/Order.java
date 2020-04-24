@@ -1,45 +1,41 @@
 package org.ordersample.orderservice.model;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+import org.ordersample.domaininfo.order.api.info.OrderDTO;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="Orders")
-@Setter
-@Getter
+@Document(collection = "Orders")
+@Data
 @NoArgsConstructor
-public class Order{
+@AllArgsConstructor
+@Builder
+public class Order {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)						
-	private String id; 
-    private String description;									
+    @Id
+    private String id;
+    private String description;
     private String customerId;
     private String invoiceId;
-    private boolean completed;
+    private OrderState state;
 
-	public Order(String description, String customerId) {
-		this.description = description;
-		this.customerId = customerId;
-	}
+    public void create(String id, String description, String customerId){
+        state = OrderState.CREATED;
+        this.id = id;
+        this.description = description;
+        this.customerId = customerId;
+    }
 
-	public Order(String description, String customerId, String invoiceId) {
-		this.description = description;
-		this.customerId = customerId;
-		this.invoiceId = invoiceId;
-	}
+    public enum OrderState {
+        CREATED,
+        ACCEPTED,
+        STARTED,
+        FINISHED,
+        DELIVERED,
+        CANCELLED
+    }
 
-	public Order(String id, String description, String customerId, String invoiceId) {
-		this.id = id;
-		this.description = description;
-		this.customerId = customerId;
-		this.invoiceId = invoiceId;
-	}
 }

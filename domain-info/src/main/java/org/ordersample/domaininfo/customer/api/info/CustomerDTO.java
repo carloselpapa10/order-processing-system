@@ -1,49 +1,37 @@
 package org.ordersample.domaininfo.customer.api.info;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-
 public class CustomerDTO {
-	
-	private String id; 
+
+    private String id;
     private String name;
 
-	public CustomerDTO(){}
-	
-	public CustomerDTO(String id) {
-		super();
-		this.id = id;
-	}
+    public CustomerDTO() {
+    }
 
-	public CustomerDTO(String id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
-	}
+    public CustomerDTO(String id) {
+        super();
+        this.id = id;
+    }
 
-	public String getId() {
-		return id;
-	}
+    public CustomerDTO(String id, String name) {
+        super();
+        this.id = id;
+        this.name = name;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	@Override
-	public int hashCode() {
-		return HashCodeBuilder.reflectionHashCode(this);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		return EqualsBuilder.reflectionEquals(this, obj);
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 }			
