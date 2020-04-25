@@ -1,5 +1,6 @@
 package org.ordersample.orderservice.dao;
 
+import com.example.protocol.orders.v1.OrderEvents;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
 import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.Order;

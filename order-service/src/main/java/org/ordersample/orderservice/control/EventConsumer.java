@@ -1,5 +1,8 @@
 package org.ordersample.orderservice.control;
 
+import com.example.protocol.orders.v1.OrderEvents;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.Parser;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -16,11 +19,11 @@ import static java.util.Arrays.asList;
 
 public class EventConsumer implements Runnable {
 
-    private final KafkaConsumer<String, GenericRecord> consumer;
-    private final Consumer<GenericRecord> eventConsumer;
+    private final KafkaConsumer<String, OrderEvents.OrdersEnvelope> consumer;
+    private final Consumer<OrderEvents.OrdersEnvelope> eventConsumer;
     private final AtomicBoolean closed = new AtomicBoolean();
 
-    public EventConsumer(Properties kafkaProperties, Consumer<GenericRecord> eventConsumer, String... topics) {
+    public EventConsumer(Properties kafkaProperties, Consumer<OrderEvents.OrdersEnvelope> eventConsumer, String... topics) {
         this.eventConsumer = eventConsumer;
         consumer = new KafkaConsumer<>(kafkaProperties);
         consumer.subscribe(asList(topics));
@@ -40,12 +43,9 @@ public class EventConsumer implements Runnable {
     }
 
     private void consume() {
-        ConsumerRecords<String, GenericRecord> records = consumer.poll(Duration.ofMillis(Long.MAX_VALUE));
-        for (ConsumerRecord<String, GenericRecord> record : records) {
-            OrderEvent orderEvent = new OrderEvent(record.value());
-
-            GenericRecord a = record.value();
-            eventConsumer.accept(orderEvent.getUser());
+        ConsumerRecords<String, OrderEvents.OrdersEnvelope> records = consumer.poll(Duration.ofMillis(Long.MAX_VALUE));
+        for (ConsumerRecord<String, OrderEvents.OrdersEnvelope> record : records) {
+            eventConsumer.accept(record.value());
         }
         consumer.commitSync();
     }

@@ -1,9 +1,7 @@
 package org.ordersample.orderservice.control;
 
+import com.example.protocol.orders.v1.OrderEvents;
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
-import io.confluent.kafka.serializers.KafkaAvroSerializer;
-import io.confluent.kafka.serializers.subject.TopicRecordNameStrategy;
-import org.apache.avro.generic.GenericRecord;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -24,7 +22,7 @@ public class EventProducer {
 
     private static final Logger logger = Logger.getLogger(EventSerializer.class.getName());
 
-    private Producer<String, GenericRecord> producer;
+    private Producer<String, OrderEvents.OrdersEnvelope> producer;
     private String topic;
 
     @PostConstruct
@@ -35,10 +33,10 @@ public class EventProducer {
         props.put(ProducerConfig.LINGER_MS_CONFIG, 0);
         props.put(ProducerConfig.BUFFER_MEMORY_CONFIG, 33554432);
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class.getName());
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EventSerializer.class.getName());
 
         props.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, UUID.randomUUID().toString());
-        props.put("value.subject.name.strategy", TopicRecordNameStrategy.class.getName());
+        //props.put("value.subject.name.strategy", TopicRecordNameStrategy.class.getName());
         props.setProperty(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://127.0.0.1:8081");
 
         producer = new KafkaProducer<>(props);
@@ -46,7 +44,7 @@ public class EventProducer {
         producer.initTransactions();
     }
 
-    public void publish(GenericRecord... events) {
+    public void publish(OrderEvents.OrdersEnvelope... events) {
         try {
             producer.beginTransaction();
             send(events);
@@ -58,11 +56,11 @@ public class EventProducer {
         }
     }
 
-    private void send(GenericRecord... events) {
-        for (final GenericRecord event : events) {
-            final ProducerRecord<String, GenericRecord> record = new ProducerRecord<>(topic, event.get("id").toString(), event);
+    private void send(OrderEvents.OrdersEnvelope... events) {
+        for (final OrderEvents.OrdersEnvelope event : events) {
+            final ProducerRecord<String, OrderEvents.OrdersEnvelope> record = new ProducerRecord<>(topic, event.getCorrelationId(), event);
 
-            record.headers().add("algo", "sometging".getBytes());
+            record.headers().add("header-1", "something".getBytes());
             logger.info("publishing = " + record);
             producer.send(record);
         }

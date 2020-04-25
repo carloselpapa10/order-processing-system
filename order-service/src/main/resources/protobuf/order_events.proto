@@ -1,0 +1,28 @@
+syntax = "proto3";
+package com.example.protocol.orders.v1;
+message OrdersEnvelope {
+    string correlation_id = 1;
+    // some other metadata
+    oneof payload {
+        OrderCreated order_created = 11;
+        OrderUpdated order_updated = 12;
+        OrderActivated order_activated = 13;
+        OrderCompleted order_completed = 14;
+    }
+}
+message OrderCreated {
+    string id = 1;
+    string first_name = 2;
+    string last_name = 3;
+}
+message OrderUpdated {
+    string id = 1;
+    string first_name = 2;
+    string last_name = 3;
+}
+message OrderActivated {
+    string order_id = 1;
+}
+message OrderCompleted {
+    string order_id = 1;
+}

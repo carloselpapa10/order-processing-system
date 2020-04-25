@@ -1,7 +1,6 @@
 package org.ordersample.orderservice.impl;
 
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
-import io.confluent.kafka.serializers.KafkaAvroDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.ordersample.orderservice.control.EventConsumer;
@@ -9,7 +8,6 @@ import org.ordersample.orderservice.control.EventDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -26,7 +24,7 @@ public class OrderUpdatedConsumer {
     private EventConsumer eventConsumer;
 
     @Autowired
-    private ApplicationEventPublisher applicationEventPublisher;
+    private OrderEventConsumers orderEventConsumers;
 
     @PostConstruct
     private void init() {
@@ -36,22 +34,19 @@ public class OrderUpdatedConsumer {
         kafkaProperties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         kafkaProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         kafkaProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        kafkaProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class.getName());
+        kafkaProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, EventDeserializer.class.getName());
         kafkaProperties.put(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8081");
 
-        //kafkaProperties.put("group.id", "order-consumer-" + UUID.randomUUID());
         kafkaProperties.put("group.id", "order-consumer-1");
         String orderTopic = "order";
 
         eventConsumer = new EventConsumer(kafkaProperties, ev -> {
             logger.info("firing = " + ev);
-            applicationEventPublisher.publishEvent(ev);
-            //events.fire(ev);
+            orderEventConsumers.orderEventHandler(ev);
         }, orderTopic);
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
         executorService.execute(eventConsumer);
-//        mes.execute(eventConsumer);
     }
 
     @PreDestroy
