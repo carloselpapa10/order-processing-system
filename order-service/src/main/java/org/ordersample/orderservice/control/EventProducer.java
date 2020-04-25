@@ -61,6 +61,8 @@ public class EventProducer {
     private void send(GenericRecord... events) {
         for (final GenericRecord event : events) {
             final ProducerRecord<String, GenericRecord> record = new ProducerRecord<>(topic, event.get("id").toString(), event);
+
+            record.headers().add("algo", "sometging".getBytes());
             logger.info("publishing = " + record);
             producer.send(record);
         }

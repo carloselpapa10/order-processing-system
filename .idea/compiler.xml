@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="customer-service" />
-        <module name="invoice-service" />
         <module name="order-service" />
         <module name="domain-info" />
-        <module name="orderview-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
