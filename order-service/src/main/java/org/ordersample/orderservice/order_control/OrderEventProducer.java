@@ -1,7 +1,6 @@
-package org.ordersample.orderservice.control;
+package org.ordersample.orderservice.order_control;
 
 import com.example.protocol.orders.v1.OrderEvents;
-import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -18,12 +17,11 @@ import java.util.UUID;
 import java.util.logging.Logger;
 
 @Component
-public class EventProducer {
+public class OrderEventProducer {
 
-    private static final Logger logger = Logger.getLogger(EventSerializer.class.getName());
+    private static final Logger logger = Logger.getLogger(OrderEventSerializer.class.getName());
 
     private Producer<String, OrderEvents.OrdersEnvelope> producer;
-    private String topic;
 
     @PostConstruct
     private void init() {
@@ -33,21 +31,20 @@ public class EventProducer {
         props.put(ProducerConfig.LINGER_MS_CONFIG, 0);
         props.put(ProducerConfig.BUFFER_MEMORY_CONFIG, 33554432);
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EventSerializer.class.getName());
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, OrderEventSerializer.class.getName());
 
         props.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, UUID.randomUUID().toString());
         //props.put("value.subject.name.strategy", TopicRecordNameStrategy.class.getName());
-        props.setProperty(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://127.0.0.1:8081");
+        props.put("schema.registry.url", "http://localhost:8081");
 
         producer = new KafkaProducer<>(props);
-        topic = "order";
         producer.initTransactions();
     }
 
-    public void publish(OrderEvents.OrdersEnvelope... events) {
+    public void publish(String topic, String id, OrderEvents.OrdersEnvelope... events) {
         try {
             producer.beginTransaction();
-            send(events);
+            send(topic, id, events);
             producer.commitTransaction();
         } catch (ProducerFencedException e) {
             producer.close();
@@ -56,9 +53,9 @@ public class EventProducer {
         }
     }
 
-    private void send(OrderEvents.OrdersEnvelope... events) {
+    private void send(String topic, String id, OrderEvents.OrdersEnvelope... events) {
         for (final OrderEvents.OrdersEnvelope event : events) {
-            final ProducerRecord<String, OrderEvents.OrdersEnvelope> record = new ProducerRecord<>(topic, event.getCorrelationId(), event);
+            final ProducerRecord<String, OrderEvents.OrdersEnvelope> record = new ProducerRecord<>(topic, id, event);
 
             record.headers().add("header-1", "something".getBytes());
             logger.info("publishing = " + record);

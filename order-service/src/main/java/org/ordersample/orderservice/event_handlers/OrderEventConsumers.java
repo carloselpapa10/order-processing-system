@@ -1,4 +1,4 @@
-package org.ordersample.orderservice.impl;
+package org.ordersample.orderservice.event_handlers;
 
 import com.example.protocol.orders.v1.OrderEvents;
 import org.slf4j.Logger;
@@ -11,17 +11,17 @@ public class OrderEventConsumers {
 
     public void orderEventHandler(OrderEvents.OrdersEnvelope ordersEnvelope){
         switch (ordersEnvelope.getPayloadCase()){
-            case ORDER_CREATED:
+            case ORDER_CREATED_EVENT:
                 logger.info("OrderEventConsumers ORDER_CREATED");
                 break;
-            case ORDER_UPDATED:
+            case ORDER_UPDATED_EVENT:
                 logger.info("OrderEventConsumers ORDER_UPDATED");
                 break;
-            case ORDER_COMPLETED:
+            case ORDER_COMPLETED_EVENT:
                 logger.info("OrderEventConsumers ORDER_COMPLETED");
                 break;
-            case ORDER_ACTIVATED:
-                logger.info("OrderEventConsumers ORDER_ACTIVATED");
+            case ORDER_DELETED_EVENT:
+                logger.info("OrderEventConsumers ORDER_DELETED_EVENT");
                 break;
             case PAYLOAD_NOT_SET:
                 logger.info("OrderEventConsumers PAYLOAD_NOT_SET");

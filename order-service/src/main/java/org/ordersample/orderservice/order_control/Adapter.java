@@ -1,4 +1,4 @@
-package org.ordersample.orderservice.control;
+package org.ordersample.orderservice.order_control;
 
 import java.util.Map;
 

@@ -96,6 +96,13 @@
 			<version>${swaggerUIVersion}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.2</version>
+			<!--<optional>true</optional>-->
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -109,13 +116,6 @@
 <!--			<artifactId>mysql-connector-java</artifactId>-->
 <!--			<version>5.1.36</version>-->
 <!--		</dependency>-->
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.2</version>
-			<!--<optional>true</optional>-->
-		</dependency>
 
 		<!-- Micormeter core dependecy  -->
 		<dependency>

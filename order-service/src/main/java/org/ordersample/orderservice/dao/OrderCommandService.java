@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface OrderCommandService {
 
-    void createOrder(OrderDTO orderDTO) throws IOException;
+    void createOrder(OrderDTO orderDTO);
 
     Order findOrder(String id) throws InvalidOrderIdException;
 

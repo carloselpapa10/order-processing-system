@@ -23,7 +23,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud-contract.version>2.1.1.RELEASE</spring-cloud-contract.version>
-		<avro.version>1.9.1</avro.version>
 	</properties>
 
 	<repositories>
@@ -42,30 +41,11 @@
 	</pluginRepositories>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>org.ordersample</groupId>
 			<artifactId>domain-info</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.json.bind/javax.json.bind-api -->
-		<dependency>
-			<groupId>javax.json.bind</groupId>
-			<artifactId>javax.json.bind-api</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.glassfish</groupId>
-			<artifactId>javax.json</artifactId>
-			<version>1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.eclipse</groupId>
-			<artifactId>yasson</artifactId>
-			<version>1.0.1</version>
 		</dependency>
 
 		<dependency>
@@ -74,14 +54,6 @@
 			<version>5.4.1-ccs</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer -->
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-avro-serializer</artifactId>
-			<version>5.4.1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.confluent/kafka-schema-registry-client -->
 		<dependency>
 			<groupId>io.confluent</groupId>
 			<artifactId>kafka-schema-registry-client</artifactId>
@@ -89,29 +61,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>common-utils</artifactId>
-			<version>5.4.1</version>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.11.4</version>
 		</dependency>
 
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>common-config</artifactId>
-			<version>5.4.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.avro</groupId>
-			<artifactId>avro</artifactId>
-			<version>${avro.version}</version>
-		</dependency>
-
-
-		<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
@@ -134,21 +88,6 @@
             <scope>test</scope>
         </dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
-		<dependency>
-			<groupId>com.google.protobuf</groupId>
-			<artifactId>protobuf-java</artifactId>
-			<version>3.11.4</version>
-		</dependency>
-
-
-		<!--		<dependency>-->
-<!--			<groupId>org.springframework.cloud</groupId>-->
-<!--			<artifactId>spring-cloud-starter-contract-verifier</artifactId>-->
-<!--			<version>${spring-cloud-contract.version}</version>-->
-<!--			<scope>test</scope>-->
-<!--		</dependency>-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -162,36 +101,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.avro</groupId>
-				<artifactId>avro-maven-plugin</artifactId>
-				<version>${avro.version}</version>
-				<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>schema</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>${project.basedir}/src/main/resources/avro/</sourceDirectory>
-							<outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.cloud</groupId>-->
-<!--				<artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
-<!--				<version>${spring-cloud-contract.version}</version>-->
-<!--				<extensions>true</extensions>-->
-<!--				<configuration>-->
-<!--					<packageWithBaseClasses>org.ordersample.orderservice</packageWithBaseClasses>-->
-<!--					&lt;!&ndash;<baseClassForTests>-->
-<!--						org.ordersample.orderservice.RestBase-->
-<!--					</baseClassForTests>&ndash;&gt;-->
-<!--				</configuration>-->
-<!--			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

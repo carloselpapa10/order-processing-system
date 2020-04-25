@@ -4,25 +4,26 @@ message OrdersEnvelope {
     string correlation_id = 1;
     // some other metadata
     oneof payload {
-        OrderCreated order_created = 11;
-        OrderUpdated order_updated = 12;
-        OrderActivated order_activated = 13;
-        OrderCompleted order_completed = 14;
+        OrderCreatedEvent order_created_event = 11;
+        OrderUpdatedEvent order_updated_event = 12;
+        OrderDeletedEvent order_deleted_event = 13;
+        OrderCompletedEvent order_completed_event = 14;
     }
 }
-message OrderCreated {
+
+message OrderCreatedEvent {
     string id = 1;
-    string first_name = 2;
-    string last_name = 3;
+    string description = 2;
+    string customerId = 3;
 }
-message OrderUpdated {
+message OrderUpdatedEvent {
     string id = 1;
-    string first_name = 2;
-    string last_name = 3;
+    string description = 2;
+    string customerId = 3;
 }
-message OrderActivated {
+message OrderDeletedEvent {
     string order_id = 1;
 }
-message OrderCompleted {
+message OrderCompletedEvent {
     string order_id = 1;
 }

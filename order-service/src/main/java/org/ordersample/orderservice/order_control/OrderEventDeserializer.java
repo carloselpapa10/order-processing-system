@@ -1,4 +1,4 @@
-package org.ordersample.orderservice.control;
+package org.ordersample.orderservice.order_control;
 
 import com.example.protocol.orders.v1.OrderEvents;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -8,9 +8,9 @@ import org.apache.kafka.common.serialization.Deserializer;
 import java.util.Map;
 import java.util.logging.Logger;
 
-public class EventDeserializer implements Deserializer<OrderEvents.OrdersEnvelope> {
+public class OrderEventDeserializer implements Deserializer<OrderEvents.OrdersEnvelope> {
 
-    private static final Logger logger = Logger.getLogger(EventDeserializer.class.getName());
+    private static final Logger logger = Logger.getLogger(OrderEventDeserializer.class.getName());
 
     @Override
     public void configure(Map<String, ?> configs, boolean isKey) {

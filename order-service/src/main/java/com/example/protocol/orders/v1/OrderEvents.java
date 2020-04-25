@@ -31,64 +31,64 @@ public final class OrderEvents {
         getCorrelationIdBytes();
 
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-     * @return Whether the orderCreated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+     * @return Whether the orderCreatedEvent field is set.
      */
-    boolean hasOrderCreated();
+    boolean hasOrderCreatedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-     * @return The orderCreated.
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+     * @return The orderCreatedEvent.
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderCreated getOrderCreated();
+    com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getOrderCreatedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder getOrderCreatedOrBuilder();
+    com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder getOrderCreatedEventOrBuilder();
 
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-     * @return Whether the orderUpdated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+     * @return Whether the orderUpdatedEvent field is set.
      */
-    boolean hasOrderUpdated();
+    boolean hasOrderUpdatedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-     * @return The orderUpdated.
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+     * @return The orderUpdatedEvent.
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderUpdated getOrderUpdated();
+    com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getOrderUpdatedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder getOrderUpdatedOrBuilder();
+    com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder getOrderUpdatedEventOrBuilder();
 
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-     * @return Whether the orderActivated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+     * @return Whether the orderDeletedEvent field is set.
      */
-    boolean hasOrderActivated();
+    boolean hasOrderDeletedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-     * @return The orderActivated.
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+     * @return The orderDeletedEvent.
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderActivated getOrderActivated();
+    com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getOrderDeletedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder getOrderActivatedOrBuilder();
+    com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder getOrderDeletedEventOrBuilder();
 
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-     * @return Whether the orderCompleted field is set.
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+     * @return Whether the orderCompletedEvent field is set.
      */
-    boolean hasOrderCompleted();
+    boolean hasOrderCompletedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-     * @return The orderCompleted.
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+     * @return The orderCompletedEvent.
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderCompleted getOrderCompleted();
+    com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getOrderCompletedEvent();
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
      */
-    com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder getOrderCompletedOrBuilder();
+    com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder getOrderCompletedEventOrBuilder();
 
     public com.example.protocol.orders.v1.OrderEvents.OrdersEnvelope.PayloadCase getPayloadCase();
   }
@@ -145,56 +145,56 @@ public final class OrderEvents {
               break;
             }
             case 90: {
-              com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder subBuilder = null;
+              com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder subBuilder = null;
               if (payloadCase_ == 11) {
-                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_).toBuilder();
+                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderCreated.parser(), extensionRegistry);
+                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_);
+                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 11;
               break;
             }
             case 98: {
-              com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder subBuilder = null;
+              com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder subBuilder = null;
               if (payloadCase_ == 12) {
-                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_).toBuilder();
+                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderUpdated.parser(), extensionRegistry);
+                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_);
+                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 12;
               break;
             }
             case 106: {
-              com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder subBuilder = null;
+              com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder subBuilder = null;
               if (payloadCase_ == 13) {
-                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_).toBuilder();
+                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderActivated.parser(), extensionRegistry);
+                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_);
+                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 13;
               break;
             }
             case 114: {
-              com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder subBuilder = null;
+              com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder subBuilder = null;
               if (payloadCase_ == 14) {
-                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_).toBuilder();
+                subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_).toBuilder();
               }
               payload_ =
-                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderCompleted.parser(), extensionRegistry);
+                  input.readMessage(com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_);
+                subBuilder.mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_);
                 payload_ = subBuilder.buildPartial();
               }
               payloadCase_ = 14;
@@ -237,10 +237,10 @@ public final class OrderEvents {
     public enum PayloadCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      ORDER_CREATED(11),
-      ORDER_UPDATED(12),
-      ORDER_ACTIVATED(13),
-      ORDER_COMPLETED(14),
+      ORDER_CREATED_EVENT(11),
+      ORDER_UPDATED_EVENT(12),
+      ORDER_DELETED_EVENT(13),
+      ORDER_COMPLETED_EVENT(14),
       PAYLOAD_NOT_SET(0);
       private final int value;
       private PayloadCase(int value) {
@@ -258,10 +258,10 @@ public final class OrderEvents {
 
       public static PayloadCase forNumber(int value) {
         switch (value) {
-          case 11: return ORDER_CREATED;
-          case 12: return ORDER_UPDATED;
-          case 13: return ORDER_ACTIVATED;
-          case 14: return ORDER_COMPLETED;
+          case 11: return ORDER_CREATED_EVENT;
+          case 12: return ORDER_UPDATED_EVENT;
+          case 13: return ORDER_DELETED_EVENT;
+          case 14: return ORDER_COMPLETED_EVENT;
           case 0: return PAYLOAD_NOT_SET;
           default: return null;
         }
@@ -313,116 +313,116 @@ public final class OrderEvents {
       }
     }
 
-    public static final int ORDER_CREATED_FIELD_NUMBER = 11;
+    public static final int ORDER_CREATED_EVENT_FIELD_NUMBER = 11;
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-     * @return Whether the orderCreated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+     * @return Whether the orderCreatedEvent field is set.
      */
-    public boolean hasOrderCreated() {
+    public boolean hasOrderCreatedEvent() {
       return payloadCase_ == 11;
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-     * @return The orderCreated.
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+     * @return The orderCreatedEvent.
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderCreated getOrderCreated() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getOrderCreatedEvent() {
       if (payloadCase_ == 11) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+     * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder getOrderCreatedOrBuilder() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder getOrderCreatedEventOrBuilder() {
       if (payloadCase_ == 11) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
     }
 
-    public static final int ORDER_UPDATED_FIELD_NUMBER = 12;
+    public static final int ORDER_UPDATED_EVENT_FIELD_NUMBER = 12;
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-     * @return Whether the orderUpdated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+     * @return Whether the orderUpdatedEvent field is set.
      */
-    public boolean hasOrderUpdated() {
+    public boolean hasOrderUpdatedEvent() {
       return payloadCase_ == 12;
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-     * @return The orderUpdated.
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+     * @return The orderUpdatedEvent.
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderUpdated getOrderUpdated() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getOrderUpdatedEvent() {
       if (payloadCase_ == 12) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+     * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder getOrderUpdatedOrBuilder() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder getOrderUpdatedEventOrBuilder() {
       if (payloadCase_ == 12) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
     }
 
-    public static final int ORDER_ACTIVATED_FIELD_NUMBER = 13;
+    public static final int ORDER_DELETED_EVENT_FIELD_NUMBER = 13;
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-     * @return Whether the orderActivated field is set.
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+     * @return Whether the orderDeletedEvent field is set.
      */
-    public boolean hasOrderActivated() {
+    public boolean hasOrderDeletedEvent() {
       return payloadCase_ == 13;
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-     * @return The orderActivated.
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+     * @return The orderDeletedEvent.
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderActivated getOrderActivated() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getOrderDeletedEvent() {
       if (payloadCase_ == 13) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+     * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder getOrderActivatedOrBuilder() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder getOrderDeletedEventOrBuilder() {
       if (payloadCase_ == 13) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
     }
 
-    public static final int ORDER_COMPLETED_FIELD_NUMBER = 14;
+    public static final int ORDER_COMPLETED_EVENT_FIELD_NUMBER = 14;
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-     * @return Whether the orderCompleted field is set.
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+     * @return Whether the orderCompletedEvent field is set.
      */
-    public boolean hasOrderCompleted() {
+    public boolean hasOrderCompletedEvent() {
       return payloadCase_ == 14;
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-     * @return The orderCompleted.
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+     * @return The orderCompletedEvent.
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderCompleted getOrderCompleted() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getOrderCompletedEvent() {
       if (payloadCase_ == 14) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
     }
     /**
-     * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+     * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
      */
-    public com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder getOrderCompletedOrBuilder() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder getOrderCompletedEventOrBuilder() {
       if (payloadCase_ == 14) {
-         return (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_;
+         return (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_;
       }
-      return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+      return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -443,16 +443,16 @@ public final class OrderEvents {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, correlationId_);
       }
       if (payloadCase_ == 11) {
-        output.writeMessage(11, (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_);
+        output.writeMessage(11, (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_);
       }
       if (payloadCase_ == 12) {
-        output.writeMessage(12, (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_);
+        output.writeMessage(12, (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_);
       }
       if (payloadCase_ == 13) {
-        output.writeMessage(13, (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_);
+        output.writeMessage(13, (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_);
       }
       if (payloadCase_ == 14) {
-        output.writeMessage(14, (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_);
+        output.writeMessage(14, (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_);
       }
       unknownFields.writeTo(output);
     }
@@ -468,19 +468,19 @@ public final class OrderEvents {
       }
       if (payloadCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_);
+          .computeMessageSize(11, (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_);
       }
       if (payloadCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_);
+          .computeMessageSize(12, (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_);
       }
       if (payloadCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_);
+          .computeMessageSize(13, (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_);
       }
       if (payloadCase_ == 14) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_);
+          .computeMessageSize(14, (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -502,20 +502,20 @@ public final class OrderEvents {
       if (!getPayloadCase().equals(other.getPayloadCase())) return false;
       switch (payloadCase_) {
         case 11:
-          if (!getOrderCreated()
-              .equals(other.getOrderCreated())) return false;
+          if (!getOrderCreatedEvent()
+              .equals(other.getOrderCreatedEvent())) return false;
           break;
         case 12:
-          if (!getOrderUpdated()
-              .equals(other.getOrderUpdated())) return false;
+          if (!getOrderUpdatedEvent()
+              .equals(other.getOrderUpdatedEvent())) return false;
           break;
         case 13:
-          if (!getOrderActivated()
-              .equals(other.getOrderActivated())) return false;
+          if (!getOrderDeletedEvent()
+              .equals(other.getOrderDeletedEvent())) return false;
           break;
         case 14:
-          if (!getOrderCompleted()
-              .equals(other.getOrderCompleted())) return false;
+          if (!getOrderCompletedEvent()
+              .equals(other.getOrderCompletedEvent())) return false;
           break;
         case 0:
         default:
@@ -535,20 +535,20 @@ public final class OrderEvents {
       hash = (53 * hash) + getCorrelationId().hashCode();
       switch (payloadCase_) {
         case 11:
-          hash = (37 * hash) + ORDER_CREATED_FIELD_NUMBER;
-          hash = (53 * hash) + getOrderCreated().hashCode();
+          hash = (37 * hash) + ORDER_CREATED_EVENT_FIELD_NUMBER;
+          hash = (53 * hash) + getOrderCreatedEvent().hashCode();
           break;
         case 12:
-          hash = (37 * hash) + ORDER_UPDATED_FIELD_NUMBER;
-          hash = (53 * hash) + getOrderUpdated().hashCode();
+          hash = (37 * hash) + ORDER_UPDATED_EVENT_FIELD_NUMBER;
+          hash = (53 * hash) + getOrderUpdatedEvent().hashCode();
           break;
         case 13:
-          hash = (37 * hash) + ORDER_ACTIVATED_FIELD_NUMBER;
-          hash = (53 * hash) + getOrderActivated().hashCode();
+          hash = (37 * hash) + ORDER_DELETED_EVENT_FIELD_NUMBER;
+          hash = (53 * hash) + getOrderDeletedEvent().hashCode();
           break;
         case 14:
-          hash = (37 * hash) + ORDER_COMPLETED_FIELD_NUMBER;
-          hash = (53 * hash) + getOrderCompleted().hashCode();
+          hash = (37 * hash) + ORDER_COMPLETED_EVENT_FIELD_NUMBER;
+          hash = (53 * hash) + getOrderCompletedEvent().hashCode();
           break;
         case 0:
         default:
@@ -718,31 +718,31 @@ public final class OrderEvents {
         com.example.protocol.orders.v1.OrderEvents.OrdersEnvelope result = new com.example.protocol.orders.v1.OrderEvents.OrdersEnvelope(this);
         result.correlationId_ = correlationId_;
         if (payloadCase_ == 11) {
-          if (orderCreatedBuilder_ == null) {
+          if (orderCreatedEventBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = orderCreatedBuilder_.build();
+            result.payload_ = orderCreatedEventBuilder_.build();
           }
         }
         if (payloadCase_ == 12) {
-          if (orderUpdatedBuilder_ == null) {
+          if (orderUpdatedEventBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = orderUpdatedBuilder_.build();
+            result.payload_ = orderUpdatedEventBuilder_.build();
           }
         }
         if (payloadCase_ == 13) {
-          if (orderActivatedBuilder_ == null) {
+          if (orderDeletedEventBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = orderActivatedBuilder_.build();
+            result.payload_ = orderDeletedEventBuilder_.build();
           }
         }
         if (payloadCase_ == 14) {
-          if (orderCompletedBuilder_ == null) {
+          if (orderCompletedEventBuilder_ == null) {
             result.payload_ = payload_;
           } else {
-            result.payload_ = orderCompletedBuilder_.build();
+            result.payload_ = orderCompletedEventBuilder_.build();
           }
         }
         result.payloadCase_ = payloadCase_;
@@ -799,20 +799,20 @@ public final class OrderEvents {
           onChanged();
         }
         switch (other.getPayloadCase()) {
-          case ORDER_CREATED: {
-            mergeOrderCreated(other.getOrderCreated());
+          case ORDER_CREATED_EVENT: {
+            mergeOrderCreatedEvent(other.getOrderCreatedEvent());
             break;
           }
-          case ORDER_UPDATED: {
-            mergeOrderUpdated(other.getOrderUpdated());
+          case ORDER_UPDATED_EVENT: {
+            mergeOrderUpdatedEvent(other.getOrderUpdatedEvent());
             break;
           }
-          case ORDER_ACTIVATED: {
-            mergeOrderActivated(other.getOrderActivated());
+          case ORDER_DELETED_EVENT: {
+            mergeOrderDeletedEvent(other.getOrderDeletedEvent());
             break;
           }
-          case ORDER_COMPLETED: {
-            mergeOrderCompleted(other.getOrderCompleted());
+          case ORDER_COMPLETED_EVENT: {
+            mergeOrderCompletedEvent(other.getOrderCompletedEvent());
             break;
           }
           case PAYLOAD_NOT_SET: {
@@ -940,69 +940,69 @@ public final class OrderEvents {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderCreated, com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder> orderCreatedBuilder_;
+          com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder> orderCreatedEventBuilder_;
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-       * @return Whether the orderCreated field is set.
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+       * @return Whether the orderCreatedEvent field is set.
        */
-      public boolean hasOrderCreated() {
+      public boolean hasOrderCreatedEvent() {
         return payloadCase_ == 11;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
-       * @return The orderCreated.
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
+       * @return The orderCreatedEvent.
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreated getOrderCreated() {
-        if (orderCreatedBuilder_ == null) {
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getOrderCreatedEvent() {
+        if (orderCreatedEventBuilder_ == null) {
           if (payloadCase_ == 11) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
         } else {
           if (payloadCase_ == 11) {
-            return orderCreatedBuilder_.getMessage();
+            return orderCreatedEventBuilder_.getMessage();
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public Builder setOrderCreated(com.example.protocol.orders.v1.OrderEvents.OrderCreated value) {
-        if (orderCreatedBuilder_ == null) {
+      public Builder setOrderCreatedEvent(com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent value) {
+        if (orderCreatedEventBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          orderCreatedBuilder_.setMessage(value);
+          orderCreatedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public Builder setOrderCreated(
-          com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder builderForValue) {
-        if (orderCreatedBuilder_ == null) {
+      public Builder setOrderCreatedEvent(
+          com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder builderForValue) {
+        if (orderCreatedEventBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          orderCreatedBuilder_.setMessage(builderForValue.build());
+          orderCreatedEventBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public Builder mergeOrderCreated(com.example.protocol.orders.v1.OrderEvents.OrderCreated value) {
-        if (orderCreatedBuilder_ == null) {
+      public Builder mergeOrderCreatedEvent(com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent value) {
+        if (orderCreatedEventBuilder_ == null) {
           if (payloadCase_ == 11 &&
-              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance()) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCreated.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_)
+              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance()) {
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -1010,18 +1010,18 @@ public final class OrderEvents {
           onChanged();
         } else {
           if (payloadCase_ == 11) {
-            orderCreatedBuilder_.mergeFrom(value);
+            orderCreatedEventBuilder_.mergeFrom(value);
           }
-          orderCreatedBuilder_.setMessage(value);
+          orderCreatedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 11;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public Builder clearOrderCreated() {
-        if (orderCreatedBuilder_ == null) {
+      public Builder clearOrderCreatedEvent() {
+        if (orderCreatedEventBuilder_ == null) {
           if (payloadCase_ == 11) {
             payloadCase_ = 0;
             payload_ = null;
@@ -1032,115 +1032,115 @@ public final class OrderEvents {
             payloadCase_ = 0;
             payload_ = null;
           }
-          orderCreatedBuilder_.clear();
+          orderCreatedEventBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder getOrderCreatedBuilder() {
-        return getOrderCreatedFieldBuilder().getBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder getOrderCreatedEventBuilder() {
+        return getOrderCreatedEventFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder getOrderCreatedOrBuilder() {
-        if ((payloadCase_ == 11) && (orderCreatedBuilder_ != null)) {
-          return orderCreatedBuilder_.getMessageOrBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder getOrderCreatedEventOrBuilder() {
+        if ((payloadCase_ == 11) && (orderCreatedEventBuilder_ != null)) {
+          return orderCreatedEventBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 11) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCreated order_created = 11;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCreatedEvent order_created_event = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderCreated, com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder> 
-          getOrderCreatedFieldBuilder() {
-        if (orderCreatedBuilder_ == null) {
+          com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder> 
+          getOrderCreatedEventFieldBuilder() {
+        if (orderCreatedEventBuilder_ == null) {
           if (!(payloadCase_ == 11)) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
           }
-          orderCreatedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.example.protocol.orders.v1.OrderEvents.OrderCreated, com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder>(
-                  (com.example.protocol.orders.v1.OrderEvents.OrderCreated) payload_,
+          orderCreatedEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder>(
+                  (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 11;
         onChanged();;
-        return orderCreatedBuilder_;
+        return orderCreatedEventBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderUpdated, com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder> orderUpdatedBuilder_;
+          com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder> orderUpdatedEventBuilder_;
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-       * @return Whether the orderUpdated field is set.
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+       * @return Whether the orderUpdatedEvent field is set.
        */
-      public boolean hasOrderUpdated() {
+      public boolean hasOrderUpdatedEvent() {
         return payloadCase_ == 12;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
-       * @return The orderUpdated.
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
+       * @return The orderUpdatedEvent.
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdated getOrderUpdated() {
-        if (orderUpdatedBuilder_ == null) {
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getOrderUpdatedEvent() {
+        if (orderUpdatedEventBuilder_ == null) {
           if (payloadCase_ == 12) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
         } else {
           if (payloadCase_ == 12) {
-            return orderUpdatedBuilder_.getMessage();
+            return orderUpdatedEventBuilder_.getMessage();
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public Builder setOrderUpdated(com.example.protocol.orders.v1.OrderEvents.OrderUpdated value) {
-        if (orderUpdatedBuilder_ == null) {
+      public Builder setOrderUpdatedEvent(com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent value) {
+        if (orderUpdatedEventBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          orderUpdatedBuilder_.setMessage(value);
+          orderUpdatedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public Builder setOrderUpdated(
-          com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder builderForValue) {
-        if (orderUpdatedBuilder_ == null) {
+      public Builder setOrderUpdatedEvent(
+          com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder builderForValue) {
+        if (orderUpdatedEventBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          orderUpdatedBuilder_.setMessage(builderForValue.build());
+          orderUpdatedEventBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public Builder mergeOrderUpdated(com.example.protocol.orders.v1.OrderEvents.OrderUpdated value) {
-        if (orderUpdatedBuilder_ == null) {
+      public Builder mergeOrderUpdatedEvent(com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent value) {
+        if (orderUpdatedEventBuilder_ == null) {
           if (payloadCase_ == 12 &&
-              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance()) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderUpdated.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_)
+              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance()) {
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -1148,18 +1148,18 @@ public final class OrderEvents {
           onChanged();
         } else {
           if (payloadCase_ == 12) {
-            orderUpdatedBuilder_.mergeFrom(value);
+            orderUpdatedEventBuilder_.mergeFrom(value);
           }
-          orderUpdatedBuilder_.setMessage(value);
+          orderUpdatedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 12;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public Builder clearOrderUpdated() {
-        if (orderUpdatedBuilder_ == null) {
+      public Builder clearOrderUpdatedEvent() {
+        if (orderUpdatedEventBuilder_ == null) {
           if (payloadCase_ == 12) {
             payloadCase_ = 0;
             payload_ = null;
@@ -1170,115 +1170,115 @@ public final class OrderEvents {
             payloadCase_ = 0;
             payload_ = null;
           }
-          orderUpdatedBuilder_.clear();
+          orderUpdatedEventBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder getOrderUpdatedBuilder() {
-        return getOrderUpdatedFieldBuilder().getBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder getOrderUpdatedEventBuilder() {
+        return getOrderUpdatedEventFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder getOrderUpdatedOrBuilder() {
-        if ((payloadCase_ == 12) && (orderUpdatedBuilder_ != null)) {
-          return orderUpdatedBuilder_.getMessageOrBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder getOrderUpdatedEventOrBuilder() {
+        if ((payloadCase_ == 12) && (orderUpdatedEventBuilder_ != null)) {
+          return orderUpdatedEventBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 12) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderUpdated order_updated = 12;</code>
+       * <code>.com.example.protocol.orders.v1.OrderUpdatedEvent order_updated_event = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderUpdated, com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder> 
-          getOrderUpdatedFieldBuilder() {
-        if (orderUpdatedBuilder_ == null) {
+          com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder> 
+          getOrderUpdatedEventFieldBuilder() {
+        if (orderUpdatedEventBuilder_ == null) {
           if (!(payloadCase_ == 12)) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
           }
-          orderUpdatedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.example.protocol.orders.v1.OrderEvents.OrderUpdated, com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder>(
-                  (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) payload_,
+          orderUpdatedEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder>(
+                  (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 12;
         onChanged();;
-        return orderUpdatedBuilder_;
+        return orderUpdatedEventBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderActivated, com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder> orderActivatedBuilder_;
+          com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder> orderDeletedEventBuilder_;
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-       * @return Whether the orderActivated field is set.
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+       * @return Whether the orderDeletedEvent field is set.
        */
-      public boolean hasOrderActivated() {
+      public boolean hasOrderDeletedEvent() {
         return payloadCase_ == 13;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
-       * @return The orderActivated.
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
+       * @return The orderDeletedEvent.
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivated getOrderActivated() {
-        if (orderActivatedBuilder_ == null) {
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getOrderDeletedEvent() {
+        if (orderDeletedEventBuilder_ == null) {
           if (payloadCase_ == 13) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
         } else {
           if (payloadCase_ == 13) {
-            return orderActivatedBuilder_.getMessage();
+            return orderDeletedEventBuilder_.getMessage();
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public Builder setOrderActivated(com.example.protocol.orders.v1.OrderEvents.OrderActivated value) {
-        if (orderActivatedBuilder_ == null) {
+      public Builder setOrderDeletedEvent(com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent value) {
+        if (orderDeletedEventBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          orderActivatedBuilder_.setMessage(value);
+          orderDeletedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public Builder setOrderActivated(
-          com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder builderForValue) {
-        if (orderActivatedBuilder_ == null) {
+      public Builder setOrderDeletedEvent(
+          com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder builderForValue) {
+        if (orderDeletedEventBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          orderActivatedBuilder_.setMessage(builderForValue.build());
+          orderDeletedEventBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public Builder mergeOrderActivated(com.example.protocol.orders.v1.OrderEvents.OrderActivated value) {
-        if (orderActivatedBuilder_ == null) {
+      public Builder mergeOrderDeletedEvent(com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent value) {
+        if (orderDeletedEventBuilder_ == null) {
           if (payloadCase_ == 13 &&
-              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance()) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderActivated.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_)
+              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance()) {
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -1286,18 +1286,18 @@ public final class OrderEvents {
           onChanged();
         } else {
           if (payloadCase_ == 13) {
-            orderActivatedBuilder_.mergeFrom(value);
+            orderDeletedEventBuilder_.mergeFrom(value);
           }
-          orderActivatedBuilder_.setMessage(value);
+          orderDeletedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 13;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public Builder clearOrderActivated() {
-        if (orderActivatedBuilder_ == null) {
+      public Builder clearOrderDeletedEvent() {
+        if (orderDeletedEventBuilder_ == null) {
           if (payloadCase_ == 13) {
             payloadCase_ = 0;
             payload_ = null;
@@ -1308,115 +1308,115 @@ public final class OrderEvents {
             payloadCase_ = 0;
             payload_ = null;
           }
-          orderActivatedBuilder_.clear();
+          orderDeletedEventBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder getOrderActivatedBuilder() {
-        return getOrderActivatedFieldBuilder().getBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder getOrderDeletedEventBuilder() {
+        return getOrderDeletedEventFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder getOrderActivatedOrBuilder() {
-        if ((payloadCase_ == 13) && (orderActivatedBuilder_ != null)) {
-          return orderActivatedBuilder_.getMessageOrBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder getOrderDeletedEventOrBuilder() {
+        if ((payloadCase_ == 13) && (orderDeletedEventBuilder_ != null)) {
+          return orderDeletedEventBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 13) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderActivated order_activated = 13;</code>
+       * <code>.com.example.protocol.orders.v1.OrderDeletedEvent order_deleted_event = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderActivated, com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder> 
-          getOrderActivatedFieldBuilder() {
-        if (orderActivatedBuilder_ == null) {
+          com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder> 
+          getOrderDeletedEventFieldBuilder() {
+        if (orderDeletedEventBuilder_ == null) {
           if (!(payloadCase_ == 13)) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
           }
-          orderActivatedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.example.protocol.orders.v1.OrderEvents.OrderActivated, com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder, com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder>(
-                  (com.example.protocol.orders.v1.OrderEvents.OrderActivated) payload_,
+          orderDeletedEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder>(
+                  (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 13;
         onChanged();;
-        return orderActivatedBuilder_;
+        return orderDeletedEventBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderCompleted, com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder> orderCompletedBuilder_;
+          com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder> orderCompletedEventBuilder_;
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-       * @return Whether the orderCompleted field is set.
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+       * @return Whether the orderCompletedEvent field is set.
        */
-      public boolean hasOrderCompleted() {
+      public boolean hasOrderCompletedEvent() {
         return payloadCase_ == 14;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
-       * @return The orderCompleted.
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
+       * @return The orderCompletedEvent.
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompleted getOrderCompleted() {
-        if (orderCompletedBuilder_ == null) {
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getOrderCompletedEvent() {
+        if (orderCompletedEventBuilder_ == null) {
           if (payloadCase_ == 14) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
         } else {
           if (payloadCase_ == 14) {
-            return orderCompletedBuilder_.getMessage();
+            return orderCompletedEventBuilder_.getMessage();
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public Builder setOrderCompleted(com.example.protocol.orders.v1.OrderEvents.OrderCompleted value) {
-        if (orderCompletedBuilder_ == null) {
+      public Builder setOrderCompletedEvent(com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent value) {
+        if (orderCompletedEventBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           payload_ = value;
           onChanged();
         } else {
-          orderCompletedBuilder_.setMessage(value);
+          orderCompletedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 14;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public Builder setOrderCompleted(
-          com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder builderForValue) {
-        if (orderCompletedBuilder_ == null) {
+      public Builder setOrderCompletedEvent(
+          com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder builderForValue) {
+        if (orderCompletedEventBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
         } else {
-          orderCompletedBuilder_.setMessage(builderForValue.build());
+          orderCompletedEventBuilder_.setMessage(builderForValue.build());
         }
         payloadCase_ = 14;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public Builder mergeOrderCompleted(com.example.protocol.orders.v1.OrderEvents.OrderCompleted value) {
-        if (orderCompletedBuilder_ == null) {
+      public Builder mergeOrderCompletedEvent(com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent value) {
+        if (orderCompletedEventBuilder_ == null) {
           if (payloadCase_ == 14 &&
-              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance()) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCompleted.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_)
+              payload_ != com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance()) {
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.newBuilder((com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_)
                 .mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
@@ -1424,18 +1424,18 @@ public final class OrderEvents {
           onChanged();
         } else {
           if (payloadCase_ == 14) {
-            orderCompletedBuilder_.mergeFrom(value);
+            orderCompletedEventBuilder_.mergeFrom(value);
           }
-          orderCompletedBuilder_.setMessage(value);
+          orderCompletedEventBuilder_.setMessage(value);
         }
         payloadCase_ = 14;
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public Builder clearOrderCompleted() {
-        if (orderCompletedBuilder_ == null) {
+      public Builder clearOrderCompletedEvent() {
+        if (orderCompletedEventBuilder_ == null) {
           if (payloadCase_ == 14) {
             payloadCase_ = 0;
             payload_ = null;
@@ -1446,49 +1446,49 @@ public final class OrderEvents {
             payloadCase_ = 0;
             payload_ = null;
           }
-          orderCompletedBuilder_.clear();
+          orderCompletedEventBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder getOrderCompletedBuilder() {
-        return getOrderCompletedFieldBuilder().getBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder getOrderCompletedEventBuilder() {
+        return getOrderCompletedEventFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder getOrderCompletedOrBuilder() {
-        if ((payloadCase_ == 14) && (orderCompletedBuilder_ != null)) {
-          return orderCompletedBuilder_.getMessageOrBuilder();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder getOrderCompletedEventOrBuilder() {
+        if ((payloadCase_ == 14) && (orderCompletedEventBuilder_ != null)) {
+          return orderCompletedEventBuilder_.getMessageOrBuilder();
         } else {
           if (payloadCase_ == 14) {
-            return (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_;
+            return (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_;
           }
-          return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+          return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
         }
       }
       /**
-       * <code>.com.example.protocol.orders.v1.OrderCompleted order_completed = 14;</code>
+       * <code>.com.example.protocol.orders.v1.OrderCompletedEvent order_completed_event = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.protocol.orders.v1.OrderEvents.OrderCompleted, com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder> 
-          getOrderCompletedFieldBuilder() {
-        if (orderCompletedBuilder_ == null) {
+          com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder> 
+          getOrderCompletedEventFieldBuilder() {
+        if (orderCompletedEventBuilder_ == null) {
           if (!(payloadCase_ == 14)) {
-            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+            payload_ = com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
           }
-          orderCompletedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.example.protocol.orders.v1.OrderEvents.OrderCompleted, com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder>(
-                  (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) payload_,
+          orderCompletedEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder>(
+                  (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_,
                   getParentForChildren(),
                   isClean());
           payload_ = null;
         }
         payloadCase_ = 14;
         onChanged();;
-        return orderCompletedBuilder_;
+        return orderCompletedEventBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1543,8 +1543,8 @@ public final class OrderEvents {
 
   }
 
-  public interface OrderCreatedOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderCreated)
+  public interface OrderCreatedEventOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderCreatedEvent)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1560,52 +1560,52 @@ public final class OrderEvents {
         getIdBytes();
 
     /**
-     * <code>string first_name = 2;</code>
-     * @return The firstName.
+     * <code>string description = 2;</code>
+     * @return The description.
      */
-    java.lang.String getFirstName();
+    java.lang.String getDescription();
     /**
-     * <code>string first_name = 2;</code>
-     * @return The bytes for firstName.
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
      */
     com.google.protobuf.ByteString
-        getFirstNameBytes();
+        getDescriptionBytes();
 
     /**
-     * <code>string last_name = 3;</code>
-     * @return The lastName.
+     * <code>string customerId = 3;</code>
+     * @return The customerId.
      */
-    java.lang.String getLastName();
+    java.lang.String getCustomerId();
     /**
-     * <code>string last_name = 3;</code>
-     * @return The bytes for lastName.
+     * <code>string customerId = 3;</code>
+     * @return The bytes for customerId.
      */
     com.google.protobuf.ByteString
-        getLastNameBytes();
+        getCustomerIdBytes();
   }
   /**
-   * Protobuf type {@code com.example.protocol.orders.v1.OrderCreated}
+   * Protobuf type {@code com.example.protocol.orders.v1.OrderCreatedEvent}
    */
-  public  static final class OrderCreated extends
+  public  static final class OrderCreatedEvent extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderCreated)
-      OrderCreatedOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderCreatedEvent)
+      OrderCreatedEventOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use OrderCreated.newBuilder() to construct.
-    private OrderCreated(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use OrderCreatedEvent.newBuilder() to construct.
+    private OrderCreatedEvent(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private OrderCreated() {
+    private OrderCreatedEvent() {
       id_ = "";
-      firstName_ = "";
-      lastName_ = "";
+      description_ = "";
+      customerId_ = "";
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new OrderCreated();
+      return new OrderCreatedEvent();
     }
 
     @java.lang.Override
@@ -1613,7 +1613,7 @@ public final class OrderEvents {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OrderCreated(
+    private OrderCreatedEvent(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1640,13 +1640,13 @@ public final class OrderEvents {
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              firstName_ = s;
+              description_ = s;
               break;
             }
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              lastName_ = s;
+              customerId_ = s;
               break;
             }
             default: {
@@ -1670,15 +1670,15 @@ public final class OrderEvents {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor;
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreated_fieldAccessorTable
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.protocol.orders.v1.OrderEvents.OrderCreated.class, com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder.class);
+              com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -1717,72 +1717,72 @@ public final class OrderEvents {
       }
     }
 
-    public static final int FIRST_NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object firstName_;
+    public static final int DESCRIPTION_FIELD_NUMBER = 2;
+    private volatile java.lang.Object description_;
     /**
-     * <code>string first_name = 2;</code>
-     * @return The firstName.
+     * <code>string description = 2;</code>
+     * @return The description.
      */
-    public java.lang.String getFirstName() {
-      java.lang.Object ref = firstName_;
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        firstName_ = s;
+        description_ = s;
         return s;
       }
     }
     /**
-     * <code>string first_name = 2;</code>
-     * @return The bytes for firstName.
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
-        getFirstNameBytes() {
-      java.lang.Object ref = firstName_;
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        firstName_ = b;
+        description_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int LAST_NAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object lastName_;
+    public static final int CUSTOMERID_FIELD_NUMBER = 3;
+    private volatile java.lang.Object customerId_;
     /**
-     * <code>string last_name = 3;</code>
-     * @return The lastName.
+     * <code>string customerId = 3;</code>
+     * @return The customerId.
      */
-    public java.lang.String getLastName() {
-      java.lang.Object ref = lastName_;
+    public java.lang.String getCustomerId() {
+      java.lang.Object ref = customerId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lastName_ = s;
+        customerId_ = s;
         return s;
       }
     }
     /**
-     * <code>string last_name = 3;</code>
-     * @return The bytes for lastName.
+     * <code>string customerId = 3;</code>
+     * @return The bytes for customerId.
      */
     public com.google.protobuf.ByteString
-        getLastNameBytes() {
-      java.lang.Object ref = lastName_;
+        getCustomerIdBytes() {
+      java.lang.Object ref = customerId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lastName_ = b;
+        customerId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1806,11 +1806,11 @@ public final class OrderEvents {
       if (!getIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
       }
-      if (!getFirstNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, firstName_);
+      if (!getDescriptionBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, description_);
       }
-      if (!getLastNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, lastName_);
+      if (!getCustomerIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, customerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -1824,11 +1824,11 @@ public final class OrderEvents {
       if (!getIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
       }
-      if (!getFirstNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, firstName_);
+      if (!getDescriptionBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, description_);
       }
-      if (!getLastNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, lastName_);
+      if (!getCustomerIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, customerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1840,17 +1840,17 @@ public final class OrderEvents {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderCreated)) {
+      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent)) {
         return super.equals(obj);
       }
-      com.example.protocol.orders.v1.OrderEvents.OrderCreated other = (com.example.protocol.orders.v1.OrderEvents.OrderCreated) obj;
+      com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent other = (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
-      if (!getFirstName()
-          .equals(other.getFirstName())) return false;
-      if (!getLastName()
-          .equals(other.getLastName())) return false;
+      if (!getDescription()
+          .equals(other.getDescription())) return false;
+      if (!getCustomerId()
+          .equals(other.getCustomerId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1864,78 +1864,78 @@ public final class OrderEvents {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId().hashCode();
-      hash = (37 * hash) + FIRST_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getFirstName().hashCode();
-      hash = (37 * hash) + LAST_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastName().hashCode();
+      hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
+      hash = (53 * hash) + getDescription().hashCode();
+      hash = (37 * hash) + CUSTOMERID_FIELD_NUMBER;
+      hash = (53 * hash) + getCustomerId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(byte[] data)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseDelimitedFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1948,7 +1948,7 @@ public final class OrderEvents {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderCreated prototype) {
+    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1964,26 +1964,26 @@ public final class OrderEvents {
       return builder;
     }
     /**
-     * Protobuf type {@code com.example.protocol.orders.v1.OrderCreated}
+     * Protobuf type {@code com.example.protocol.orders.v1.OrderCreatedEvent}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderCreated)
-        com.example.protocol.orders.v1.OrderEvents.OrderCreatedOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderCreatedEvent)
+        com.example.protocol.orders.v1.OrderEvents.OrderCreatedEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreated_fieldAccessorTable
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.protocol.orders.v1.OrderEvents.OrderCreated.class, com.example.protocol.orders.v1.OrderEvents.OrderCreated.Builder.class);
+                com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.Builder.class);
       }
 
-      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderCreated.newBuilder()
+      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2003,9 +2003,9 @@ public final class OrderEvents {
         super.clear();
         id_ = "";
 
-        firstName_ = "";
+        description_ = "";
 
-        lastName_ = "";
+        customerId_ = "";
 
         return this;
       }
@@ -2013,17 +2013,17 @@ public final class OrderEvents {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor;
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreated getDefaultInstanceForType() {
-        return com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getDefaultInstanceForType() {
+        return com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreated build() {
-        com.example.protocol.orders.v1.OrderEvents.OrderCreated result = buildPartial();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent build() {
+        com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2031,11 +2031,11 @@ public final class OrderEvents {
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCreated buildPartial() {
-        com.example.protocol.orders.v1.OrderEvents.OrderCreated result = new com.example.protocol.orders.v1.OrderEvents.OrderCreated(this);
+      public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent buildPartial() {
+        com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent result = new com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent(this);
         result.id_ = id_;
-        result.firstName_ = firstName_;
-        result.lastName_ = lastName_;
+        result.description_ = description_;
+        result.customerId_ = customerId_;
         onBuilt();
         return result;
       }
@@ -2074,26 +2074,26 @@ public final class OrderEvents {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderCreated) {
-          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCreated)other);
+        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) {
+          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderCreated other) {
-        if (other == com.example.protocol.orders.v1.OrderEvents.OrderCreated.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent other) {
+        if (other == com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           onChanged();
         }
-        if (!other.getFirstName().isEmpty()) {
-          firstName_ = other.firstName_;
+        if (!other.getDescription().isEmpty()) {
+          description_ = other.description_;
           onChanged();
         }
-        if (!other.getLastName().isEmpty()) {
-          lastName_ = other.lastName_;
+        if (!other.getCustomerId().isEmpty()) {
+          customerId_ = other.customerId_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -2111,11 +2111,11 @@ public final class OrderEvents {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.example.protocol.orders.v1.OrderEvents.OrderCreated parsedMessage = null;
+        com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderCreated) e.getUnfinishedMessage();
+          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2201,154 +2201,154 @@ public final class OrderEvents {
         return this;
       }
 
-      private java.lang.Object firstName_ = "";
+      private java.lang.Object description_ = "";
       /**
-       * <code>string first_name = 2;</code>
-       * @return The firstName.
+       * <code>string description = 2;</code>
+       * @return The description.
        */
-      public java.lang.String getFirstName() {
-        java.lang.Object ref = firstName_;
+      public java.lang.String getDescription() {
+        java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          firstName_ = s;
+          description_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @return The bytes for firstName.
+       * <code>string description = 2;</code>
+       * @return The bytes for description.
        */
       public com.google.protobuf.ByteString
-          getFirstNameBytes() {
-        java.lang.Object ref = firstName_;
+          getDescriptionBytes() {
+        java.lang.Object ref = description_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          firstName_ = b;
+          description_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @param value The firstName to set.
+       * <code>string description = 2;</code>
+       * @param value The description to set.
        * @return This builder for chaining.
        */
-      public Builder setFirstName(
+      public Builder setDescription(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        firstName_ = value;
+        description_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string first_name = 2;</code>
+       * <code>string description = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFirstName() {
+      public Builder clearDescription() {
         
-        firstName_ = getDefaultInstance().getFirstName();
+        description_ = getDefaultInstance().getDescription();
         onChanged();
         return this;
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @param value The bytes for firstName to set.
+       * <code>string description = 2;</code>
+       * @param value The bytes for description to set.
        * @return This builder for chaining.
        */
-      public Builder setFirstNameBytes(
+      public Builder setDescriptionBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        firstName_ = value;
+        description_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object lastName_ = "";
+      private java.lang.Object customerId_ = "";
       /**
-       * <code>string last_name = 3;</code>
-       * @return The lastName.
+       * <code>string customerId = 3;</code>
+       * @return The customerId.
        */
-      public java.lang.String getLastName() {
-        java.lang.Object ref = lastName_;
+      public java.lang.String getCustomerId() {
+        java.lang.Object ref = customerId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          lastName_ = s;
+          customerId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @return The bytes for lastName.
+       * <code>string customerId = 3;</code>
+       * @return The bytes for customerId.
        */
       public com.google.protobuf.ByteString
-          getLastNameBytes() {
-        java.lang.Object ref = lastName_;
+          getCustomerIdBytes() {
+        java.lang.Object ref = customerId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          lastName_ = b;
+          customerId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @param value The lastName to set.
+       * <code>string customerId = 3;</code>
+       * @param value The customerId to set.
        * @return This builder for chaining.
        */
-      public Builder setLastName(
+      public Builder setCustomerId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        lastName_ = value;
+        customerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string last_name = 3;</code>
+       * <code>string customerId = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastName() {
+      public Builder clearCustomerId() {
         
-        lastName_ = getDefaultInstance().getLastName();
+        customerId_ = getDefaultInstance().getCustomerId();
         onChanged();
         return this;
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @param value The bytes for lastName to set.
+       * <code>string customerId = 3;</code>
+       * @param value The bytes for customerId to set.
        * @return This builder for chaining.
        */
-      public Builder setLastNameBytes(
+      public Builder setCustomerIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        lastName_ = value;
+        customerId_ = value;
         onChanged();
         return this;
       }
@@ -2365,48 +2365,48 @@ public final class OrderEvents {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderCreated)
+      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderCreatedEvent)
     }
 
-    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderCreated)
-    private static final com.example.protocol.orders.v1.OrderEvents.OrderCreated DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderCreatedEvent)
+    private static final com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderCreated();
+      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent();
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCreated getDefaultInstance() {
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<OrderCreated>
-        PARSER = new com.google.protobuf.AbstractParser<OrderCreated>() {
+    private static final com.google.protobuf.Parser<OrderCreatedEvent>
+        PARSER = new com.google.protobuf.AbstractParser<OrderCreatedEvent>() {
       @java.lang.Override
-      public OrderCreated parsePartialFrom(
+      public OrderCreatedEvent parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OrderCreated(input, extensionRegistry);
+        return new OrderCreatedEvent(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<OrderCreated> parser() {
+    public static com.google.protobuf.Parser<OrderCreatedEvent> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<OrderCreated> getParserForType() {
+    public com.google.protobuf.Parser<OrderCreatedEvent> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.example.protocol.orders.v1.OrderEvents.OrderCreated getDefaultInstanceForType() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCreatedEvent getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface OrderUpdatedOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderUpdated)
+  public interface OrderUpdatedEventOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderUpdatedEvent)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2422,52 +2422,52 @@ public final class OrderEvents {
         getIdBytes();
 
     /**
-     * <code>string first_name = 2;</code>
-     * @return The firstName.
+     * <code>string description = 2;</code>
+     * @return The description.
      */
-    java.lang.String getFirstName();
+    java.lang.String getDescription();
     /**
-     * <code>string first_name = 2;</code>
-     * @return The bytes for firstName.
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
      */
     com.google.protobuf.ByteString
-        getFirstNameBytes();
+        getDescriptionBytes();
 
     /**
-     * <code>string last_name = 3;</code>
-     * @return The lastName.
+     * <code>string customerId = 3;</code>
+     * @return The customerId.
      */
-    java.lang.String getLastName();
+    java.lang.String getCustomerId();
     /**
-     * <code>string last_name = 3;</code>
-     * @return The bytes for lastName.
+     * <code>string customerId = 3;</code>
+     * @return The bytes for customerId.
      */
     com.google.protobuf.ByteString
-        getLastNameBytes();
+        getCustomerIdBytes();
   }
   /**
-   * Protobuf type {@code com.example.protocol.orders.v1.OrderUpdated}
+   * Protobuf type {@code com.example.protocol.orders.v1.OrderUpdatedEvent}
    */
-  public  static final class OrderUpdated extends
+  public  static final class OrderUpdatedEvent extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderUpdated)
-      OrderUpdatedOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderUpdatedEvent)
+      OrderUpdatedEventOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use OrderUpdated.newBuilder() to construct.
-    private OrderUpdated(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use OrderUpdatedEvent.newBuilder() to construct.
+    private OrderUpdatedEvent(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private OrderUpdated() {
+    private OrderUpdatedEvent() {
       id_ = "";
-      firstName_ = "";
-      lastName_ = "";
+      description_ = "";
+      customerId_ = "";
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new OrderUpdated();
+      return new OrderUpdatedEvent();
     }
 
     @java.lang.Override
@@ -2475,7 +2475,7 @@ public final class OrderEvents {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OrderUpdated(
+    private OrderUpdatedEvent(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2502,13 +2502,13 @@ public final class OrderEvents {
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              firstName_ = s;
+              description_ = s;
               break;
             }
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              lastName_ = s;
+              customerId_ = s;
               break;
             }
             default: {
@@ -2532,15 +2532,15 @@ public final class OrderEvents {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor;
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdated_fieldAccessorTable
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.protocol.orders.v1.OrderEvents.OrderUpdated.class, com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder.class);
+              com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -2579,72 +2579,72 @@ public final class OrderEvents {
       }
     }
 
-    public static final int FIRST_NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object firstName_;
+    public static final int DESCRIPTION_FIELD_NUMBER = 2;
+    private volatile java.lang.Object description_;
     /**
-     * <code>string first_name = 2;</code>
-     * @return The firstName.
+     * <code>string description = 2;</code>
+     * @return The description.
      */
-    public java.lang.String getFirstName() {
-      java.lang.Object ref = firstName_;
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        firstName_ = s;
+        description_ = s;
         return s;
       }
     }
     /**
-     * <code>string first_name = 2;</code>
-     * @return The bytes for firstName.
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
-        getFirstNameBytes() {
-      java.lang.Object ref = firstName_;
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        firstName_ = b;
+        description_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int LAST_NAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object lastName_;
+    public static final int CUSTOMERID_FIELD_NUMBER = 3;
+    private volatile java.lang.Object customerId_;
     /**
-     * <code>string last_name = 3;</code>
-     * @return The lastName.
+     * <code>string customerId = 3;</code>
+     * @return The customerId.
      */
-    public java.lang.String getLastName() {
-      java.lang.Object ref = lastName_;
+    public java.lang.String getCustomerId() {
+      java.lang.Object ref = customerId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lastName_ = s;
+        customerId_ = s;
         return s;
       }
     }
     /**
-     * <code>string last_name = 3;</code>
-     * @return The bytes for lastName.
+     * <code>string customerId = 3;</code>
+     * @return The bytes for customerId.
      */
     public com.google.protobuf.ByteString
-        getLastNameBytes() {
-      java.lang.Object ref = lastName_;
+        getCustomerIdBytes() {
+      java.lang.Object ref = customerId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lastName_ = b;
+        customerId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -2668,11 +2668,11 @@ public final class OrderEvents {
       if (!getIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
       }
-      if (!getFirstNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, firstName_);
+      if (!getDescriptionBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, description_);
       }
-      if (!getLastNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, lastName_);
+      if (!getCustomerIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, customerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -2686,11 +2686,11 @@ public final class OrderEvents {
       if (!getIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
       }
-      if (!getFirstNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, firstName_);
+      if (!getDescriptionBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, description_);
       }
-      if (!getLastNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, lastName_);
+      if (!getCustomerIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, customerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2702,17 +2702,17 @@ public final class OrderEvents {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderUpdated)) {
+      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent)) {
         return super.equals(obj);
       }
-      com.example.protocol.orders.v1.OrderEvents.OrderUpdated other = (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) obj;
+      com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent other = (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
-      if (!getFirstName()
-          .equals(other.getFirstName())) return false;
-      if (!getLastName()
-          .equals(other.getLastName())) return false;
+      if (!getDescription()
+          .equals(other.getDescription())) return false;
+      if (!getCustomerId()
+          .equals(other.getCustomerId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -2726,78 +2726,78 @@ public final class OrderEvents {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId().hashCode();
-      hash = (37 * hash) + FIRST_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getFirstName().hashCode();
-      hash = (37 * hash) + LAST_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getLastName().hashCode();
+      hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
+      hash = (53 * hash) + getDescription().hashCode();
+      hash = (37 * hash) + CUSTOMERID_FIELD_NUMBER;
+      hash = (53 * hash) + getCustomerId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(byte[] data)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseDelimitedFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2810,7 +2810,7 @@ public final class OrderEvents {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderUpdated prototype) {
+    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2826,26 +2826,26 @@ public final class OrderEvents {
       return builder;
     }
     /**
-     * Protobuf type {@code com.example.protocol.orders.v1.OrderUpdated}
+     * Protobuf type {@code com.example.protocol.orders.v1.OrderUpdatedEvent}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderUpdated)
-        com.example.protocol.orders.v1.OrderEvents.OrderUpdatedOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderUpdatedEvent)
+        com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdated_fieldAccessorTable
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.protocol.orders.v1.OrderEvents.OrderUpdated.class, com.example.protocol.orders.v1.OrderEvents.OrderUpdated.Builder.class);
+                com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.Builder.class);
       }
 
-      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderUpdated.newBuilder()
+      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2865,9 +2865,9 @@ public final class OrderEvents {
         super.clear();
         id_ = "";
 
-        firstName_ = "";
+        description_ = "";
 
-        lastName_ = "";
+        customerId_ = "";
 
         return this;
       }
@@ -2875,17 +2875,17 @@ public final class OrderEvents {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor;
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdated getDefaultInstanceForType() {
-        return com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance();
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getDefaultInstanceForType() {
+        return com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdated build() {
-        com.example.protocol.orders.v1.OrderEvents.OrderUpdated result = buildPartial();
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent build() {
+        com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2893,11 +2893,11 @@ public final class OrderEvents {
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderUpdated buildPartial() {
-        com.example.protocol.orders.v1.OrderEvents.OrderUpdated result = new com.example.protocol.orders.v1.OrderEvents.OrderUpdated(this);
+      public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent buildPartial() {
+        com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent result = new com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent(this);
         result.id_ = id_;
-        result.firstName_ = firstName_;
-        result.lastName_ = lastName_;
+        result.description_ = description_;
+        result.customerId_ = customerId_;
         onBuilt();
         return result;
       }
@@ -2936,26 +2936,26 @@ public final class OrderEvents {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderUpdated) {
-          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderUpdated)other);
+        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) {
+          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderUpdated other) {
-        if (other == com.example.protocol.orders.v1.OrderEvents.OrderUpdated.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent other) {
+        if (other == com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           onChanged();
         }
-        if (!other.getFirstName().isEmpty()) {
-          firstName_ = other.firstName_;
+        if (!other.getDescription().isEmpty()) {
+          description_ = other.description_;
           onChanged();
         }
-        if (!other.getLastName().isEmpty()) {
-          lastName_ = other.lastName_;
+        if (!other.getCustomerId().isEmpty()) {
+          customerId_ = other.customerId_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -2973,11 +2973,11 @@ public final class OrderEvents {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.example.protocol.orders.v1.OrderEvents.OrderUpdated parsedMessage = null;
+        com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderUpdated) e.getUnfinishedMessage();
+          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3063,154 +3063,154 @@ public final class OrderEvents {
         return this;
       }
 
-      private java.lang.Object firstName_ = "";
+      private java.lang.Object description_ = "";
       /**
-       * <code>string first_name = 2;</code>
-       * @return The firstName.
+       * <code>string description = 2;</code>
+       * @return The description.
        */
-      public java.lang.String getFirstName() {
-        java.lang.Object ref = firstName_;
+      public java.lang.String getDescription() {
+        java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          firstName_ = s;
+          description_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @return The bytes for firstName.
+       * <code>string description = 2;</code>
+       * @return The bytes for description.
        */
       public com.google.protobuf.ByteString
-          getFirstNameBytes() {
-        java.lang.Object ref = firstName_;
+          getDescriptionBytes() {
+        java.lang.Object ref = description_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          firstName_ = b;
+          description_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @param value The firstName to set.
+       * <code>string description = 2;</code>
+       * @param value The description to set.
        * @return This builder for chaining.
        */
-      public Builder setFirstName(
+      public Builder setDescription(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        firstName_ = value;
+        description_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string first_name = 2;</code>
+       * <code>string description = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFirstName() {
+      public Builder clearDescription() {
         
-        firstName_ = getDefaultInstance().getFirstName();
+        description_ = getDefaultInstance().getDescription();
         onChanged();
         return this;
       }
       /**
-       * <code>string first_name = 2;</code>
-       * @param value The bytes for firstName to set.
+       * <code>string description = 2;</code>
+       * @param value The bytes for description to set.
        * @return This builder for chaining.
        */
-      public Builder setFirstNameBytes(
+      public Builder setDescriptionBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        firstName_ = value;
+        description_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object lastName_ = "";
+      private java.lang.Object customerId_ = "";
       /**
-       * <code>string last_name = 3;</code>
-       * @return The lastName.
+       * <code>string customerId = 3;</code>
+       * @return The customerId.
        */
-      public java.lang.String getLastName() {
-        java.lang.Object ref = lastName_;
+      public java.lang.String getCustomerId() {
+        java.lang.Object ref = customerId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          lastName_ = s;
+          customerId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @return The bytes for lastName.
+       * <code>string customerId = 3;</code>
+       * @return The bytes for customerId.
        */
       public com.google.protobuf.ByteString
-          getLastNameBytes() {
-        java.lang.Object ref = lastName_;
+          getCustomerIdBytes() {
+        java.lang.Object ref = customerId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          lastName_ = b;
+          customerId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @param value The lastName to set.
+       * <code>string customerId = 3;</code>
+       * @param value The customerId to set.
        * @return This builder for chaining.
        */
-      public Builder setLastName(
+      public Builder setCustomerId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        lastName_ = value;
+        customerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string last_name = 3;</code>
+       * <code>string customerId = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastName() {
+      public Builder clearCustomerId() {
         
-        lastName_ = getDefaultInstance().getLastName();
+        customerId_ = getDefaultInstance().getCustomerId();
         onChanged();
         return this;
       }
       /**
-       * <code>string last_name = 3;</code>
-       * @param value The bytes for lastName to set.
+       * <code>string customerId = 3;</code>
+       * @param value The bytes for customerId to set.
        * @return This builder for chaining.
        */
-      public Builder setLastNameBytes(
+      public Builder setCustomerIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        lastName_ = value;
+        customerId_ = value;
         onChanged();
         return this;
       }
@@ -3227,48 +3227,48 @@ public final class OrderEvents {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderUpdated)
+      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderUpdatedEvent)
     }
 
-    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderUpdated)
-    private static final com.example.protocol.orders.v1.OrderEvents.OrderUpdated DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderUpdatedEvent)
+    private static final com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderUpdated();
+      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent();
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdated getDefaultInstance() {
+    public static com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<OrderUpdated>
-        PARSER = new com.google.protobuf.AbstractParser<OrderUpdated>() {
+    private static final com.google.protobuf.Parser<OrderUpdatedEvent>
+        PARSER = new com.google.protobuf.AbstractParser<OrderUpdatedEvent>() {
       @java.lang.Override
-      public OrderUpdated parsePartialFrom(
+      public OrderUpdatedEvent parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OrderUpdated(input, extensionRegistry);
+        return new OrderUpdatedEvent(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<OrderUpdated> parser() {
+    public static com.google.protobuf.Parser<OrderUpdatedEvent> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<OrderUpdated> getParserForType() {
+    public com.google.protobuf.Parser<OrderUpdatedEvent> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.example.protocol.orders.v1.OrderEvents.OrderUpdated getDefaultInstanceForType() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderUpdatedEvent getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface OrderActivatedOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderActivated)
+  public interface OrderDeletedEventOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderDeletedEvent)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3284,18 +3284,18 @@ public final class OrderEvents {
         getOrderIdBytes();
   }
   /**
-   * Protobuf type {@code com.example.protocol.orders.v1.OrderActivated}
+   * Protobuf type {@code com.example.protocol.orders.v1.OrderDeletedEvent}
    */
-  public  static final class OrderActivated extends
+  public  static final class OrderDeletedEvent extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderActivated)
-      OrderActivatedOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderDeletedEvent)
+      OrderDeletedEventOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use OrderActivated.newBuilder() to construct.
-    private OrderActivated(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use OrderDeletedEvent.newBuilder() to construct.
+    private OrderDeletedEvent(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private OrderActivated() {
+    private OrderDeletedEvent() {
       orderId_ = "";
     }
 
@@ -3303,7 +3303,7 @@ public final class OrderEvents {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new OrderActivated();
+      return new OrderDeletedEvent();
     }
 
     @java.lang.Override
@@ -3311,7 +3311,7 @@ public final class OrderEvents {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OrderActivated(
+    private OrderDeletedEvent(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3356,15 +3356,15 @@ public final class OrderEvents {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor;
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderActivated_fieldAccessorTable
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.protocol.orders.v1.OrderEvents.OrderActivated.class, com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder.class);
+              com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder.class);
     }
 
     public static final int ORDER_ID_FIELD_NUMBER = 1;
@@ -3442,10 +3442,10 @@ public final class OrderEvents {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderActivated)) {
+      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent)) {
         return super.equals(obj);
       }
-      com.example.protocol.orders.v1.OrderEvents.OrderActivated other = (com.example.protocol.orders.v1.OrderEvents.OrderActivated) obj;
+      com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent other = (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) obj;
 
       if (!getOrderId()
           .equals(other.getOrderId())) return false;
@@ -3467,69 +3467,69 @@ public final class OrderEvents {
       return hash;
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(byte[] data)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseDelimitedFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3542,7 +3542,7 @@ public final class OrderEvents {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderActivated prototype) {
+    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3558,26 +3558,26 @@ public final class OrderEvents {
       return builder;
     }
     /**
-     * Protobuf type {@code com.example.protocol.orders.v1.OrderActivated}
+     * Protobuf type {@code com.example.protocol.orders.v1.OrderDeletedEvent}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderActivated)
-        com.example.protocol.orders.v1.OrderEvents.OrderActivatedOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderDeletedEvent)
+        com.example.protocol.orders.v1.OrderEvents.OrderDeletedEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderActivated_fieldAccessorTable
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.protocol.orders.v1.OrderEvents.OrderActivated.class, com.example.protocol.orders.v1.OrderEvents.OrderActivated.Builder.class);
+                com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.Builder.class);
       }
 
-      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderActivated.newBuilder()
+      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3603,17 +3603,17 @@ public final class OrderEvents {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor;
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivated getDefaultInstanceForType() {
-        return com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance();
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getDefaultInstanceForType() {
+        return com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivated build() {
-        com.example.protocol.orders.v1.OrderEvents.OrderActivated result = buildPartial();
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent build() {
+        com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3621,8 +3621,8 @@ public final class OrderEvents {
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderActivated buildPartial() {
-        com.example.protocol.orders.v1.OrderEvents.OrderActivated result = new com.example.protocol.orders.v1.OrderEvents.OrderActivated(this);
+      public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent buildPartial() {
+        com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent result = new com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent(this);
         result.orderId_ = orderId_;
         onBuilt();
         return result;
@@ -3662,16 +3662,16 @@ public final class OrderEvents {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderActivated) {
-          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderActivated)other);
+        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) {
+          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderActivated other) {
-        if (other == com.example.protocol.orders.v1.OrderEvents.OrderActivated.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent other) {
+        if (other == com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent.getDefaultInstance()) return this;
         if (!other.getOrderId().isEmpty()) {
           orderId_ = other.orderId_;
           onChanged();
@@ -3691,11 +3691,11 @@ public final class OrderEvents {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.example.protocol.orders.v1.OrderEvents.OrderActivated parsedMessage = null;
+        com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderActivated) e.getUnfinishedMessage();
+          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3793,48 +3793,48 @@ public final class OrderEvents {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderActivated)
+      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderDeletedEvent)
     }
 
-    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderActivated)
-    private static final com.example.protocol.orders.v1.OrderEvents.OrderActivated DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderDeletedEvent)
+    private static final com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderActivated();
+      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent();
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderActivated getDefaultInstance() {
+    public static com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<OrderActivated>
-        PARSER = new com.google.protobuf.AbstractParser<OrderActivated>() {
+    private static final com.google.protobuf.Parser<OrderDeletedEvent>
+        PARSER = new com.google.protobuf.AbstractParser<OrderDeletedEvent>() {
       @java.lang.Override
-      public OrderActivated parsePartialFrom(
+      public OrderDeletedEvent parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OrderActivated(input, extensionRegistry);
+        return new OrderDeletedEvent(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<OrderActivated> parser() {
+    public static com.google.protobuf.Parser<OrderDeletedEvent> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<OrderActivated> getParserForType() {
+    public com.google.protobuf.Parser<OrderDeletedEvent> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.example.protocol.orders.v1.OrderEvents.OrderActivated getDefaultInstanceForType() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderDeletedEvent getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface OrderCompletedOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderCompleted)
+  public interface OrderCompletedEventOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.example.protocol.orders.v1.OrderCompletedEvent)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3850,18 +3850,18 @@ public final class OrderEvents {
         getOrderIdBytes();
   }
   /**
-   * Protobuf type {@code com.example.protocol.orders.v1.OrderCompleted}
+   * Protobuf type {@code com.example.protocol.orders.v1.OrderCompletedEvent}
    */
-  public  static final class OrderCompleted extends
+  public  static final class OrderCompletedEvent extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderCompleted)
-      OrderCompletedOrBuilder {
+      // @@protoc_insertion_point(message_implements:com.example.protocol.orders.v1.OrderCompletedEvent)
+      OrderCompletedEventOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use OrderCompleted.newBuilder() to construct.
-    private OrderCompleted(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use OrderCompletedEvent.newBuilder() to construct.
+    private OrderCompletedEvent(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private OrderCompleted() {
+    private OrderCompletedEvent() {
       orderId_ = "";
     }
 
@@ -3869,7 +3869,7 @@ public final class OrderEvents {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new OrderCompleted();
+      return new OrderCompletedEvent();
     }
 
     @java.lang.Override
@@ -3877,7 +3877,7 @@ public final class OrderEvents {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OrderCompleted(
+    private OrderCompletedEvent(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3922,15 +3922,15 @@ public final class OrderEvents {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor;
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompleted_fieldAccessorTable
+      return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.protocol.orders.v1.OrderEvents.OrderCompleted.class, com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder.class);
+              com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder.class);
     }
 
     public static final int ORDER_ID_FIELD_NUMBER = 1;
@@ -4008,10 +4008,10 @@ public final class OrderEvents {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderCompleted)) {
+      if (!(obj instanceof com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent)) {
         return super.equals(obj);
       }
-      com.example.protocol.orders.v1.OrderEvents.OrderCompleted other = (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) obj;
+      com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent other = (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) obj;
 
       if (!getOrderId()
           .equals(other.getOrderId())) return false;
@@ -4033,69 +4033,69 @@ public final class OrderEvents {
       return hash;
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(byte[] data)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseDelimitedFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted parseFrom(
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4108,7 +4108,7 @@ public final class OrderEvents {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderCompleted prototype) {
+    public static Builder newBuilder(com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4124,26 +4124,26 @@ public final class OrderEvents {
       return builder;
     }
     /**
-     * Protobuf type {@code com.example.protocol.orders.v1.OrderCompleted}
+     * Protobuf type {@code com.example.protocol.orders.v1.OrderCompletedEvent}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderCompleted)
-        com.example.protocol.orders.v1.OrderEvents.OrderCompletedOrBuilder {
+        // @@protoc_insertion_point(builder_implements:com.example.protocol.orders.v1.OrderCompletedEvent)
+        com.example.protocol.orders.v1.OrderEvents.OrderCompletedEventOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompleted_fieldAccessorTable
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.protocol.orders.v1.OrderEvents.OrderCompleted.class, com.example.protocol.orders.v1.OrderEvents.OrderCompleted.Builder.class);
+                com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.class, com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder.class);
       }
 
-      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderCompleted.newBuilder()
+      // Construct using com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4169,17 +4169,17 @@ public final class OrderEvents {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor;
+        return com.example.protocol.orders.v1.OrderEvents.internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor;
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompleted getDefaultInstanceForType() {
-        return com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getDefaultInstanceForType() {
+        return com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompleted build() {
-        com.example.protocol.orders.v1.OrderEvents.OrderCompleted result = buildPartial();
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent build() {
+        com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4187,8 +4187,8 @@ public final class OrderEvents {
       }
 
       @java.lang.Override
-      public com.example.protocol.orders.v1.OrderEvents.OrderCompleted buildPartial() {
-        com.example.protocol.orders.v1.OrderEvents.OrderCompleted result = new com.example.protocol.orders.v1.OrderEvents.OrderCompleted(this);
+      public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent buildPartial() {
+        com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent result = new com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent(this);
         result.orderId_ = orderId_;
         onBuilt();
         return result;
@@ -4228,16 +4228,16 @@ public final class OrderEvents {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderCompleted) {
-          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCompleted)other);
+        if (other instanceof com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) {
+          return mergeFrom((com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderCompleted other) {
-        if (other == com.example.protocol.orders.v1.OrderEvents.OrderCompleted.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent other) {
+        if (other == com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.getDefaultInstance()) return this;
         if (!other.getOrderId().isEmpty()) {
           orderId_ = other.orderId_;
           onChanged();
@@ -4257,11 +4257,11 @@ public final class OrderEvents {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.example.protocol.orders.v1.OrderEvents.OrderCompleted parsedMessage = null;
+        com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderCompleted) e.getUnfinishedMessage();
+          parsedMessage = (com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4359,41 +4359,41 @@ public final class OrderEvents {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderCompleted)
+      // @@protoc_insertion_point(builder_scope:com.example.protocol.orders.v1.OrderCompletedEvent)
     }
 
-    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderCompleted)
-    private static final com.example.protocol.orders.v1.OrderEvents.OrderCompleted DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:com.example.protocol.orders.v1.OrderCompletedEvent)
+    private static final com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderCompleted();
+      DEFAULT_INSTANCE = new com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent();
     }
 
-    public static com.example.protocol.orders.v1.OrderEvents.OrderCompleted getDefaultInstance() {
+    public static com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<OrderCompleted>
-        PARSER = new com.google.protobuf.AbstractParser<OrderCompleted>() {
+    private static final com.google.protobuf.Parser<OrderCompletedEvent>
+        PARSER = new com.google.protobuf.AbstractParser<OrderCompletedEvent>() {
       @java.lang.Override
-      public OrderCompleted parsePartialFrom(
+      public OrderCompletedEvent parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OrderCompleted(input, extensionRegistry);
+        return new OrderCompletedEvent(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<OrderCompleted> parser() {
+    public static com.google.protobuf.Parser<OrderCompletedEvent> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<OrderCompleted> getParserForType() {
+    public com.google.protobuf.Parser<OrderCompletedEvent> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.example.protocol.orders.v1.OrderEvents.OrderCompleted getDefaultInstanceForType() {
+    public com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4405,25 +4405,25 @@ public final class OrderEvents {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_example_protocol_orders_v1_OrdersEnvelope_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor;
+    internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_example_protocol_orders_v1_OrderCreated_fieldAccessorTable;
+      internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor;
+    internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_example_protocol_orders_v1_OrderUpdated_fieldAccessorTable;
+      internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor;
+    internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_example_protocol_orders_v1_OrderActivated_fieldAccessorTable;
+      internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor;
+    internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_example_protocol_orders_v1_OrderCompleted_fieldAccessorTable;
+      internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -4434,21 +4434,23 @@ public final class OrderEvents {
   static {
     java.lang.String[] descriptorData = {
       "\n%resources/protobuf/order_events.proto\022" +
-      "\036com.example.protocol.orders.v1\"\327\002\n\016Orde" +
-      "rsEnvelope\022\026\n\016correlation_id\030\001 \001(\t\022E\n\ror" +
-      "der_created\030\013 \001(\0132,.com.example.protocol" +
-      ".orders.v1.OrderCreatedH\000\022E\n\rorder_updat" +
-      "ed\030\014 \001(\0132,.com.example.protocol.orders.v" +
-      "1.OrderUpdatedH\000\022I\n\017order_activated\030\r \001(" +
-      "\0132..com.example.protocol.orders.v1.Order" +
-      "ActivatedH\000\022I\n\017order_completed\030\016 \001(\0132..c" +
-      "om.example.protocol.orders.v1.OrderCompl" +
-      "etedH\000B\t\n\007payload\"A\n\014OrderCreated\022\n\n\002id\030" +
-      "\001 \001(\t\022\022\n\nfirst_name\030\002 \001(\t\022\021\n\tlast_name\030\003" +
-      " \001(\t\"A\n\014OrderUpdated\022\n\n\002id\030\001 \001(\t\022\022\n\nfirs" +
-      "t_name\030\002 \001(\t\022\021\n\tlast_name\030\003 \001(\t\"\"\n\016Order" +
-      "Activated\022\020\n\010order_id\030\001 \001(\t\"\"\n\016OrderComp" +
-      "leted\022\020\n\010order_id\030\001 \001(\tb\006proto3"
+      "\036com.example.protocol.orders.v1\"\377\002\n\016Orde" +
+      "rsEnvelope\022\026\n\016correlation_id\030\001 \001(\t\022P\n\023or" +
+      "der_created_event\030\013 \001(\01321.com.example.pr" +
+      "otocol.orders.v1.OrderCreatedEventH\000\022P\n\023" +
+      "order_updated_event\030\014 \001(\01321.com.example." +
+      "protocol.orders.v1.OrderUpdatedEventH\000\022P" +
+      "\n\023order_deleted_event\030\r \001(\01321.com.exampl" +
+      "e.protocol.orders.v1.OrderDeletedEventH\000" +
+      "\022T\n\025order_completed_event\030\016 \001(\01323.com.ex" +
+      "ample.protocol.orders.v1.OrderCompletedE" +
+      "ventH\000B\t\n\007payload\"H\n\021OrderCreatedEvent\022\n" +
+      "\n\002id\030\001 \001(\t\022\023\n\013description\030\002 \001(\t\022\022\n\ncusto" +
+      "merId\030\003 \001(\t\"H\n\021OrderUpdatedEvent\022\n\n\002id\030\001" +
+      " \001(\t\022\023\n\013description\030\002 \001(\t\022\022\n\ncustomerId\030" +
+      "\003 \001(\t\"%\n\021OrderDeletedEvent\022\020\n\010order_id\030\001" +
+      " \001(\t\"\'\n\023OrderCompletedEvent\022\020\n\010order_id\030" +
+      "\001 \001(\tb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4459,30 +4461,30 @@ public final class OrderEvents {
     internal_static_com_example_protocol_orders_v1_OrdersEnvelope_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_example_protocol_orders_v1_OrdersEnvelope_descriptor,
-        new java.lang.String[] { "CorrelationId", "OrderCreated", "OrderUpdated", "OrderActivated", "OrderCompleted", "Payload", });
-    internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor =
+        new java.lang.String[] { "CorrelationId", "OrderCreatedEvent", "OrderUpdatedEvent", "OrderDeletedEvent", "OrderCompletedEvent", "Payload", });
+    internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_example_protocol_orders_v1_OrderCreated_fieldAccessorTable = new
+    internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_example_protocol_orders_v1_OrderCreated_descriptor,
-        new java.lang.String[] { "Id", "FirstName", "LastName", });
-    internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor =
+        internal_static_com_example_protocol_orders_v1_OrderCreatedEvent_descriptor,
+        new java.lang.String[] { "Id", "Description", "CustomerId", });
+    internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_com_example_protocol_orders_v1_OrderUpdated_fieldAccessorTable = new
+    internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_example_protocol_orders_v1_OrderUpdated_descriptor,
-        new java.lang.String[] { "Id", "FirstName", "LastName", });
-    internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor =
+        internal_static_com_example_protocol_orders_v1_OrderUpdatedEvent_descriptor,
+        new java.lang.String[] { "Id", "Description", "CustomerId", });
+    internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_com_example_protocol_orders_v1_OrderActivated_fieldAccessorTable = new
+    internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_example_protocol_orders_v1_OrderActivated_descriptor,
+        internal_static_com_example_protocol_orders_v1_OrderDeletedEvent_descriptor,
         new java.lang.String[] { "OrderId", });
-    internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor =
+    internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_com_example_protocol_orders_v1_OrderCompleted_fieldAccessorTable = new
+    internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_example_protocol_orders_v1_OrderCompleted_descriptor,
+        internal_static_com_example_protocol_orders_v1_OrderCompletedEvent_descriptor,
         new java.lang.String[] { "OrderId", });
   }
 

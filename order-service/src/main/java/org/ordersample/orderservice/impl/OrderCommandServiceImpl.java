@@ -2,10 +2,10 @@ package org.ordersample.orderservice.impl;
 
 import com.example.protocol.orders.v1.OrderEvents;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
-import org.ordersample.orderservice.control.EventProducer;
 import org.ordersample.orderservice.dao.OrderCommandService;
 import org.ordersample.orderservice.exception.InvalidOrderIdException;
 import org.ordersample.orderservice.model.Order;
+import org.ordersample.orderservice.order_control.OrderEventProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,23 +21,24 @@ import java.util.UUID;
 public class OrderCommandServiceImpl implements OrderCommandService {
 
     private static final Logger log = LoggerFactory.getLogger(OrderCommandServiceImpl.class);
+    private final String TOPIC = "order";
 
     @Autowired
-    private EventProducer eventProducer;
+    private OrderEventProducer orderEventProducer;
 
     @Override
-    public void createOrder(OrderDTO orderDTO) throws IOException {
+    public void createOrder(OrderDTO orderDTO) {
         log.info("OrderService - OrderServiceImpl - createOrder");
 
         OrderEvents.OrdersEnvelope ordersEnvelope = OrderEvents.OrdersEnvelope.newBuilder()
                 .setCorrelationId(UUID.randomUUID().toString())
-                .setOrderCreated(OrderEvents.OrderCreated.newBuilder()
+                .setOrderCreatedEvent(OrderEvents.OrderCreatedEvent.newBuilder()
                         .setId(orderDTO.getId().toString())
-                        .setFirstName("Carlos")
-                        .setLastName("Avendano")
+                        .setDescription(orderDTO.getDescription())
+                        .setCustomerId(orderDTO.getDescription())
                 ).build();
 
-        eventProducer.publish(ordersEnvelope);
+        orderEventProducer.publish(TOPIC, orderDTO.getId().toString(), ordersEnvelope);
     }
 
     @Override
@@ -46,11 +47,11 @@ public class OrderCommandServiceImpl implements OrderCommandService {
 
         OrderEvents.OrdersEnvelope ordersEnvelope = OrderEvents.OrdersEnvelope.newBuilder()
                 .setCorrelationId(UUID.randomUUID().toString())
-                .setOrderCompleted(OrderEvents.OrderCompleted.newBuilder()
+                .setOrderCompletedEvent(OrderEvents.OrderCompletedEvent.newBuilder()
                         .setOrderId(orderDTO.getId().toString())
                 ).build();
 
-        eventProducer.publish(ordersEnvelope);
+        orderEventProducer.publish(TOPIC, orderDTO.getId().toString(), ordersEnvelope);
     }
 
     @Override
@@ -96,7 +97,5 @@ public class OrderCommandServiceImpl implements OrderCommandService {
     @Override
     public void deleteOrder(Order order) {
         log.info("OrderService - OrderServiceImpl - deleteOrder");
-
     }
-
 }
