@@ -1,0 +1,9 @@
+{
+     "type": "record",
+     "namespace": "io.example.ordersample.avro.schemas",
+     "name": "OrderCompletedEvent",
+     "version": "1",
+     "fields": [
+       { "name": "id", "type": "string", "doc": "Id of Order" }
+     ]
+}

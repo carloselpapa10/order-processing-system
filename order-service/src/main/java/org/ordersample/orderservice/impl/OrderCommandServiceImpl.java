@@ -1,10 +1,7 @@
 package org.ordersample.orderservice.impl;
 
-import org.apache.avro.Schema;
-import org.apache.avro.generic.GenericData;
-import org.apache.avro.generic.GenericRecord;
-import org.ordersample.domaininfo.order.api.events.OrderCompletedEvent;
-import org.ordersample.domaininfo.order.api.events.OrderCreatedEvent;
+import io.example.ordersample.avro.schemas.OrderCompletedEvent;
+import io.example.ordersample.avro.schemas.OrderCreatedEvent;
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
 import org.ordersample.orderservice.control.EventProducer;
 import org.ordersample.orderservice.dao.OrderCommandService;
@@ -13,19 +10,18 @@ import org.ordersample.orderservice.model.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.UUID;
 
 @Component
 @Transactional
 public class OrderCommandServiceImpl implements OrderCommandService {
 
     private static final Logger log = LoggerFactory.getLogger(OrderCommandServiceImpl.class);
+    private static final String TOPIC = "orders";
 
     @Autowired
     private EventProducer eventProducer;
@@ -34,39 +30,22 @@ public class OrderCommandServiceImpl implements OrderCommandService {
     public void createOrder(OrderDTO orderDTO) throws IOException {
         log.info("OrderService - OrderServiceImpl - createOrder");
 
-        //Create schema from .avsc file
-        Schema mainSchema = new Schema.Parser().parse(new ClassPathResource("avro/movie-v1.avsc").getInputStream());
-
-        //Create avro message with defined schema
-        GenericRecord avroMessage = new GenericData.Record(mainSchema);
-
-        //Populate avro message
-        avroMessage.put("id", UUID.randomUUID().toString());
-        avroMessage.put("movie_name", "Casablanca");
-        avroMessage.put("genre", "Drama/Romance");
-
-//        eventProducer.publish(new OrderCreatedEvent(this, orderDTO));
-        eventProducer.publish(avroMessage);
+        OrderCreatedEvent orderCreatedEvent = OrderCreatedEvent.newBuilder()
+                .setId(orderDTO.getId().toString())
+                .setDescription(orderDTO.getDescription())
+                .setCustomerId(orderDTO.getCustomerId())
+                .build();
+        eventProducer.publish(TOPIC, orderDTO.getId().toString(), orderCreatedEvent);
     }
 
     @Override
-    public void completeOrder(OrderDTO orderDTO) throws IOException {
+    public void completeOrder(String orderId) throws IOException {
         log.info("OrderService - OrderServiceImpl - completeOrder");
 
-        //Create schema from .avsc file
-        Schema mainSchema = new Schema.Parser().parse(new ClassPathResource("avro/user-v1.avsc").getInputStream());
-
-        //Create avro message with defined schema
-        GenericRecord avroMessage = new GenericData.Record(mainSchema);
-
-        //Populate avro message
-        avroMessage.put("id", UUID.randomUUID().toString());
-        avroMessage.put("first_name", "Karen");
-        avroMessage.put("last_name", "Grygoryan");
-
-        eventProducer.publish(avroMessage);
-
-        //eventProducer.publish(new OrderCompletedEvent(this, orderDTO));
+        OrderCompletedEvent orderCompletedEvent = OrderCompletedEvent.newBuilder()
+                .setId(orderId)
+                .build();
+        eventProducer.publish(TOPIC, orderId, orderCompletedEvent);
     }
 
     @Override

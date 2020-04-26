@@ -1,11 +1,10 @@
-package org.ordersample.orderservice.impl;
+package org.ordersample.orderservice.eventhandling;
 
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.ordersample.orderservice.control.EventConsumer;
-import org.ordersample.orderservice.control.EventDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +18,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Component
-public class OrderUpdatedConsumer {
+public class OrderEventConsumerConfig {
 
-    private static final Logger logger = LoggerFactory.getLogger(OrderUpdatedConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(OrderEventConsumerConfig.class);
 
     private EventConsumer eventConsumer;
 
@@ -38,20 +37,16 @@ public class OrderUpdatedConsumer {
         kafkaProperties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         kafkaProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, KafkaAvroDeserializer.class.getName());
         kafkaProperties.put(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8081");
-
-        //kafkaProperties.put("group.id", "order-consumer-" + UUID.randomUUID());
         kafkaProperties.put("group.id", "order-consumer-1");
-        String orderTopic = "order";
+        String orderTopic = "orders";
 
         eventConsumer = new EventConsumer(kafkaProperties, ev -> {
             logger.info("firing = " + ev);
             applicationEventPublisher.publishEvent(ev);
-            //events.fire(ev);
         }, orderTopic);
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
         executorService.execute(eventConsumer);
-//        mes.execute(eventConsumer);
     }
 
     @PreDestroy

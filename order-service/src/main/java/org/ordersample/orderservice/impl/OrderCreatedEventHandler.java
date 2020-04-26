@@ -1,13 +1,10 @@
 package org.ordersample.orderservice.impl;
 
-import org.ordersample.domaininfo.order.api.events.OrderCreatedEvent;
 import org.ordersample.orderservice.model.Order;
-import org.ordersample.orderservice.model.OrderEvent;
 import org.ordersample.orderservice.repository.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
@@ -16,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 
 @Component
-public class OrderCreatedEventHandler implements ApplicationListener<OrderEvent> {
+public class OrderCreatedEventHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(OrderCreatedEventHandler.class);
 
@@ -25,8 +22,7 @@ public class OrderCreatedEventHandler implements ApplicationListener<OrderEvent>
 
     private Map<UUID, Order> orders = new ConcurrentHashMap<>();
 
-    @Override
-    public void onApplicationEvent(OrderEvent event) {
+    public void onApplicationEvent() {
 
         logger.info("sii");
 //        Order order = Order.builder()

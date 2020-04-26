@@ -19,7 +19,7 @@ public interface OrderCommandService {
 
     void rejectOrder(Order order);
 
-    void completeOrder(OrderDTO orderDTO) throws IOException;
+    void completeOrder(String orderId) throws IOException;
 
     void editOrder(Order order);
 

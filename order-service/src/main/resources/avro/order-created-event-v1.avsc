@@ -1,0 +1,11 @@
+{
+     "type": "record",
+     "namespace": "io.example.ordersample.avro.schemas",
+     "name": "OrderCreatedEvent",
+     "version": "1",
+     "fields": [
+       { "name": "id", "type": "string", "doc": "Id of Order" },
+       { "name": "description", "type": "string", "doc": "Description of Order" },
+       { "name": "customerId", "type": "string", "doc": "Id of customer" }
+     ]
+}

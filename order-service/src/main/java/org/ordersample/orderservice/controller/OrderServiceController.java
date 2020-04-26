@@ -2,6 +2,7 @@ package org.ordersample.orderservice.controller;
 
 import org.ordersample.domaininfo.order.api.info.OrderDTO;
 import org.ordersample.orderservice.dao.OrderCommandService;
+import org.ordersample.orderservice.webapi.CompleteOrderRequest;
 import org.ordersample.orderservice.webapi.CreateOrderRequest;
 import org.ordersample.orderservice.webapi.CreateOrderResponse;
 import org.slf4j.Logger;
@@ -37,18 +38,11 @@ public class OrderServiceController {
         return new CreateOrderResponse(orderDTO.getId().toString());
     }
 
-    @PutMapping
-    public CreateOrderResponse completeOrder(@RequestBody CreateOrderRequest createOrderRequest) throws IOException {
+    @PostMapping("/complete")
+    public void completeOrder(@RequestBody CompleteOrderRequest completeOrderRequest) throws IOException {
         log.info("OrderService - OrderServiceController - createOrder");
 
-        OrderDTO orderDTO = OrderDTO.builder()
-                .id(UUID.randomUUID())
-                .description(createOrderRequest.getDescription())
-                .customerId(createOrderRequest.getCustomerId())
-                .build();
-
-        orderCommandService.completeOrder(orderDTO);
-        return new CreateOrderResponse(orderDTO.getId().toString());
+        orderCommandService.completeOrder(completeOrderRequest.getId());
     }
 
 //	@GetMapping("/{orderId}")

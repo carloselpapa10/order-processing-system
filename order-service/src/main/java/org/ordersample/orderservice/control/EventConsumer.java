@@ -5,7 +5,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.errors.WakeupException;
-import org.ordersample.orderservice.model.OrderEvent;
 
 import java.time.Duration;
 import java.util.Properties;
@@ -42,12 +41,11 @@ public class EventConsumer implements Runnable {
     private void consume() {
         ConsumerRecords<String, GenericRecord> records = consumer.poll(Duration.ofMillis(Long.MAX_VALUE));
         for (ConsumerRecord<String, GenericRecord> record : records) {
-            OrderEvent orderEvent = new OrderEvent(record.value());
 
             GenericRecord a = record.value();
-            eventConsumer.accept(orderEvent.getUser());
+            //eventConsumer.accept(orderEvent.getUser());
         }
-        consumer.commitSync();
+        //consumer.commitSync();
     }
 
     public void stop() {

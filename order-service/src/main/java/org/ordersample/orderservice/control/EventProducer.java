@@ -25,7 +25,6 @@ public class EventProducer {
     private static final Logger logger = Logger.getLogger(EventSerializer.class.getName());
 
     private Producer<String, GenericRecord> producer;
-    private String topic;
 
     @PostConstruct
     private void init() {
@@ -42,14 +41,13 @@ public class EventProducer {
         props.setProperty(AbstractKafkaAvroSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://127.0.0.1:8081");
 
         producer = new KafkaProducer<>(props);
-        topic = "order";
         producer.initTransactions();
     }
 
-    public void publish(GenericRecord... events) {
+    public void publish(String topic, String id, GenericRecord... events) {
         try {
             producer.beginTransaction();
-            send(events);
+            send(topic, id, events);
             producer.commitTransaction();
         } catch (ProducerFencedException e) {
             producer.close();
@@ -58,11 +56,11 @@ public class EventProducer {
         }
     }
 
-    private void send(GenericRecord... events) {
+    private void send(String topic, String id, GenericRecord... events) {
         for (final GenericRecord event : events) {
-            final ProducerRecord<String, GenericRecord> record = new ProducerRecord<>(topic, event.get("id").toString(), event);
+            final ProducerRecord<String, GenericRecord> record = new ProducerRecord<>(topic, id, event);
 
-            record.headers().add("algo", "sometging".getBytes());
+            record.headers().add("transitId", UUID.randomUUID().toString().getBytes());
             logger.info("publishing = " + record);
             producer.send(record);
         }
