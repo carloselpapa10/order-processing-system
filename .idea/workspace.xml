@@ -2,42 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c71f990-c82f-4e65-bfb1-8cef9c352c9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_confluent_kafka_avro_serializer_5_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_3_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_interceptor_javax_interceptor_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_bind_javax_json_bind_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_yasson_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-info/domain-info.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain-info/domain-info.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain-info/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/order-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/protocol/orders/v1/OrderEvents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlersConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/Adapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventJsonbSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/UUIDAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/dao/OrderCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/dao/OrderCommandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCommandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCompletedEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCreatedEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderEventConsumers.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderUpdatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/protobuf/order_events.proto" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/protobuf/order_events.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/example/protocol/orders/v1/OrderEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/example/protocol/orders/v1/OrderEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/order_control/OrderEventConsumer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +16,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="base" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -170,7 +145,42 @@
           <line>45</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderConsumerConfig.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="ordersEnvelope." language="JAVA" custom="com.google.gson.Gson,com.example.protocol.orders.v1.OrderEvents" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

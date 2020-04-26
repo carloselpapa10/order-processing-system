@@ -43,7 +43,7 @@ public class OrderEventConsumer implements Runnable {
         for (ConsumerRecord<String, OrderEvents.OrdersEnvelope> record : records) {
             eventConsumer.accept(record.value());
         }
-        consumer.commitSync();
+        //consumer.commitSync();
     }
 
     public void stop() {

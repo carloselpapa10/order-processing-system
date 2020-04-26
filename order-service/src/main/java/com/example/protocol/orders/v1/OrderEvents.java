@@ -188,7 +188,7 @@ public final class OrderEvents {
             }
             case 114: {
               com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent.Builder subBuilder = null;
-              if (payloadCase_ == 14) {
+              if (  payloadCase_ == 14) {
                 subBuilder = ((com.example.protocol.orders.v1.OrderEvents.OrderCompletedEvent) payload_).toBuilder();
               }
               payload_ =
