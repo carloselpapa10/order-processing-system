@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c71f990-c82f-4e65-bfb1-8cef9c352c9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain-info/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/domain-info/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/io/karengryg/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/io/karengryg/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/commandhandlers/OrderServiceCommandHandlersConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventJsonbSerializer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/controller/OrderServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/dao/OrderCommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/dao/OrderCommandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCommandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCreatedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCreatedEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderUpdatedConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/eventhandling/OrderEventConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/model/OrderEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/webapi/CreateOrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/avro/movie-v1.avsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/avro/user-v1.avsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/UUIDAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/eventhandling/OrderEventConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumerConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -156,31 +147,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventSerializer.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventDeserializer.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventDeserializer.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/impl/OrderCommandServiceImpl.java</url>
           <line>42</line>
           <option name="timeStamp" value="31" />
@@ -206,21 +172,16 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="38" />
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/control/EventConsumer.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="44" />
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/org/ordersample/orderservice/event_handlers/OrderEventConsumers.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="record.value().getSchema().getFullName()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

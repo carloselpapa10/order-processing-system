@@ -41,11 +41,9 @@ public class EventConsumer implements Runnable {
     private void consume() {
         ConsumerRecords<String, GenericRecord> records = consumer.poll(Duration.ofMillis(Long.MAX_VALUE));
         for (ConsumerRecord<String, GenericRecord> record : records) {
-
-            GenericRecord a = record.value();
-            //eventConsumer.accept(orderEvent.getUser());
+            eventConsumer.accept(record.value());
         }
-        //consumer.commitSync();
+        consumer.commitSync();
     }
 
     public void stop() {

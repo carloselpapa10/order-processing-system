@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 @Component
 public class EventProducer {
 
-    private static final Logger logger = Logger.getLogger(EventSerializer.class.getName());
+    private static final Logger logger = Logger.getLogger(EventProducer.class.getName());
 
     private Producer<String, GenericRecord> producer;
 
